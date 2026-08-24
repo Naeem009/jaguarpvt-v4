@@ -207,3 +207,18 @@ html[data-locale="en"] {
 .font-mono {
   font-family: var(--font-mono);
 }
+
+/* Grade stock footage toward cream/camel (light) and charcoal (dark). */
+.hero-video-grade {
+  filter: saturate(0.28) sepia(0.34) brightness(1.08) contrast(0.94);
+}
+
+html.dark .hero-video-grade {
+  filter: grayscale(0.55) saturate(0.2) brightness(0.48) contrast(1.22);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) .hero-video-grade {
+    filter: grayscale(0.55) saturate(0.2) brightness(0.48) contrast(1.22);
+  }
+}

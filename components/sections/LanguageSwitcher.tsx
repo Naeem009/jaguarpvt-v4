@@ -62,10 +62,10 @@ export function LanguageSwitcher({
               "rounded-full border px-3 py-1.5 text-sm transition-colors",
               option.code === locale
                 ? inverted
-                  ? "border-white bg-white/10 text-white"
+                  ? "border-ink bg-ink/5 text-ink dark:border-white dark:bg-white/10 dark:text-white"
                   : "border-accent bg-accent-tint text-accent-dark"
                 : inverted
-                  ? "border-white/20 text-white/80 hover:border-white"
+                  ? "border-ink/20 text-ink/80 hover:border-ink dark:border-white/20 dark:text-white/80 dark:hover:border-white"
                   : "border-ink/10 text-graphite hover:border-accent",
             )}
           >
@@ -86,7 +86,7 @@ export function LanguageSwitcher({
         className={cn(
           "inline-flex min-h-10 items-center gap-2 rounded-full border px-3 text-sm font-medium transition-colors",
           inverted
-            ? "border-white/20 text-white hover:border-white"
+            ? "border-ink/20 text-ink hover:border-ink dark:border-white/20 dark:text-white dark:hover:border-white"
             : "border-ink/10 text-ink hover:border-accent",
         )}
       >

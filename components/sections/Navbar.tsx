@@ -17,7 +17,9 @@ import { cn } from "@/lib/utils";
 function navLinkClass(isOverlayNav: boolean) {
   return cn(
     "text-sm font-medium transition-colors",
-    isOverlayNav ? "text-white hover:text-white/80" : "text-ink hover:text-accent",
+    isOverlayNav
+      ? "text-ink hover:text-ink/70 dark:text-white dark:hover:text-white/80"
+      : "text-ink hover:text-accent",
   );
 }
 
@@ -331,7 +333,6 @@ export function Navbar() {
             className="relative block h-[3.75rem] w-[min(88vw,340px)] shrink-0 sm:h-[4rem] sm:w-[360px] lg:h-[4.25rem] lg:w-[440px]"
           >
             <BrandLogo
-              inverted={isOverlayNav}
               sizes="(max-width: 640px) 340px, (max-width: 1024px) 360px, 440px"
               priority
             />
@@ -359,7 +360,11 @@ export function Navbar() {
             <ThemeToggle inverted={isOverlayNav} />
             <Button
               href="/contact"
-              className={isOverlayNav ? "bg-white text-charcoal hover:bg-white/90" : undefined}
+              className={
+                isOverlayNav
+                  ? "bg-ink text-paper hover:bg-ink/90 dark:bg-white dark:text-charcoal dark:hover:bg-white/90"
+                  : undefined
+              }
             >
               {tCommon("contact")}
             </Button>
@@ -370,7 +375,7 @@ export function Navbar() {
             className={cn(
               "inline-flex size-10 shrink-0 touch-manipulation items-center justify-center rounded-full border lg:hidden",
               isOverlayNav
-                ? "border-white/20 bg-white/10 text-white"
+                ? "border-ink/20 bg-paper/40 text-ink dark:border-white/20 dark:bg-white/10 dark:text-white"
                 : "border-ink/10 bg-paper text-ink",
             )}
             aria-expanded={mobileOpen}

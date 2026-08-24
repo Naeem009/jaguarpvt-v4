@@ -10,6 +10,7 @@ import {
   StatBar,
   TrustStrip,
 } from "@/components/sections";
+import { heroVideoMedia } from "@/lib/media/hero-media";
 import { getProductHubGridItems } from "@/lib/products/get-content";
 import { buildCompanyStats } from "@/lib/stats/company-stats";
 import { buildImpactHubStats } from "@/lib/stats/impact-hub-stats";
@@ -51,12 +52,7 @@ export default async function HomePage({ params }: PageProps) {
         subhead={t("hero.subhead")}
         primaryCTA={{ label: tCommon("contactUs"), href: "/contact" }}
         secondaryCTA={{ label: tCommon("exploreProducts"), href: "/products" }}
-        media={{
-          type: "video",
-          src: "/videos/home/hero-stitching.mp4",
-          poster: "/images/home/hero.jpg",
-          alt: t("hero.heroAlt"),
-        }}
+        media={heroVideoMedia("/images/home/hero.jpg", t("hero.heroAlt"), "home")}
       />
 
       <StatBar stats={companyStats} />

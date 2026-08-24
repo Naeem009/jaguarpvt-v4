@@ -1,10 +1,17 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { HeroBackdrop } from "./HeroBackdrop";
 import { cn } from "@/lib/utils";
 
 export type HeroMedia =
   | { type: "image"; src: string; alt: string }
-  | { type: "video"; src: string; poster?: string; alt: string };
+  | {
+      type: "video";
+      src: string;
+      clips?: readonly string[];
+      poster?: string;
+      alt: string;
+    };
 
 export type HeroCTA = {
   label: string;
@@ -29,28 +36,20 @@ export function Hero({
   variant = "home",
 }: HeroProps) {
   const isHome = variant === "home";
+  const videoClips =
+    media.type === "video" ? (media.clips && media.clips.length > 0 ? media.clips : [media.src]) : [];
 
   return (
     <section
       id={isHome ? "home-hero" : undefined}
       className={cn(
-        "relative isolate flex items-end overflow-hidden bg-charcoal text-white",
+        "hero-cinematic relative isolate flex items-end overflow-hidden bg-charcoal text-ink dark:text-white",
         isHome ? "min-h-dvh" : "min-h-[60vh]",
       )}
     >
       <div className="absolute inset-0">
         {media.type === "video" ? (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={media.poster}
-            className="h-full w-full object-cover"
-            aria-label={media.alt}
-          >
-            <source src={media.src} type="video/mp4" />
-          </video>
+          <HeroBackdrop clips={videoClips} poster={media.poster} alt={media.alt} />
         ) : (
           <Image
             src={media.src}
@@ -58,24 +57,60 @@ export function Hero({
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="hero-video-grade object-cover"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/60" />
+        <div
+          className={cn(
+            "absolute inset-0",
+            isHome
+              ? "bg-gradient-to-t from-paper via-paper/55 to-paper/20 dark:from-charcoal dark:via-charcoal/55 dark:to-charcoal/25"
+              : "bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/50",
+          )}
+        />
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-4 pb-24 pt-32 md:px-6 md:pb-32 md:pt-40">
         <div className="max-w-3xl space-y-5">
-          <h1 className="font-display text-3xl font-semibold tracking-[-0.02em] md:text-4xl lg:text-5xl">
+          <h1
+            className={cn(
+              "font-display text-3xl font-semibold tracking-[-0.02em] md:text-4xl lg:text-5xl",
+              !isHome && "text-white",
+            )}
+          >
             {headline}
           </h1>
-          <p className="font-display max-w-2xl text-lg text-white/80 md:text-xl">{subhead}</p>
+          <p
+            className={cn(
+              "font-display max-w-2xl text-lg md:text-xl",
+              isHome ? "text-graphite dark:text-white/80" : "text-white/80",
+            )}
+          >
+            {subhead}
+          </p>
           <div className="flex flex-wrap gap-4 pt-2">
-            <Button href={primaryCTA.href} size="lg" className="bg-white text-charcoal hover:bg-white/90">
+            <Button
+              href={primaryCTA.href}
+              size="lg"
+              className={
+                isHome
+                  ? "bg-ink text-paper hover:bg-ink/90 dark:bg-white dark:text-charcoal dark:hover:bg-white/90"
+                  : "bg-white text-charcoal hover:bg-white/90"
+              }
+            >
               {primaryCTA.label}
             </Button>
             {secondaryCTA ? (
-              <Button href={secondaryCTA.href} variant="secondary" size="lg" className="border-white/20 text-white hover:border-white hover:text-white">
+              <Button
+                href={secondaryCTA.href}
+                variant="secondary"
+                size="lg"
+                className={
+                  isHome
+                    ? "border-ink/20 text-ink hover:border-ink hover:text-ink dark:border-white/20 dark:text-white dark:hover:border-white dark:hover:text-white"
+                    : "border-white/20 text-white hover:border-white hover:text-white"
+                }
+              >
                 {secondaryCTA.label}
               </Button>
             ) : null}

@@ -101,7 +101,7 @@ export function MegaMenu({
         onClick={() => setOpen((value) => !value)}
         className={cn(
           "inline-flex min-h-10 items-center gap-1 text-sm font-medium transition-colors",
-          inverted ? "text-white hover:text-white/80" : "text-ink hover:text-accent",
+          inverted ? "text-ink hover:text-ink/70 dark:text-white dark:hover:text-white/80" : "text-ink hover:text-accent",
         )}
       >
         {label}

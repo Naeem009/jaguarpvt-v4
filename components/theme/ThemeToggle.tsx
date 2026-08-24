@@ -30,7 +30,7 @@ export function ThemeToggle({
       className={cn(
         "inline-flex size-10 items-center justify-center rounded-full border transition-colors",
         inverted
-          ? "border-white/20 text-white hover:border-white"
+          ? "border-ink/20 text-ink hover:border-ink dark:border-white/20 dark:text-white dark:hover:border-white"
           : "border-ink/10 text-ink hover:border-accent",
         className,
       )}
