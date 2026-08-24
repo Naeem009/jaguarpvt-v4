@@ -1,29 +1,43 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  /* Neutrals */
-  --color-ink: #0b0c0b;
-  --color-charcoal: #16181a; /* hero overlays, cinematic dark scrims */
-  --color-graphite: #55585a;
-  --color-mist: #eef0ec;
-  --color-paper: #fafaf8;
-  --color-paper-muted: #f2f1ed;
+  color-scheme: light;
+
+  /* Surfaces — warm cream */
+  --color-paper: #f7f4ef;
+  --color-paper-muted: #fbfaf7;
+  --color-mist: #ede8dc;
   --color-white: #ffffff;
 
-  /* Brand green — #7EBB42 */
-  --color-accent-bright: #7ebb42;
-  --color-accent: #3f7a1a;
-  --color-accent-dark: #3a6e18;
-  --color-accent-tint: #eef5e4;
+  /* Type */
+  --color-ink: #161513;
+  --color-graphite: #7a756c;
 
-  /* Technology accent — AI-powered components only */
-  --color-tech: #1f3fad;
-  --color-tech-tint: #eaf0fe;
+  /* Overlays */
+  --color-charcoal: #0a0a0a;
+
+  /* Material accents */
+  --color-stone: #c9bea8;
+  --color-camel: #a9825e;
+  --color-accent-bright: #c9bea8;
+  --color-accent: #a9825e;
+  --color-accent-dark: #3a3a38;
+  --color-accent-tint: #e8e0d2;
+
+  /* Tech / AI surfaces use charcoal + stone wash */
+  --color-tech: #3a3a38;
+  --color-tech-tint: #e5e0d6;
 
   /* Semantic */
-  --color-success: #3a6e18;
-  --color-warning: #b8860b;
+  --color-success: #5c5346;
+  --color-warning: #a9825e;
   --color-error: #c0392b;
+
+  /* Elevation */
+  --elevation-card: 0 1px 3px rgba(22, 21, 19, 0.06);
+  --elevation-card-hover: 0 8px 24px rgba(22, 21, 19, 0.08);
 
   /* Typography */
   --font-display: var(--font-montserrat), "Montserrat", -apple-system, sans-serif;
@@ -34,6 +48,70 @@
   --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+html.dark {
+  color-scheme: dark;
+
+  --color-paper: #141414;
+  --color-paper-muted: #0a0a0a;
+  --color-mist: #1a1a1a;
+  --color-white: #ffffff;
+
+  --color-ink: #f5f3f0;
+  --color-graphite: #a8a29b;
+
+  --color-charcoal: #0a0a0a;
+
+  --color-stone: #c9bea8;
+  --color-camel: #a9825e;
+  --color-accent-bright: #c9bea8;
+  --color-accent: #a9825e;
+  --color-accent-dark: #c9bea8;
+  --color-accent-tint: #2a241c;
+
+  --color-tech: #c9bea8;
+  --color-tech-tint: #1c1c1a;
+
+  --color-success: #c9bea8;
+  --color-warning: #a9825e;
+  --color-error: #c0392b;
+
+  --elevation-card: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --elevation-card-hover: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) {
+    color-scheme: dark;
+
+    --color-paper: #141414;
+    --color-paper-muted: #0a0a0a;
+    --color-mist: #1a1a1a;
+    --color-white: #ffffff;
+
+    --color-ink: #f5f3f0;
+    --color-graphite: #a8a29b;
+
+    --color-charcoal: #0a0a0a;
+
+    --color-stone: #c9bea8;
+    --color-camel: #a9825e;
+    --color-accent-bright: #c9bea8;
+    --color-accent: #a9825e;
+    --color-accent-dark: #c9bea8;
+    --color-accent-tint: #2a241c;
+
+    --color-tech: #c9bea8;
+    --color-tech-tint: #1c1c1a;
+
+    --color-success: #c9bea8;
+    --color-warning: #a9825e;
+    --color-error: #c0392b;
+
+    --elevation-card: 0 1px 3px rgba(0, 0, 0, 0.45);
+    --elevation-card-hover: 0 12px 32px rgba(0, 0, 0, 0.55);
+  }
+}
+
 @theme inline {
   --color-ink: var(--color-ink);
   --color-charcoal: var(--color-charcoal);
@@ -42,6 +120,8 @@
   --color-paper: var(--color-paper);
   --color-paper-muted: var(--color-paper-muted);
   --color-white: var(--color-white);
+  --color-stone: var(--color-stone);
+  --color-camel: var(--color-camel);
   --color-accent-bright: var(--color-accent-bright);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
@@ -61,8 +141,8 @@
   --radius-card: 1rem;
   --radius-card-lg: 1.5rem;
 
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-card: var(--elevation-card);
+  --shadow-card-hover: var(--elevation-card-hover);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -108,6 +188,11 @@ body {
   color: var(--color-ink);
   font-family: var(--font-body);
   line-height: 1.6;
+}
+
+::selection {
+  background-color: var(--color-camel);
+  color: var(--color-paper);
 }
 
 html[data-locale="en"] {

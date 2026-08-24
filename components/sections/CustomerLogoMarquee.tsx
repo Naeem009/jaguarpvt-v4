@@ -36,7 +36,7 @@ export function CustomerLogoMarquee({
               width={480}
               height={336}
               sizes="(max-width: 768px) 320px, 384px"
-              className="max-h-56 w-auto max-w-full object-contain opacity-70 grayscale transition-[opacity,filter] duration-300 group-hover:opacity-100 group-hover:grayscale-0 md:max-h-64"
+              className="max-h-56 w-auto max-w-full object-contain opacity-70 grayscale transition-[opacity,filter] duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:invert md:max-h-64"
             />
           </li>
         ))}

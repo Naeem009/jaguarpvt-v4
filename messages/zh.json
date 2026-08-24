@@ -23,6 +23,9 @@
     "closeMenu": "关闭菜单",
     "closeMenuOverlay": "关闭菜单遮罩",
     "language": "语言",
+    "theme": "外观",
+    "switchToLight": "切换到浅色模式",
+    "switchToDark": "切换到深色模式",
     "catalogueBadge": "目录"
   },
   "footer": {

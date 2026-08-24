@@ -210,7 +210,7 @@ function FloatingAIChatWidget() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="fixed end-4 bottom-4 z-50 inline-flex min-h-12 items-center gap-2 rounded-full bg-tech px-5 text-sm font-medium text-white shadow-[var(--shadow-card-hover)] hover:bg-tech/90"
+        className="fixed end-4 bottom-4 z-50 inline-flex min-h-12 items-center gap-2 rounded-full bg-ink px-5 text-sm font-medium text-paper shadow-[var(--shadow-card-hover)] hover:bg-ink/90"
         aria-expanded={open}
       >
         {open ? t("launcherClose") : t("launcherOpen")}

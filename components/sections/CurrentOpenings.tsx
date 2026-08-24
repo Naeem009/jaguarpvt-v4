@@ -95,7 +95,7 @@ export function CurrentOpenings({ openings }: CurrentOpeningsProps) {
                       className={cn(
                         "min-h-11 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
                         isActive
-                          ? "border-accent bg-accent text-white"
+                          ? "border-ink bg-ink text-paper"
                           : "border-ink/10 bg-paper text-graphite hover:border-accent hover:text-accent-dark",
                       )}
                     >

@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Inter, Martel_Sans, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { rootSiteMetadata } from "@/lib/seo/metadata";
+import { themeInitScript } from "@/lib/theme";
 import "../globals.css";
 
 const inter = Inter({
@@ -44,6 +47,13 @@ export const metadata: Metadata = {
     "Vertically integrated apparel manufacturer for casual wear, streetwear, activewear, denim, kidswear, and boutique with audited compliance and scalable production.",
 };
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F7F4EF" },
+    { media: "(prefers-color-scheme: dark)", color: "#141414" },
+  ],
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -68,11 +78,17 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       lang={locale}
       dir={locale === "ar" ? "rtl" : "ltr"}
       data-locale={locale}
+      suppressHydrationWarning
       className={`${inter.variable} ${montserrat.variable} ${martelSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-dvh flex-col bg-paper text-ink">
+        <Script id="jaguar-theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex flex-1 flex-col">{children}</div>
+          <ThemeProvider>
+            <div className="flex flex-1 flex-col">{children}</div>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

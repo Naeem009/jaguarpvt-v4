@@ -11,7 +11,7 @@ export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
 const toneStyles: Record<BadgeTone, string> = {
   neutral: "bg-paper text-graphite",
   accent: "bg-accent-tint text-accent-dark",
-  tech: "bg-tech text-white",
+  tech: "bg-tech text-paper",
 };
 
 export function Badge({

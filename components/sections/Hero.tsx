@@ -71,7 +71,7 @@ export function Hero({
           </h1>
           <p className="font-display max-w-2xl text-lg text-white/80 md:text-xl">{subhead}</p>
           <div className="flex flex-wrap gap-4 pt-2">
-            <Button href={primaryCTA.href} size="lg">
+            <Button href={primaryCTA.href} size="lg" className="bg-white text-charcoal hover:bg-white/90">
               {primaryCTA.label}
             </Button>
             {secondaryCTA ? (

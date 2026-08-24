@@ -1,20 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
+import { BrandLogo } from "@/components/theme/BrandLogo";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MegaMenu } from "./MegaMenu";
 import { ESG_REPORT_URL } from "@/lib/our-impact/content";
 import { PRODUCT_CATEGORY_SLUGS } from "@/lib/products/content";
 import type { ProductCategorySlug } from "@/lib/products/content";
 import { cn } from "@/lib/utils";
-
-const LOGO_DARK_SRC = "/logos/logo-dark.svg";
-const LOGO_LIGHT_SRC = "/logos/logo-light.svg";
 
 function navLinkClass(isOverlayNav: boolean) {
   return cn(
@@ -184,13 +182,7 @@ export function Navbar() {
                   className="relative mb-6 block h-[4.5rem] w-[min(88vw,340px)]"
                   onClick={closeMobileMenu}
                 >
-                  <Image
-                    src={LOGO_DARK_SRC}
-                    alt="Jaguar (Pvt) Ltd."
-                    fill
-                    sizes="(max-width: 1024px) 340px, 340px"
-                    className="object-contain object-start"
-                  />
+                  <BrandLogo sizes="(max-width: 1024px) 340px, 340px" />
                 </Link>
 
                 <div className="space-y-4">
@@ -303,6 +295,10 @@ export function Navbar() {
                     <p className="mb-3 text-sm font-medium text-graphite">{t("language")}</p>
                     <LanguageSwitcher variant="chips" />
                   </div>
+                  <div className="flex items-center justify-between pt-2">
+                    <p className="text-sm font-medium text-graphite">{t("theme")}</p>
+                    <ThemeToggle />
+                  </div>
                 </div>
               </div>
 
@@ -334,12 +330,9 @@ export function Navbar() {
             href="/"
             className="relative block h-[3.75rem] w-[min(88vw,340px)] shrink-0 sm:h-[4rem] sm:w-[360px] lg:h-[4.25rem] lg:w-[440px]"
           >
-            <Image
-              src={isOverlayNav ? LOGO_LIGHT_SRC : LOGO_DARK_SRC}
-              alt="Jaguar (Pvt) Ltd."
-              fill
+            <BrandLogo
+              inverted={isOverlayNav}
               sizes="(max-width: 640px) 340px, (max-width: 1024px) 360px, 440px"
-              className="object-contain object-start"
               priority
             />
           </Link>
@@ -363,7 +356,13 @@ export function Navbar() {
               {t("careers")}
             </Link>
             <LanguageSwitcher inverted={isOverlayNav} />
-            <Button href="/contact">{tCommon("contact")}</Button>
+            <ThemeToggle inverted={isOverlayNav} />
+            <Button
+              href="/contact"
+              className={isOverlayNav ? "bg-white text-charcoal hover:bg-white/90" : undefined}
+            >
+              {tCommon("contact")}
+            </Button>
           </nav>
 
           <button

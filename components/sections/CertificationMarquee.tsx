@@ -36,7 +36,7 @@ export function CertificationMarquee({
               width={400}
               height={280}
               sizes="500px"
-              className="max-h-56 w-auto max-w-full object-contain opacity-60 grayscale transition-[opacity,filter] duration-300 hover:opacity-100 hover:grayscale-0"
+              className="max-h-56 w-auto max-w-full object-contain opacity-60 grayscale transition-[opacity,filter] duration-300 hover:opacity-100 hover:grayscale-0 dark:invert"
             />
           </li>
         ))}

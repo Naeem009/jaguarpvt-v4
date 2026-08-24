@@ -161,7 +161,7 @@ export default async function CareerOpeningPage({ params }: PageProps) {
                   <JobApplyForm jobSlug={opening.slug} jobTitle={opening.title} />
                   <a
                     href="#apply"
-                    className="fixed bottom-4 start-4 end-24 z-30 inline-flex min-h-12 items-center justify-center rounded-full bg-accent px-6 text-base font-medium text-white shadow-[var(--shadow-card-hover)] md:hidden"
+                    className="fixed bottom-4 start-4 end-24 z-30 inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-6 text-base font-medium text-paper shadow-[var(--shadow-card-hover)] md:hidden"
                   >
                     {t("role.applyCta")}
                   </a>

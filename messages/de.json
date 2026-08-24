@@ -23,6 +23,9 @@
     "closeMenu": "Menü schließen",
     "closeMenuOverlay": "Menü-Overlay schließen",
     "language": "Sprache",
+    "theme": "Erscheinungsbild",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "switchToDark": "Zum dunklen Modus wechseln",
     "catalogueBadge": "Katalog"
   },
   "footer": {
