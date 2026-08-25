@@ -64,7 +64,7 @@ export function Hero({
           className={cn(
             "absolute inset-0",
             isHome
-              ? "bg-gradient-to-t from-paper via-paper/55 to-paper/20 dark:from-charcoal dark:via-charcoal/55 dark:to-charcoal/25"
+              ? "bg-gradient-to-t from-paper via-knit/55 to-knit/20 dark:from-charcoal dark:via-charcoal/55 dark:to-charcoal/25"
               : "bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/50",
           )}
         />

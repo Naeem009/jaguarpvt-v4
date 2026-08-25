@@ -15,7 +15,7 @@ export const about = {
     },
     overview: {
       title: "A manufacturer built for long-term programs",
-      body: "Jaguar (Pvt) Ltd. integrates product development, manufacturing, and compliance across casual wear, streetwear, activewear, denim, kidswear, and boutique. We serve global brands from six facilities across five countries — with audit-ready systems, transparent capability data, and commercial teams who speak the language of sourcing, not sales.",
+      body: "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer — knitting, dyeing, sewing, and finishing casual wear, streetwear, activewear, denim, kidswear, and boutique. We serve global brands from six facilities across five countries — with audit-ready systems, transparent capability data, and commercial teams who speak the language of sourcing, not sales.",
     },
     cta: {
       title: "Partner with a manufacturer built for long-term programs",

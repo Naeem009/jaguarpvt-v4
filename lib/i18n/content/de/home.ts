@@ -1,9 +1,9 @@
 export const home = {
   hero: {
-    headline: "Fertigung, entwickelt für das, was als Nächstes kommt.",
+    headline: "Strickwaren, entwickelt für das, was als Nächstes kommt.",
     subhead:
-      "Vertikal integrierte Produktion in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique — für globale Marken an 04 Standorten in 03 Ländern.",
-    heroAlt: "Nahaufnahme von Stoff, der auf einer industriellen Nähmaschine verarbeitet wird",
+      "Vertikal integrierte Maschenware — von Garn und Rundstricken über Nähen bis zur Ausrüstung — in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique. Für globale Marken an 04 Standorten in 03 Ländern.",
+    heroAlt: "Maschenware, industrielles Nähen und Strickproduktion",
   },
   stats: {
     facilities: "Standorte",

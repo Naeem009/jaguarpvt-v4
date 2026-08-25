@@ -65,7 +65,7 @@ export function FacilityMapTeaser({
             {previewMarkers.map((marker, index) => (
               <span
                 key={index}
-                className="absolute size-3 rounded-full bg-accent shadow-[0_0_0_6px_rgba(169,130,94,0.28)]"
+                className="absolute size-3 rounded-full bg-heather shadow-[0_0_0_6px_rgba(199,180,162,0.4)]"
                 style={{ top: marker.top, insetInlineStart: marker.insetInlineStart }}
                 aria-hidden
               />

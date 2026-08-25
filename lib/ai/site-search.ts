@@ -18,8 +18,8 @@ const siteSearchIndex: SiteSearchEntry[] = [
     id: "home",
     title: "Home",
     href: "/",
-    snippet: "Manufacturing capability across casual wear, streetwear, activewear, denim, kidswear, and boutique.",
-    keywords: ["home", "manufacturing", "apparel", "capabilities"],
+    snippet: "Knitwear manufacturing across knitted fabric, sewing, and finished programs in casual wear, streetwear, activewear, denim, kidswear, and boutique.",
+    keywords: ["home", "knitwear", "knitting", "manufacturing", "apparel", "capabilities"],
   },
   {
     id: "about",

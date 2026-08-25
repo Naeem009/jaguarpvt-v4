@@ -8,14 +8,14 @@ export const productCategories = {
     name: "Casual Wear",
     headline: "Casual Wear",
     subhead:
-      "Everyday apparel programs — tees, polos, loungewear, and soft-hand separates — built for comfort, consistency, and scalable production.",
+      "Everyday knitwear programs — jersey tees, polos, loungewear, and soft-hand separates — built for comfort, consistency, and scalable production.",
     gridDescription:
-      "Everyday apparel — tees, polos, loungewear, and soft-hand separates with integrated cutting, sewing, and finishing.",
+      "Everyday knits — tees, polos, loungewear, and soft-hand separates with in-house knitting, cutting, sewing, and finishing.",
     timelineSteps: [
       {
-        title: "Fabric selection and approval",
+        title: "Knit fabric selection and approval",
         description:
-          "Programs begin with hand-feel, shade, and shrinkage approval on cotton, blends, and sustainable inputs — including organic cotton and recycled materials where specified.",
+          "Programs begin with hand-feel, shade, and shrinkage approval on jersey, fleece, and cotton blends — including organic cotton and recycled knits where specified.",
       },
       {
         title: "Cutting, sewing, and assembly",
@@ -168,9 +168,9 @@ export const productCategories = {
     name: "Kidswear",
     headline: "Kidswear",
     subhead:
-      "Children's apparel with soft-hand construction, secure attachments, and compliance-focused finishing for infant through youth programs.",
+      "Children's knitwear with soft-hand construction, secure attachments, and compliance-focused finishing for infant through youth programs.",
     gridDescription:
-      "Children's apparel with soft-hand construction, secure attachments, and compliance-focused finishing.",
+      "Children's knits with soft-hand construction, secure attachments, and compliance-focused finishing.",
     timelineSteps: [
       {
         title: "Material selection and compliance review",

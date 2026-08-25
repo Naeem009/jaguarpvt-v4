@@ -1,9 +1,9 @@
 export const home = {
   hero: {
-    headline: "La manufacture, pensée pour demain.",
+    headline: "Le tricot, pensé pour demain.",
     subhead:
-      "Production intégrée verticalement dans les vêtements casual, le streetwear, l'activewear, le denim, la mode enfant et la boutique — au service des marques internationales dans 04 sites répartis dans 03 pays.",
-    heroAlt: "Gros plan sur un tissu cousu sur une machine à coudre industrielle",
+      "Maille intégrée verticalement — du fil et du tricotage circulaire à la couture et à la finition — en casual, streetwear, activewear, denim, mode enfant et boutique. Au service des marques internationales dans 04 sites répartis dans 03 pays.",
+    heroAlt: "Tissu maille, piqûre industrielle et production de knitwear",
   },
   stats: {
     facilities: "Sites",

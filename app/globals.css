@@ -8,7 +8,7 @@
   /* Surfaces — warm cream */
   --color-paper: #f7f4ef;
   --color-paper-muted: #fbfaf7;
-  --color-mist: #ede8dc;
+  --color-mist: #e8d8c8;
   --color-white: #ffffff;
 
   /* Type */
@@ -18,17 +18,19 @@
   /* Overlays */
   --color-charcoal: #0a0a0a;
 
-  /* Material accents */
-  --color-stone: #c9bea8;
+  /* Knitwear heather — #dbc6b2 (yarn) and #c7b4a2 (heather) */
+  --color-knit: #dbc6b2;
+  --color-heather: #c7b4a2;
+  --color-stone: #c7b4a2;
   --color-camel: #a9825e;
-  --color-accent-bright: #c9bea8;
+  --color-accent-bright: #dbc6b2;
   --color-accent: #a9825e;
   --color-accent-dark: #3a3a38;
-  --color-accent-tint: #e8e0d2;
+  --color-accent-tint: #dbc6b2;
 
-  /* Tech / AI surfaces use charcoal + stone wash */
+  /* Tech / AI surfaces use charcoal + heather wash */
   --color-tech: #3a3a38;
-  --color-tech-tint: #e5e0d6;
+  --color-tech-tint: #e8ddd0;
 
   /* Semantic */
   --color-success: #5c5346;
@@ -61,17 +63,19 @@ html.dark {
 
   --color-charcoal: #0a0a0a;
 
-  --color-stone: #c9bea8;
+  --color-knit: #dbc6b2;
+  --color-heather: #c7b4a2;
+  --color-stone: #c7b4a2;
   --color-camel: #a9825e;
-  --color-accent-bright: #c9bea8;
+  --color-accent-bright: #dbc6b2;
   --color-accent: #a9825e;
-  --color-accent-dark: #c9bea8;
-  --color-accent-tint: #2a241c;
+  --color-accent-dark: #dbc6b2;
+  --color-accent-tint: #2a2622;
 
-  --color-tech: #c9bea8;
+  --color-tech: #c7b4a2;
   --color-tech-tint: #1c1c1a;
 
-  --color-success: #c9bea8;
+  --color-success: #c7b4a2;
   --color-warning: #a9825e;
   --color-error: #c0392b;
 
@@ -93,17 +97,19 @@ html.dark {
 
     --color-charcoal: #0a0a0a;
 
-    --color-stone: #c9bea8;
+    --color-knit: #dbc6b2;
+    --color-heather: #c7b4a2;
+    --color-stone: #c7b4a2;
     --color-camel: #a9825e;
-    --color-accent-bright: #c9bea8;
+    --color-accent-bright: #dbc6b2;
     --color-accent: #a9825e;
-    --color-accent-dark: #c9bea8;
-    --color-accent-tint: #2a241c;
+    --color-accent-dark: #dbc6b2;
+    --color-accent-tint: #2a2622;
 
-    --color-tech: #c9bea8;
+    --color-tech: #c7b4a2;
     --color-tech-tint: #1c1c1a;
 
-    --color-success: #c9bea8;
+    --color-success: #c7b4a2;
     --color-warning: #a9825e;
     --color-error: #c0392b;
 
@@ -120,6 +126,8 @@ html.dark {
   --color-paper: var(--color-paper);
   --color-paper-muted: var(--color-paper-muted);
   --color-white: var(--color-white);
+  --color-knit: var(--color-knit);
+  --color-heather: var(--color-heather);
   --color-stone: var(--color-stone);
   --color-camel: var(--color-camel);
   --color-accent-bright: var(--color-accent-bright);
@@ -191,8 +199,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-camel);
-  color: var(--color-paper);
+  background-color: var(--color-heather);
+  color: var(--color-ink);
 }
 
 html[data-locale="en"] {
@@ -208,9 +216,9 @@ html[data-locale="en"] {
   font-family: var(--font-mono);
 }
 
-/* Grade stock footage toward cream/camel (light) and charcoal (dark). */
+/* Grade stock footage toward knit beige #dbc6b2 / #c7b4a2 (light) and charcoal (dark). */
 .hero-video-grade {
-  filter: saturate(0.28) sepia(0.34) brightness(1.08) contrast(0.94);
+  filter: saturate(0.32) sepia(0.46) hue-rotate(-10deg) brightness(1.06) contrast(0.95);
 }
 
 html.dark .hero-video-grade {

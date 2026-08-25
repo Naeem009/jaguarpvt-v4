@@ -1,12 +1,12 @@
 export const sections = {
   trustStrip: {
     eyebrow: "Partnership",
-    defaultTitle: "Trusted by leading activewear and lifestyle brands",
+    defaultTitle: "Trusted by leading knitwear and lifestyle brands",
   },
   productGrid: {
     eyebrow: "Products",
     defaultTitle: "Built across six product categories",
-    defaultSubhead: "From casual wear and streetwear to activewear, denim, kidswear, and boutique — integrated manufacturing across every category.",
+    defaultSubhead: "From jersey tees and streetwear knits to activewear, denim, kidswear, and boutique — integrated knitting, sewing, and finishing across every category.",
   },
   facilityMapTeaser: {
     eyebrow: "Global footprint",
@@ -18,8 +18,8 @@ export const sections = {
   },
   timeline: {
     eyebrow: "Process",
-    defaultTitle: "From fiber to finished garment",
-    defaultSubhead: "Integrated steps across cutting, sewing, finishing, and compliance documentation.",
+    defaultTitle: "From yarn to finished knitwear",
+    defaultSubhead: "Integrated steps across knitting, cutting, sewing, finishing, and compliance documentation.",
     stepLabel: "Step {number}",
   },
   productSpecs: {
@@ -42,9 +42,9 @@ export const sections = {
     eyebrow: "In motion",
     pages: {
       home: {
-        title: "Precision stitching at scale",
-        subhead: "A glimpse of integrated apparel production across our manufacturing floor.",
-        videoAlt: "Apparel stitching and sewing on the production line",
+        title: "Knitting and stitching at scale",
+        subhead: "A glimpse of knitted fabric, sewing, and finishing across our manufacturing floor.",
+        videoAlt: "Knitting, stitching, and knitwear on the production line",
       },
       about: {
         title: "Built on manufacturing discipline",
@@ -53,7 +53,7 @@ export const sections = {
       },
       atAGlance: {
         title: "Scale across categories and regions",
-        subhead: "Integrated manufacturing across casual wear, streetwear, activewear, denim, kidswear, and boutique.",
+        subhead: "Integrated knitting and sewing across casual wear, streetwear, activewear, denim, kidswear, and boutique.",
         videoAlt: "Global apparel manufacturing footprint",
       },
       aboutStrategy: {
@@ -107,9 +107,9 @@ export const sections = {
         videoAlt: "Quality and compliance in apparel manufacturing",
       },
       products: {
-        title: "Product programs in production",
-        subhead: "Casual wear, streetwear, activewear, denim, kidswear, and boutique capabilities on integrated lines.",
-        videoAlt: "Finished apparel and product manufacturing",
+        title: "Knitwear programs in production",
+        subhead: "Casual wear, streetwear, activewear, denim, kidswear, and boutique knits on integrated lines.",
+        videoAlt: "Finished knitwear and product manufacturing",
       },
       casualWear: {
         title: "Casual wear in production",

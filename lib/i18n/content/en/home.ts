@@ -1,9 +1,9 @@
 export const home = {
   hero: {
-    headline: "Manufacturing, engineered for what's next.",
+    headline: "Knitwear, engineered for what's next.",
     subhead:
-      "Vertically integrated production across casual wear, streetwear, activewear, denim, kidswear, and boutique — serving global brands at 04 facilities in 03 countries.",
-    heroAlt: "Draped fabric, industrial stitching, and garment manufacturing on the factory floor",
+      "Vertically integrated knits — from yarn and circular knitting through sewing and finishing — across casual wear, streetwear, activewear, denim, kidswear, and boutique. Serving global brands at 04 facilities in 03 countries.",
+    heroAlt: "Knitted fabric, industrial stitching, and knitwear in production",
   },
   stats: {
     facilities: "Facilities",

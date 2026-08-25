@@ -63,10 +63,10 @@ function buildMatcherSection(data: ContactFormValues) {
 function row(label: string, value: string) {
   return `
     <tr>
-      <td style="padding:10px 12px;border:1px solid #c9bea8;background:#fafaf9;width:180px;font-size:13px;color:#4a4b4e;vertical-align:top;">
+      <td style="padding:10px 12px;border:1px solid #c7b4a2;background:#fafaf9;width:180px;font-size:13px;color:#4a4b4e;vertical-align:top;">
         ${escapeHtml(label)}
       </td>
-      <td style="padding:10px 12px;border:1px solid #c9bea8;font-size:14px;color:#161513;vertical-align:top;">
+      <td style="padding:10px 12px;border:1px solid #c7b4a2;font-size:14px;color:#161513;vertical-align:top;">
         ${escapeHtml(value)}
       </td>
     </tr>
@@ -124,10 +124,10 @@ function buildHtmlEmail(data: ContactFormValues, meta: ContactSubmissionMeta) {
     <!DOCTYPE html>
     <html lang="en">
       <body style="margin:0;padding:24px;background:#f7f4ef;font-family:Inter,Arial,sans-serif;color:#161513;">
-        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;margin:0 auto;background:#fbfaf7;border:1px solid #c9bea8;border-radius:16px;overflow:hidden;">
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;margin:0 auto;background:#fbfaf7;border:1px solid #c7b4a2;border-radius:16px;overflow:hidden;">
           <tr>
             <td style="padding:24px;background:#0a0a0a;color:#f5f3f0;">
-              <p style="margin:0 0 8px;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#a9825e;">Jaguar Website</p>
+              <p style="margin:0 0 8px;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#c7b4a2;">Jaguar Website</p>
               <h1 style="margin:0;font-size:24px;line-height:1.3;">New contact inquiry</h1>
               <p style="margin:12px 0 0;font-size:14px;color:rgba(255,255,255,0.78);">${escapeHtml(data.companyName)} submitted the contact form.</p>
             </td>
@@ -150,7 +150,7 @@ function buildHtmlEmail(data: ContactFormValues, meta: ContactSubmissionMeta) {
               </table>
 
               <h2 style="margin:24px 0 12px;font-size:16px;color:#161513;">Message</h2>
-              <div style="padding:16px;border:1px solid #c9bea8;border-radius:12px;background:#fafaf9;font-size:14px;line-height:1.6;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
+              <div style="padding:16px;border:1px solid #c7b4a2;border-radius:12px;background:#fafaf9;font-size:14px;line-height:1.6;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
 
               ${matcher?.html ?? ""}
 

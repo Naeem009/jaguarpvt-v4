@@ -1,10 +1,10 @@
 export const metadata = {
   siteDescription:
-    "Vertically integrated apparel manufacturer for casual wear, streetwear, activewear, denim, kidswear, and boutique programs with audited compliance and scalable production.",
+    "Vertically integrated knitwear manufacturer for casual wear, streetwear, activewear, denim, kidswear, and boutique programs with audited compliance and scalable production.",
   home: {
-    title: "Vertically Integrated Apparel Manufacturer",
+    title: "Vertically Integrated Knitwear Manufacturer",
     description:
-      "Jaguar (Pvt) Ltd. is a vertically integrated apparel manufacturer delivering casual wear, streetwear, activewear, denim, kidswear, and boutique programs for global brands with audited compliance and scalable production.",
+      "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer delivering casual wear, streetwear, activewear, denim, kidswear, and boutique programs for global brands with audited compliance and scalable production.",
   },
   about: {
     title: "About",
@@ -69,12 +69,12 @@ export const metadata = {
   products: {
     title: "Products",
     description:
-      "Explore Jaguar product manufacturing across casual wear, streetwear, activewear, denim, kidswear, and boutique programs.",
+      "Explore Jaguar knitwear manufacturing across casual wear, streetwear, activewear, denim, kidswear, and boutique programs.",
   },
   casualWear: {
     title: "Casual Wear",
     description:
-      "Casual wear manufacturing for tees, polos, loungewear, and everyday separates with integrated cutting, sewing, and finishing.",
+      "Casual wear knit manufacturing for jersey tees, polos, loungewear, and everyday separates with in-house knitting, sewing, and finishing.",
   },
   streetwear: {
     title: "Streetwear",

@@ -54,15 +54,16 @@ export const pageMetadata: Record<
 > = {
   home: {
     path: "",
-    title: "Vertically Integrated Apparel Manufacturer",
+    title: "Vertically Integrated Knitwear Manufacturer",
     description:
-      "Jaguar (Pvt) Ltd. is a vertically integrated apparel manufacturer delivering casual wear, streetwear, activewear, denim, kidswear, and boutique programs for global brands with audited compliance and scalable production.",
+      "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer delivering casual wear, streetwear, activewear, denim, kidswear, and boutique programs for global brands with audited compliance and scalable production.",
     keywords: [
+      "knitwear manufacturer",
+      "knitted fabric manufacturer",
+      "vertically integrated knitwear manufacturer",
       "apparel manufacturer",
       "garment manufacturer",
-      "vertically integrated apparel manufacturer",
-      "clothing manufacturing partner",
-      "global apparel supplier",
+      "global knitwear supplier",
     ],
   },
   about: {
@@ -163,15 +164,15 @@ export const pageMetadata: Record<
     path: "/products",
     title: "Products",
     description:
-      "Explore Jaguar product manufacturing across casual wear, streetwear, activewear, denim, kidswear, and boutique programs.",
+      "Explore Jaguar knitwear manufacturing across casual wear, streetwear, activewear, denim, kidswear, and boutique programs.",
     keywords: ["apparel product categories", "garment manufacturing capabilities", "clothing production programs"],
   },
   casualWear: {
     path: "/products/casual-wear",
     title: "Casual Wear",
     description:
-      "Casual wear manufacturing for tees, polos, loungewear, and everyday separates with integrated cutting, sewing, and finishing.",
-    keywords: ["casual wear manufacturer", "everyday apparel supplier", "lounge wear factory"],
+      "Casual wear knit manufacturing for jersey tees, polos, loungewear, and everyday separates with in-house knitting, sewing, and finishing.",
+    keywords: ["casual wear manufacturer", "jersey knit supplier", "lounge wear factory"],
   },
   streetwear: {
     path: "/products/streetwear",

@@ -1,9 +1,9 @@
 export const home = {
   hero: {
-    headline: "Manufactura diseñada para lo que viene.",
+    headline: "Punto y knitwear, diseñados para lo que viene.",
     subhead:
-      "Producción verticalmente integrada en ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique — al servicio de marcas globales en 04 instalaciones en 03 países.",
-    heroAlt: "Primer plano de tela siendo cosida en una máquina de coser industrial",
+      "Punto integrado verticalmente — del hilo y el tricotado circular al costura y el acabado — en casual, streetwear, ropa deportiva, denim, infantil y boutique. Al servicio de marcas globales en 04 instalaciones en 03 países.",
+    heroAlt: "Tejido de punto, costura industrial y producción de knitwear",
   },
   stats: {
     facilities: "Instalaciones",

@@ -18,6 +18,8 @@ function normalize(text: string) {
 
 const synonymGroups: string[][] = [
   ["apparel", "garment", "clothing", "textile"],
+  ["knitwear", "knits", "knitted", "knitting", "jersey", "fleece"],
+  ["sewing", "stitching", "seam", "garment construction"],
   ["manufacturer", "manufacturing", "factory", "supplier", "partner"],
   ["casual wear", "casual-wear", "everyday apparel", "basics"],
   ["streetwear", "urban apparel", "hoodie"],
