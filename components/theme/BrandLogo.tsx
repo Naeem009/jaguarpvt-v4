@@ -1,11 +1,16 @@
 import { cn } from "@/lib/utils";
-import { JaguarMark } from "@/components/theme/JaguarMark";
+
+const MARK = {
+  src: "/logos/jaguar-mark.png",
+  width: 998,
+  height: 1475,
+} as const;
 
 export function BrandLogo({
   inverted = false,
   className,
   sizes: _sizes,
-  priority: _priority = false,
+  priority = false,
   variant = "lockup",
 }: {
   inverted?: boolean;
@@ -15,12 +20,24 @@ export function BrandLogo({
   variant?: "lockup" | "stacked" | "mark";
 }) {
   const wordmark = inverted ? "text-white" : "text-black dark:text-white";
+  const markFilter = inverted ? "invert" : "dark:invert";
 
-  const mark = <JaguarMark className="h-full w-auto" stroke="currentColor" />;
+  const mark = (
+    // Native img keeps the original silhouette sharp (no optimizer resampling).
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={MARK.src}
+      alt=""
+      width={MARK.width}
+      height={MARK.height}
+      {...(priority ? { fetchPriority: "high" as const } : {})}
+      className={cn("h-full w-auto object-contain object-center", markFilter)}
+    />
+  );
 
   if (variant === "mark") {
     return (
-      <span className={cn("inline-flex h-10 text-black dark:text-white", className)}>
+      <span className={cn("inline-flex h-10", className)}>
         {mark}
         <span className="sr-only">Jaguar (Pvt) Ltd.</span>
       </span>
