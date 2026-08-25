@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 
 const MARK = {
   src: "/logos/jaguar-mark.png",
-  width: 998,
-  height: 1475,
+  width: 888,
+  height: 1370,
 } as const;
 
 export function BrandLogo({
