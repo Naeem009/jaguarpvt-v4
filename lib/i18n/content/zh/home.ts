@@ -1,9 +1,27 @@
 export const home = {
   hero: {
-    headline: "针织服装，面向未来的制造工程。",
+    tagline: "Apparel  |  Innovation  |  Beyond",
+    established: "始于 1984",
+    headline: "从面料到时装。为下一步而设计。",
     subhead:
-      "垂直整合针织 —— 从纱线与圆机织造到缝纫与后整 —— 覆盖休闲装、街头服饰、运动服饰、牛仔、童装与精品。在03个国家04座工厂为全球品牌提供服务。",
-    heroAlt: "针织面料、工业缝制与针织成衣生产",
+      "自 1984 年起的垂直整合针织制造商 — 从纱线到成衣，为全球品牌提供织造、缝纫与后整。",
+    cta: "探索我们的产能",
+    heroAlt: "垂坠针织面料，讲述 Jaguar 制造故事",
+  },
+  highlights: {
+    years: { value: "40+", label: "卓越历程" },
+    output: { value: "20,000+", label: "日产量（件）" },
+    facility: { value: "", label: "垂直整合工厂" },
+    global: { value: "", label: "国际客户经验" },
+  },
+  whoWeAre: {
+    headline: "以经验筑基。以创新驱动。",
+    body: "三代针织制造 — 内部织造、染色与缝纫，以及全球品牌所期待的工艺纪律。休闲、街头、运动、牛仔、童装与精品，服务长期合作。",
+    cta: "了解我们的故事",
+    imageAlt: "Jaguar 针织制造与成衣",
+  },
+  partners: {
+    title: "合作伙伴",
   },
   stats: {
     facilities: "工厂",

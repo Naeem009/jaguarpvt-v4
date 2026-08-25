@@ -10,9 +10,11 @@
   },
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "aboutOverview": "Overview",
+    "capabilities": "Capabilities",
     "products": "Products",
+    "sustainability": "Sustainability",
     "ourImpact": "Our Impact",
     "facility": "Facility",
     "careers": "Careers",

@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 
 function navLinkClass(isOverlayNav: boolean) {
   return cn(
-    "text-sm font-medium transition-colors",
+    "text-xs font-medium uppercase tracking-[0.16em] transition-colors",
     isOverlayNav
       ? "text-ink hover:text-ink/70 dark:text-white dark:hover:text-white/80"
       : "text-ink hover:text-accent",
@@ -179,18 +179,11 @@ export function Navbar() {
               </div>
 
               <div className="flex-1 overflow-y-auto px-4 py-4">
-                <Link
-                  href="/"
-                  className="relative mb-6 block h-[4.5rem] w-[min(88vw,340px)]"
-                  onClick={closeMobileMenu}
-                >
-                  <BrandLogo sizes="(max-width: 1024px) 340px, 340px" />
+                <Link href="/" className="mb-6 inline-flex" onClick={closeMobileMenu}>
+                  <BrandLogo />
                 </Link>
 
                 <div className="space-y-4">
-                  <Link href="/" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
-                    {t("home")}
-                  </Link>
                   <div>
                     <button
                       type="button"
@@ -261,7 +254,7 @@ export function Navbar() {
                       aria-expanded={mobileImpactOpen}
                       onClick={() => setMobileImpactOpen((value) => !value)}
                     >
-                      {t("ourImpact")}
+                      {t("sustainability")}
                       <span aria-hidden>{mobileImpactOpen ? "−" : "+"}</span>
                     </button>
                     {mobileImpactOpen ? (
@@ -287,7 +280,7 @@ export function Navbar() {
                   </div>
 
                   <Link href="/facility" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
-                    {t("facility")}
+                    {t("capabilities")}
                   </Link>
                   <Link href="/careers" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
                     {t("careers")}
@@ -327,47 +320,28 @@ export function Navbar() {
             : "border-b border-ink/8 bg-paper/95 backdrop-blur-md supports-[backdrop-filter]:bg-paper/90",
         )}
       >
-        <div className="flex w-full items-center justify-between gap-2 py-1.5 pe-4 ps-0 md:py-2 md:pe-6">
-          <Link
-            href="/"
-            className="relative block h-[3.75rem] w-[min(88vw,340px)] shrink-0 sm:h-[4rem] sm:w-[360px] lg:h-[4.25rem] lg:w-[440px]"
-          >
-            <BrandLogo
-              sizes="(max-width: 640px) 340px, (max-width: 1024px) 360px, 440px"
-              priority
-            />
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6 md:py-4">
+          <Link href="/" className="shrink-0">
+            <BrandLogo priority />
           </Link>
 
-          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
-            <Link href="/" className={navLinkClass(isOverlayNav)}>
-              {t("home")}
-            </Link>
+          <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
             <MegaMenu label={t("about")} items={aboutMegaMenuItems} inverted={isOverlayNav} />
+            <Link href="/facility" className={navLinkClass(isOverlayNav)}>
+              {t("capabilities")}
+            </Link>
             <MegaMenu label={t("products")} items={productsMegaMenuItems} inverted={isOverlayNav} />
             <MegaMenu
-              label={t("ourImpact")}
+              label={t("sustainability")}
               items={impactMegaMenuItems}
               footerAction={{ label: t("downloadEsg"), href: ESG_REPORT_URL }}
               inverted={isOverlayNav}
             />
-            <Link href="/facility" className={navLinkClass(isOverlayNav)}>
-              {t("facility")}
-            </Link>
-            <Link href="/careers" className={navLinkClass(isOverlayNav)}>
-              {t("careers")}
+            <Link href="/contact" className={navLinkClass(isOverlayNav)}>
+              {t("contact")}
             </Link>
             <LanguageSwitcher inverted={isOverlayNav} />
             <ThemeToggle inverted={isOverlayNav} />
-            <Button
-              href="/contact"
-              className={
-                isOverlayNav
-                  ? "bg-ink text-paper hover:bg-ink/90 dark:bg-white dark:text-charcoal dark:hover:bg-white/90"
-                  : undefined
-              }
-            >
-              {tCommon("contact")}
-            </Button>
           </nav>
 
           <button

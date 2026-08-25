@@ -100,7 +100,7 @@ export function MegaMenu({
         aria-haspopup="true"
         onClick={() => setOpen((value) => !value)}
         className={cn(
-          "inline-flex min-h-10 items-center gap-1 text-sm font-medium transition-colors",
+          "inline-flex min-h-10 items-center gap-1 text-xs font-medium uppercase tracking-[0.16em] transition-colors",
           inverted ? "text-ink hover:text-ink/70 dark:text-white dark:hover:text-white/80" : "text-ink hover:text-accent",
         )}
       >

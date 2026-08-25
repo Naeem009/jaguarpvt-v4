@@ -1,9 +1,27 @@
 export const home = {
   hero: {
-    headline: "Knitwear, engineered for what's next.",
+    tagline: "Apparel  |  Innovation  |  Beyond",
+    established: "Since 1984",
+    headline: "From fabric to fashion. Designed for what's next.",
     subhead:
-      "Vertically integrated knits — from yarn and circular knitting through sewing and finishing — across casual wear, streetwear, activewear, denim, kidswear, and boutique. Serving global brands at 04 facilities in 03 countries.",
-    heroAlt: "Knitted fabric, industrial stitching, and knitwear in production",
+      "A vertically integrated knitwear manufacturer since 1984 — knitting, sewing, and finishing programs for global brands, from yarn to finished garment.",
+    cta: "Explore our capabilities",
+    heroAlt: "Draped knitted fabric across the Jaguar manufacturing story",
+  },
+  highlights: {
+    years: { value: "40+", label: "Years of excellence" },
+    output: { value: "20,000+", label: "Garments per day" },
+    facility: { value: "", label: "Vertically integrated facility" },
+    global: { value: "", label: "Global client experience" },
+  },
+  whoWeAre: {
+    headline: "Built on experience. Driven by innovation.",
+    body: "Three generations of knitwear manufacturing — combining in-house knitting, dyeing, and sewing with the process discipline global brands expect. We develop and deliver casual wear, streetwear, activewear, denim, kidswear, and boutique programs from facilities built for long-term partnerships.",
+    cta: "Discover our story",
+    imageAlt: "Jaguar knitwear manufacturing and finished garments",
+  },
+  partners: {
+    title: "Our partners",
   },
   stats: {
     facilities: "Facilities",

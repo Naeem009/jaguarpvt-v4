@@ -1,9 +1,27 @@
 export const home = {
   hero: {
-    headline: "Le tricot, pensé pour demain.",
+    tagline: "Apparel  |  Innovation  |  Beyond",
+    established: "Depuis 1984",
+    headline: "Du tissu à la mode. Conçu pour la suite.",
     subhead:
-      "Maille intégrée verticalement — du fil et du tricotage circulaire à la couture et à la finition — en casual, streetwear, activewear, denim, mode enfant et boutique. Au service des marques internationales dans 04 sites répartis dans 03 pays.",
-    heroAlt: "Tissu maille, piqûre industrielle et production de knitwear",
+      "Un fabricant de maille intégré verticalement depuis 1984 — tricotage, couture et finition pour des marques internationales, du fil au vêtement fini.",
+    cta: "Découvrir nos capacités",
+    heroAlt: "Tissu maille drapé, au cœur de l'histoire Jaguar",
+  },
+  highlights: {
+    years: { value: "40+", label: "Années d'excellence" },
+    output: { value: "20 000+", label: "Vêtements par jour" },
+    facility: { value: "", label: "Site intégré verticalement" },
+    global: { value: "", label: "Expérience clients internationale" },
+  },
+  whoWeAre: {
+    headline: "Bâti sur l'expérience. Porté par l'innovation.",
+    body: "Trois générations de manufacture maille — tricotage, teinture et couture internes, avec la discipline que les marques globales attendent. Casual, streetwear, activewear, denim, enfant et boutique, pour des partenariats de long terme.",
+    cta: "Découvrir notre histoire",
+    imageAlt: "Manufacture de knitwear Jaguar et vêtements finis",
+  },
+  partners: {
+    title: "Nos partenaires",
   },
   stats: {
     facilities: "Sites",

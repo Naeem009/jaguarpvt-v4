@@ -1,9 +1,27 @@
 export const home = {
   hero: {
-    headline: "Punto y knitwear, diseñados para lo que viene.",
+    tagline: "Apparel  |  Innovation  |  Beyond",
+    established: "Desde 1984",
+    headline: "Del tejido a la moda. Diseñado para lo que viene.",
     subhead:
-      "Punto integrado verticalmente — del hilo y el tricotado circular al costura y el acabado — en casual, streetwear, ropa deportiva, denim, infantil y boutique. Al servicio de marcas globales en 04 instalaciones en 03 países.",
-    heroAlt: "Tejido de punto, costura industrial y producción de knitwear",
+      "Fabricante de punto integrado verticalmente desde 1984 — tejido, costura y acabado para marcas globales, del hilo a la prenda terminada.",
+    cta: "Explorar nuestras capacidades",
+    heroAlt: "Tejido de punto drapeado en la historia de Jaguar",
+  },
+  highlights: {
+    years: { value: "40+", label: "Años de excelencia" },
+    output: { value: "20.000+", label: "Prendas por día" },
+    facility: { value: "", label: "Instalación integrada verticalmente" },
+    global: { value: "", label: "Experiencia con clientes internacionales" },
+  },
+  whoWeAre: {
+    headline: "Construido sobre experiencia. Impulsado por innovación.",
+    body: "Tres generaciones de knitwear — tejido, tintura y costura internos, con la disciplina que esperan las marcas globales. Casual, streetwear, activewear, denim, infantil y boutique para alianzas de largo plazo.",
+    cta: "Descubrir nuestra historia",
+    imageAlt: "Manufactura de punto Jaguar y prendas terminadas",
+  },
+  partners: {
+    title: "Nuestros socios",
   },
   stats: {
     facilities: "Instalaciones",

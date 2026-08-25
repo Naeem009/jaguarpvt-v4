@@ -1,5 +1,6 @@
 "use client";
 
+import { BrandLogo } from "@/components/theme/BrandLogo";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -66,7 +67,21 @@ export function Footer({ className }: { className?: string }) {
 
   return (
     <footer className={cn("border-t border-ink/8 bg-paper-muted text-ink", className)}>
-      <div className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-10">
+      <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
+        <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <BrandLogo />
+          <div className="flex items-center gap-4 text-sm text-graphite">
+            <a
+              href="https://www.linkedin.com/company/jaguar-pvt-ltd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-ink"
+            >
+              {t("linkedin")}
+            </a>
+          </div>
+        </div>
+
         <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
           {columns.map((column) => (
             <div key={column.title}>

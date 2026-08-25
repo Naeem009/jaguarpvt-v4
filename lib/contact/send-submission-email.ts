@@ -5,6 +5,7 @@ import {
   sustainabilityLabels,
   type ContactFormValues,
 } from "@/lib/contact/schema";
+import { siteUrl } from "@/lib/seo/config";
 
 const DEFAULT_RECIPIENT = "usama@jaguarpvt.com";
 
@@ -127,6 +128,7 @@ function buildHtmlEmail(data: ContactFormValues, meta: ContactSubmissionMeta) {
         <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;margin:0 auto;background:#fbfaf7;border:1px solid #c7b4a2;border-radius:16px;overflow:hidden;">
           <tr>
             <td style="padding:24px;background:#0a0a0a;color:#f5f3f0;">
+              <img src="${siteUrl}/logos/jaguar-mark.png" alt="Jaguar" width="40" height="64" style="display:block;height:56px;width:auto;margin:0 0 12px;" />
               <p style="margin:0 0 8px;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#c7b4a2;">Jaguar Website</p>
               <h1 style="margin:0;font-size:24px;line-height:1.3;">New contact inquiry</h1>
               <p style="margin:12px 0 0;font-size:14px;color:rgba(255,255,255,0.78);">${escapeHtml(data.companyName)} submitted the contact form.</p>

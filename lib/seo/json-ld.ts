@@ -9,7 +9,7 @@ export function buildOrganizationJsonLd() {
     "@type": "Organization",
     name: siteName,
     url: siteUrl,
-    logo: `${siteUrl}/icon.png`,
+    logo: `${siteUrl}/logos/logo-mark.svg`,
     image: `${siteUrl}/images/home/hero.jpg`,
     description:
       "Vertically integrated knitwear manufacturer specializing in knitted fabric, sewing, and finished knitwear across casual wear, streetwear, activewear, denim, kidswear, and boutique for global brands.",

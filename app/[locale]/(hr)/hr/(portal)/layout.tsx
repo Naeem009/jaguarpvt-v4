@@ -16,8 +16,8 @@ export default async function HrPortalLayout({ children }: { children: React.Rea
       <header className="border-b border-ink/8">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 md:px-6">
           <div className="flex items-center gap-4">
-            <div className="relative h-10 w-40">
-              <BrandLogo sizes="160px" />
+            <div className="flex items-center">
+              <BrandLogo />
             </div>
             <p className="text-sm font-medium text-graphite">HR Careers</p>
           </div>

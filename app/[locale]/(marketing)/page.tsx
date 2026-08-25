@@ -1,19 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { prepareLocale } from "@/lib/i18n/prepare-locale";
 import { createPageMetadata } from "@/lib/seo/metadata";
-import {
-  AIChatWidget,
-  CTASection,
-  FacilityMapTeaser,
-  Hero,
-  ProductGrid,
-  StatBar,
-  TrustStrip,
-} from "@/components/sections";
+import { HomeHero } from "@/components/sections/HomeHero";
+import { HomeHighlights } from "@/components/sections/HomeHighlights";
+import { WhoWeAre } from "@/components/sections/WhoWeAre";
+import { Partners } from "@/components/sections/Partners";
 import { heroVideoMedia } from "@/lib/media/hero-media";
-import { getProductHubGridItems } from "@/lib/products/get-content";
-import { buildCompanyStats } from "@/lib/stats/company-stats";
-import { buildImpactHubStats } from "@/lib/stats/impact-hub-stats";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -28,54 +20,38 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const tCommon = await getTranslations("common");
-  const tImpactStats = await getTranslations("impact.hub.stats");
-  const productItems = await getProductHubGridItems();
-  const companyStats = buildCompanyStats({
-    facilities: t("stats.facilities"),
-    countries: t("stats.countries"),
-    employees: t("stats.employees"),
-    yearsInOperation: t("stats.yearsInOperation"),
-  });
-  const impactStats = buildImpactHubStats({
-    waterSaved: tImpactStats("waterSaved"),
-    renewableEnergy: tImpactStats("renewableEnergy"),
-    certifiedFacilities: tImpactStats("certifiedFacilities"),
-    workerPrograms: tImpactStats("workerPrograms"),
-  });
 
   return (
     <main>
-      <Hero
-        variant="home"
+      <HomeHero
+        tagline={t("hero.tagline")}
+        established={t("hero.established")}
         headline={t("hero.headline")}
         subhead={t("hero.subhead")}
-        primaryCTA={{ label: tCommon("contactUs"), href: "/contact" }}
-        secondaryCTA={{ label: tCommon("exploreProducts"), href: "/products" }}
+        ctaLabel={t("hero.cta")}
+        ctaHref="/facility"
         media={heroVideoMedia("/images/home/hero.jpg", t("hero.heroAlt"), "home")}
       />
 
-      <StatBar stats={companyStats} />
-
-      <ProductGrid items={productItems} />
-
-      <AIChatWidget mode="embedded" context={t("aiContext")} />
-
-      <StatBar
-        variant="impact"
-        stats={impactStats}
-        footerLink={{ href: "/our-impact", label: t("impactStats.exploreImpact") }}
+      <HomeHighlights
+        items={[
+          { icon: "years", value: t("highlights.years.value"), label: t("highlights.years.label") },
+          { icon: "output", value: t("highlights.output.value"), label: t("highlights.output.label") },
+          { icon: "facility", value: t("highlights.facility.value"), label: t("highlights.facility.label") },
+          { icon: "global", value: t("highlights.global.value"), label: t("highlights.global.label") },
+        ]}
       />
 
-      <FacilityMapTeaser image="/images/home/facility-teaser.jpg" />
-
-      <TrustStrip />
-
-      <CTASection
-        title={t("cta.title")}
-        subhead={t("cta.subhead")}
-        cta={{ label: tCommon("contactUs"), href: "/contact" }}
+      <WhoWeAre
+        headline={t("whoWeAre.headline")}
+        body={t("whoWeAre.body")}
+        ctaLabel={t("whoWeAre.cta")}
+        ctaHref="/about"
+        image="/images/home/who-we-are.jpg"
+        imageAlt={t("whoWeAre.imageAlt")}
       />
+
+      <Partners title={t("partners.title")} />
     </main>
   );
 }

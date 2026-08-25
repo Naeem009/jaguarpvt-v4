@@ -1,9 +1,27 @@
 export const home = {
   hero: {
-    headline: "Strickwaren, entwickelt für das, was als Nächstes kommt.",
+    tagline: "Apparel  |  Innovation  |  Beyond",
+    established: "Seit 1984",
+    headline: "Von der Masche zur Mode. Entwickelt für das Nächste.",
     subhead:
-      "Vertikal integrierte Maschenware — von Garn und Rundstricken über Nähen bis zur Ausrüstung — in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique. Für globale Marken an 04 Standorten in 03 Ländern.",
-    heroAlt: "Maschenware, industrielles Nähen und Strickproduktion",
+      "Ein vertikal integrierter Strickwarenhersteller seit 1984 — Stricken, Nähen und Ausrüstung für globale Marken, vom Garn bis zum fertigen Teil.",
+    cta: "Unsere Fähigkeiten entdecken",
+    heroAlt: "Drapierte Maschenware in der Jaguar Fertigungsgeschichte",
+  },
+  highlights: {
+    years: { value: "40+", label: "Jahre Exzellenz" },
+    output: { value: "20.000+", label: "Teile pro Tag" },
+    facility: { value: "", label: "Vertikal integrierte Fertigung" },
+    global: { value: "", label: "Globale Kundenerfahrung" },
+  },
+  whoWeAre: {
+    headline: "Auf Erfahrung gebaut. Von Innovation getrieben.",
+    body: "Drei Generationen Strickfertigung — internes Stricken, Färben und Nähen mit der Prozessdisziplin, die globale Marken erwarten. Casual, Streetwear, Activewear, Denim, Kidswear und Boutique für langfristige Partnerschaften.",
+    cta: "Unsere Geschichte entdecken",
+    imageAlt: "Jaguar Strickfertigung und fertige Teile",
+  },
+  partners: {
+    title: "Unsere Partner",
   },
   stats: {
     facilities: "Standorte",

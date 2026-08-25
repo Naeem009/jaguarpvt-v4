@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 110 190 230" role="img" aria-label="Jaguar mark">
-<path transform="matrix(1,0,0,-1,95.2796,306.01893)" d="M0 0 13.911 22.984H162.701L209.005-45.094H101.814V-167.54H133.871L150.807-145.766H181.317L149.597-192.54H74.328V-21.573H159.005L141.801 0Z" fill="#FFFFFF"/>
-<path transform="matrix(1,0,0,-1,131.4358,327.5916)" d="M0 0V-131.048L-49.06-67.338-79.436-67.607-9.543-170.967H23.252V0Z" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="400 40 580 990" fill="none" role="img" aria-label="Jaguar" shape-rendering="geometricPrecision">
+  <path d="M569.76 623.66 A 158 158 0 0 1 460 668" stroke="#FFFFFF" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1"/>
+  <path d="M623.94 679.76 A 236 236 0 0 1 460 746" stroke="#FFFFFF" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1"/>
+  <path d="M774 72 L 774 510 A 314 314 0 0 1 460 824" stroke="#FFFFFF" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1"/>
+  <path d="M852 72 L 852 510 A 392 392 0 0 1 460 902" stroke="#FFFFFF" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1"/>
+  <path d="M930 72 L 930 510 A 470 470 0 0 1 460 980" stroke="#FFFFFF" stroke-width="26" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1"/>
 </svg>
