@@ -25,9 +25,6 @@
     "closeMenu": "Fermer le menu",
     "closeMenuOverlay": "Fermer la superposition du menu",
     "language": "Langue",
-    "theme": "Apparence",
-    "switchToLight": "Passer en mode clair",
-    "switchToDark": "Passer en mode sombre",
     "catalogueBadge": "Catalogue"
   },
   "footer": {

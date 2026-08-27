@@ -6,7 +6,6 @@ import { createPortal } from "react-dom";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrandLogo } from "@/components/theme/BrandLogo";
-import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MegaMenu } from "./MegaMenu";
 import { ESG_REPORT_URL } from "@/lib/our-impact/content";
@@ -290,10 +289,6 @@ export function Navbar() {
                     <p className="mb-3 text-sm font-medium text-graphite">{t("language")}</p>
                     <LanguageSwitcher variant="chips" />
                   </div>
-                  <div className="flex items-center justify-between pt-2">
-                    <p className="text-sm font-medium text-graphite">{t("theme")}</p>
-                    <ThemeToggle />
-                  </div>
                 </div>
               </div>
 
@@ -337,11 +332,13 @@ export function Navbar() {
               footerAction={{ label: t("downloadEsg"), href: ESG_REPORT_URL }}
               inverted={isOverlayNav}
             />
+            <Link href="/careers" className={navLinkClass(isOverlayNav)}>
+              {t("careers")}
+            </Link>
             <Link href="/contact" className={navLinkClass(isOverlayNav)}>
               {t("contact")}
             </Link>
             <LanguageSwitcher inverted={isOverlayNav} />
-            <ThemeToggle inverted={isOverlayNav} />
           </nav>
 
           <button

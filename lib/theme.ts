@@ -2,15 +2,14 @@ export const THEME_STORAGE_KEY = "jaguar-theme";
 
 export type Theme = "light" | "dark";
 
+/** Apply the viewer's system color scheme before paint. Ignores any saved manual override. */
 export const themeInitScript = `(function(){
   try {
-    var stored = localStorage.getItem("${THEME_STORAGE_KEY}");
-    var theme = stored === "light" || stored === "dark"
-      ? stored
-      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    localStorage.removeItem("${THEME_STORAGE_KEY}");
+    var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     var root = document.documentElement;
-    root.classList.toggle("dark", theme === "dark");
-    root.classList.toggle("light", theme === "light");
-    root.style.colorScheme = theme;
+    root.classList.toggle("dark", dark);
+    root.classList.toggle("light", !dark);
+    root.style.colorScheme = dark ? "dark" : "light";
   } catch (e) {}
 })();`;

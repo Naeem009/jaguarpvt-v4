@@ -25,9 +25,6 @@
     "closeMenu": "Close menu",
     "closeMenuOverlay": "Close menu overlay",
     "language": "Language",
-    "theme": "Appearance",
-    "switchToLight": "Switch to light mode",
-    "switchToDark": "Switch to dark mode",
     "catalogueBadge": "Catalogue"
   },
   "footer": {

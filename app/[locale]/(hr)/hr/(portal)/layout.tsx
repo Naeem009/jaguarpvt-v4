@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import { getHrSession } from "@/lib/hr/auth";
 import { BrandLogo } from "@/components/theme/BrandLogo";
-import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { HrLogoutButton } from "@/components/hr/HrLogoutButton";
 
 export const dynamic = "force-dynamic";
@@ -22,7 +21,6 @@ export default async function HrPortalLayout({ children }: { children: React.Rea
             <p className="text-sm font-medium text-graphite">HR Careers</p>
           </div>
           <div className="flex items-center gap-3">
-            <ThemeToggle />
             <HrLogoutButton />
           </div>
         </div>
