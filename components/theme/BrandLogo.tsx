@@ -46,9 +46,9 @@ export function BrandLogo({
 
   if (variant === "stacked") {
     return (
-      <span className={cn("inline-flex flex-col items-center", wordmark, className)}>
+      <span dir="ltr" lang="en" className={cn("inline-flex flex-col items-center", wordmark, className)}>
         <span className="inline-flex h-[5.5rem] sm:h-28 md:h-36 lg:h-44">{mark}</span>
-        <span className="mt-5 font-display text-2xl font-semibold tracking-[0.42em] sm:text-3xl md:text-4xl lg:text-5xl">
+        <span className="mt-5 font-brand text-2xl font-semibold tracking-[0.42em] sm:text-3xl md:text-4xl lg:text-5xl">
           JAGUAR
         </span>
         <span className="sr-only">(Pvt) Ltd.</span>
@@ -57,9 +57,9 @@ export function BrandLogo({
   }
 
   return (
-    <span className={cn("inline-flex items-center gap-2.5", wordmark, className)}>
+    <span dir="ltr" lang="en" className={cn("inline-flex items-center gap-2.5", wordmark, className)}>
       <span className="inline-flex h-10 sm:h-11">{mark}</span>
-      <span className="font-display text-sm font-semibold tracking-[0.38em] sm:text-base">JAGUAR</span>
+      <span className="font-brand text-sm font-semibold tracking-[0.38em] sm:text-base">JAGUAR</span>
       <span className="sr-only">(Pvt) Ltd.</span>
     </span>
   );

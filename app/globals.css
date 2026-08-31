@@ -45,6 +45,7 @@
   --font-display: var(--font-montserrat), "Montserrat", -apple-system, sans-serif;
   --font-body: var(--font-inter), "SF Pro Text", -apple-system, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), "SF Mono", monospace;
+  --font-brand: var(--font-martel-sans), "Martel Sans", -apple-system, sans-serif;
 
   /* Motion */
   --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
@@ -143,6 +144,7 @@ html.dark {
   --font-display: var(--font-display);
   --font-body: var(--font-body);
   --font-mono: var(--font-mono);
+  --font-brand: var(--font-brand);
   --font-sans: var(--font-body);
 
   --radius-button: 9999px;
@@ -210,6 +212,10 @@ html[data-locale="en"] {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+.font-brand {
+  font-family: var(--font-brand);
 }
 
 .font-mono {
