@@ -20,6 +20,9 @@ export const home = {
     cta: "Unsere Geschichte entdecken",
     imageAlt: "Jaguar Strickfertigung und fertige Teile",
   },
+  customers: {
+    title: "Unsere Kunden",
+  },
   partners: {
     title: "Unsere Partner",
   },

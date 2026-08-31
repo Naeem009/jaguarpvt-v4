@@ -20,6 +20,9 @@ export const home = {
     cta: "了解我们的故事",
     imageAlt: "Jaguar 针织制造与成衣",
   },
+  customers: {
+    title: "我们的客户",
+  },
   partners: {
     title: "合作伙伴",
   },

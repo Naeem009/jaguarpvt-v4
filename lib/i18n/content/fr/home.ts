@@ -20,6 +20,9 @@ export const home = {
     cta: "Découvrir notre histoire",
     imageAlt: "Manufacture de knitwear Jaguar et vêtements finis",
   },
+  customers: {
+    title: "Nos clients",
+  },
   partners: {
     title: "Nos partenaires",
   },

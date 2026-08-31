@@ -20,6 +20,9 @@ export const home = {
     cta: "اكتشف قصتنا",
     imageAlt: "تصنيع تريكو جاغوار والملابس النهائية",
   },
+  customers: {
+    title: "عملاؤنا",
+  },
   partners: {
     title: "شركاؤنا",
   },

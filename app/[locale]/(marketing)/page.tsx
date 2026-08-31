@@ -4,6 +4,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { HomeHighlights } from "@/components/sections/HomeHighlights";
 import { WhoWeAre } from "@/components/sections/WhoWeAre";
+import { Customers } from "@/components/sections/Customers";
 import { Partners } from "@/components/sections/Partners";
 import { heroVideoMedia } from "@/lib/media/hero-media";
 
@@ -51,6 +52,7 @@ export default async function HomePage({ params }: PageProps) {
         imageAlt={t("whoWeAre.imageAlt")}
       />
 
+      <Customers title={t("customers.title")} />
       <Partners title={t("partners.title")} />
     </main>
   );

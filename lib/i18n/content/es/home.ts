@@ -20,6 +20,9 @@ export const home = {
     cta: "Descubrir nuestra historia",
     imageAlt: "Manufactura de punto Jaguar y prendas terminadas",
   },
+  customers: {
+    title: "Nuestros clientes",
+  },
   partners: {
     title: "Nuestros socios",
   },

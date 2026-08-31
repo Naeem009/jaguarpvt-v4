@@ -38,6 +38,7 @@ export { DynamicPageVideoSection } from "./DynamicPageVideoSection";
 export { HomeHero } from "./HomeHero";
 export { HomeHighlights } from "./HomeHighlights";
 export { WhoWeAre } from "./WhoWeAre";
+export { Customers } from "./Customers";
 export { Partners } from "./Partners";
 export { Hero } from "./Hero";
 export type { HeroCTA, HeroMedia, HeroProps } from "./Hero";
