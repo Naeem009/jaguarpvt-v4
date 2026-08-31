@@ -88,11 +88,17 @@
       "facilities",
       "faisalabad",
       "pakistan",
+      "morocco",
+      "tangier",
+      "ava marie",
+      "united kingdom",
+      "leicester",
+      "sweet threads",
       "manufacturing sites",
       "apparel factory",
       "process capabilities"
     ],
-    "content": "Published facilities in Faisalabad, Pakistan include Knitting (jersey and performance knit programs), Dyeing (knit and woven dyeing with documented chemical management), and Sewing Facility (cut-and-sew, finishing, and packing). The Facility page includes an interactive map, facility cards, and a Process & Capabilities section covering 15 production departments from yarn warehouse through packing and audits."
+    "content": "Published facilities include Jaguar (Pvt) Ltd. in Faisalabad, Pakistan — Knitting, Dyeing, Sewing, Garment Dyeing (acid wash, stone wash, tie-dye, pigment dye), Embroidery, and Printing (DTG, screen printing, puff print) — plus Ava Marie in Tangier, Morocco (end-to-end manufacturing, 250,000 pieces per month) and Sweet Threads Ltd in Leicester, United Kingdom (ladieswear design and manufacture since 2017). The Facility page includes an interactive map, facility cards, and a Process & Capabilities section covering production departments from yarn warehouse through packing and audits."
   },
   {
     "id": "facility-process",
@@ -107,9 +113,17 @@
       "dyeing",
       "knitting",
       "quality control",
-      "packing"
+      "packing",
+      "dtg",
+      "puff print",
+      "embroidery",
+      "garment dyeing",
+      "acid wash",
+      "stone wash",
+      "tie-dye",
+      "pigment dye"
     ],
-    "content": "Process & Capabilities covers fifteen departments grouped into raw material and testing, fabric production, embellishment, cut/sew/wet processing, and finishing/QA—including yarn warehouse, dyeing lab, knitting, dyeing, screen printing, embroidery, cutting, stitching, garment dyeing, washing, finishing, QC, metal detection, audits, and packing."
+    "content": "Process & Capabilities covers departments grouped into raw material and testing, fabric production, embellishment, cut/sew/wet processing, and finishing/QA—including yarn warehouse, dyeing lab, knitting, dyeing, printing (DTG, screen, puff), embroidery, cutting, stitching, garment dyeing (acid wash, stone wash, tie-dye, pigment dye), washing, finishing, QC, metal detection, audits, and packing."
   },
   {
     "id": "careers-overview",

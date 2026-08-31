@@ -14,7 +14,7 @@ export const metadata = {
   atAGlance: {
     title: "捷豹概览",
     description:
-      "Jaguar (Pvt) Ltd. 公司概览 —— 五国六厂、领导力、历史及规模化整合服装制造。",
+      "Jaguar (Pvt) Ltd. 公司概览 —— 巴基斯坦、摩洛哥与英国工厂、领导力、历史及规模化整合服装制造。",
   },
   aboutStrategy: {
     title: "我们的战略",

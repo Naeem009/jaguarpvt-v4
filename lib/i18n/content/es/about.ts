@@ -15,7 +15,7 @@ export const about = {
     },
     overview: {
       title: "Un fabricante diseñado para programas a largo plazo",
-      body: "Jaguar (Pvt) Ltd. integra desarrollo de producto, fabricación y cumplimiento en ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique. Servimos a marcas globales desde seis instalaciones en cinco países — con sistemas preparados para auditorías, datos transparentes de capacidad y equipos comerciales que hablan el lenguaje del abastecimiento, no de las ventas.",
+      body: "Jaguar (Pvt) Ltd. integra desarrollo de producto, fabricación y cumplimiento en ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique. Servimos a marcas globales desde instalaciones en Pakistán, Marruecos (Ava Marie) y el Reino Unido (Sweet Threads) — con sistemas preparados para auditorías, datos transparentes de capacidad y equipos comerciales que hablan el lenguaje del abastecimiento, no de las ventas.",
     },
     cta: {
       title: "Asóciese con un fabricante diseñado para programas a largo plazo",
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "Presencia global, profundidad regional",
-        body: "Seis instalaciones en cinco países ofrecen a los equipos de abastecimiento opcionalidad geográfica sin sacrificar el control del proceso. Cada sitio opera bajo sistemas de calidad compartidos, con líneas específicas por categoría para ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique — y alcance de certificación documentado por instalación, no asumido a nivel de grupo.",
+        body: "Ocho instalaciones en Pakistán, Marruecos y el Reino Unido ofrecen a los equipos de abastecimiento opcionalidad geográfica sin sacrificar el control del proceso. El campus de Faisalabad cubre tejeduría, teñido, confección, teñido de prenda, bordado y estampación. Ava Marie en Tánger y Sweet Threads en Leicester amplían el grupo con velocidad cerca de Europa y capacidad británica de diseño a fabricación — con alcance de certificación documentado por instalación, no asumido a nivel de grupo.",
         imageAlt: "Huella global de fabricación y red de instalaciones",
       },
       {
@@ -86,9 +86,9 @@ export const about = {
             "A medida que la moda global cambió, ampliamos la tejeduría y el teñido internos, invertimos en tecnología CAD/CAM y diversificamos nuestra experiencia en telas hacia algodón orgánico, algodón de bambú y materiales reciclados — adaptando el know-how para satisfacer las necesidades cambiantes de las marcas.",
         },
         {
-          title: "Hoy — Seis instalaciones, cinco países",
+          title: "Hoy — Pakistán, Marruecos y el Reino Unido",
           description:
-            "Más de cuatro décadas después, Jaguar atiende a emprendedores emergentes y grandes marcas consolidadas en seis instalaciones en cinco países — con suministro mayorista ético, producción optimizada, comunicación transparente y un compromiso inquebrantable con la calidad.",
+            "Más de cuatro décadas después, Jaguar atiende a emprendedores emergentes y grandes marcas consolidadas desde Faisalabad, Tánger y Leicester — con suministro mayorista ético, producción optimizada, comunicación transparente y un compromiso inquebrantable con la calidad.",
         },
       ],
     },

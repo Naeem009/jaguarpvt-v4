@@ -14,7 +14,7 @@ export const metadata = {
   atAGlance: {
     title: "Jaguar auf einen Blick",
     description:
-      "Unternehmensüberblick über Jaguar (Pvt) Ltd. — sechs Standorte in fünf Ländern, Führung, Geschichte und integrierte Bekleidungsfertigung im großen Maßstab.",
+      "Unternehmensüberblick über Jaguar (Pvt) Ltd. — Standorte in Pakistan, Marokko und dem Vereinigten Königreich, Führung, Geschichte und integrierte Bekleidungsfertigung im großen Maßstab.",
   },
   aboutStrategy: {
     title: "Unsere Strategie",

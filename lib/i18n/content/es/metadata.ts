@@ -14,7 +14,7 @@ export const metadata = {
   atAGlance: {
     title: "Jaguar de un vistazo",
     description:
-      "Panorama de la empresa Jaguar (Pvt) Ltd.: seis instalaciones en cinco países, liderazgo, historia y fabricación integrada de confección a escala.",
+      "Panorama de la empresa Jaguar (Pvt) Ltd.: instalaciones en Pakistán, Marruecos y el Reino Unido, liderazgo, historia y fabricación integrada de confección a escala.",
   },
   aboutStrategy: {
     title: "Nuestra estrategia",

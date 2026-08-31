@@ -15,7 +15,7 @@ export const about = {
     },
     overview: {
       title: "Un manufacturier conçu pour les programmes de long terme",
-      body: "Jaguar (Pvt) Ltd. intègre le développement produit, la manufacture et la conformité dans le casual, le streetwear, l'activewear, le denim, la mode enfant et la boutique. Nous servons les marques internationales depuis six sites dans cinq pays — avec des systèmes prêts pour l'audit, des données de capacité transparentes et des équipes commerciales qui parlent sourcing, pas vente.",
+      body: "Jaguar (Pvt) Ltd. intègre le développement produit, la manufacture et la conformité dans le casual, le streetwear, l'activewear, le denim, la mode enfant et la boutique. Nous servons les marques internationales depuis des sites au Pakistan, au Maroc (Ava Marie) et au Royaume-Uni (Sweet Threads) — avec des systèmes prêts pour l'audit, des données de capacité transparentes et des équipes commerciales qui parlent sourcing, pas vente.",
     },
     cta: {
       title: "Partenairez avec un manufacturier conçu pour les programmes de long terme",
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "Empreinte mondiale, profondeur régionale",
-        body: "Six sites dans cinq pays offrent aux équipes sourcing une optionnalité géographique sans sacrifier le contrôle des processus. Chaque site fonctionne sous des systèmes qualité partagés, avec des lignes dédiées par catégorie pour le casual, le streetwear, l'activewear, le denim, la mode enfant et la boutique — et un périmètre de certification documenté par site, non supposé à l'échelle du groupe.",
+        body: "Huit sites au Pakistan, au Maroc et au Royaume-Uni offrent aux équipes sourcing une optionnalité géographique sans sacrifier le contrôle des processus. Le campus de Faisalabad couvre tricotage, teinture, couture, teinture vêtement, broderie et impression. Ava Marie à Tanger et Sweet Threads à Leicester étendent le groupe avec la vitesse proche de l'Europe et une capacité britannique du design à la fabrication — avec un périmètre de certification documenté par site, non supposé à l'échelle du groupe.",
         imageAlt: "Empreinte mondiale de manufacture et réseau de sites",
       },
       {
@@ -86,9 +86,9 @@ export const about = {
             "Alors que la mode mondiale changeait, nous avons développé le tricotage et la teinture en interne, investi dans les technologies CAD/CAM et élargi notre expertise tissus au coton biologique, au coton bambou et aux matériaux recyclés — adaptant notre savoir-faire aux besoins changeants des marques.",
         },
         {
-          title: "Aujourd'hui — Six sites, cinq pays",
+          title: "Aujourd'hui — Pakistan, Maroc et Royaume-Uni",
           description:
-            "Plus de quatre décennies plus tard, Jaguar sert entrepreneurs émergents et grands groupes établis depuis six sites dans cinq pays — avec un approvisionnement wholesale éthique, une production rationalisée, une communication transparente et un engagement inébranlable envers la qualité.",
+            "Plus de quatre décennies plus tard, Jaguar sert entrepreneurs émergents et grands groupes établis depuis Faisalabad, Tanger et Leicester — avec un approvisionnement wholesale éthique, une production rationalisée, une communication transparente et un engagement inébranlable envers la qualité.",
         },
       ],
     },

@@ -83,17 +83,25 @@ export function FacilityCard({
         <p
           className={cn(
             "text-sm leading-relaxed text-graphite",
-            variant === "list" && "line-clamp-3",
+            variant === "list" && "line-clamp-4",
           )}
         >
           {facility.description}
         </p>
 
         <dl className="grid grid-cols-2 gap-4 text-sm">
-          <div>
-            <dt className="font-medium text-graphite">{t("card.employees")}</dt>
-            <dd className="text-ink">{facility.employees.toLocaleString()}+</dd>
-          </div>
+          {facility.employees != null ? (
+            <div>
+              <dt className="font-medium text-graphite">{t("card.employees")}</dt>
+              <dd className="text-ink">{facility.employees.toLocaleString()}+</dd>
+            </div>
+          ) : null}
+          {facility.monthlyCapacity ? (
+            <div>
+              <dt className="font-medium text-graphite">{t("card.monthlyCapacity")}</dt>
+              <dd className="text-ink">{facility.monthlyCapacity}</dd>
+            </div>
+          ) : null}
           <div>
             <dt className="font-medium text-graphite">{t("card.established")}</dt>
             <dd className="text-ink">{facility.establishedYear}</dd>
@@ -101,21 +109,49 @@ export function FacilityCard({
         </dl>
 
         <div className={cn("space-y-4", variant === "list" && "mt-auto")}>
-          <div className="flex min-h-8 flex-wrap gap-2">
-            {facility.categories.map((category) => (
-              <Badge key={category} tone="neutral">
-                {tCategories(category as ProductCategorySlug)}
-              </Badge>
-            ))}
-          </div>
+          {facility.capabilities && facility.capabilities.length > 0 ? (
+            <div className="flex min-h-8 flex-wrap gap-2">
+              {facility.capabilities.map((capability) => (
+                <Badge key={capability} tone="accent">
+                  {capability}
+                </Badge>
+              ))}
+            </div>
+          ) : null}
 
-          <div className="flex min-h-8 flex-wrap gap-2">
-            {facility.certifications.map((certification) => (
-              <Badge key={certification} tone="accent">
-                {certification}
-              </Badge>
-            ))}
-          </div>
+          {facility.categories.length > 0 ? (
+            <div className="flex min-h-8 flex-wrap gap-2">
+              {facility.categories.map((category) => (
+                <Badge key={category} tone="neutral">
+                  {tCategories(category as ProductCategorySlug)}
+                </Badge>
+              ))}
+            </div>
+          ) : null}
+
+          {facility.certifications.length > 0 ? (
+            <div className="flex min-h-8 flex-wrap gap-2">
+              {facility.certifications.map((certification) => (
+                <Badge key={certification} tone="accent">
+                  {certification}
+                </Badge>
+              ))}
+            </div>
+          ) : null}
+
+          {facility.website && variant === "list" ? (
+            <p className="text-sm text-graphite">{new URL(facility.website).hostname.replace(/^www\./, "")}</p>
+          ) : null}
+          {facility.website && variant === "popover" ? (
+            <a
+              href={facility.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline"
+            >
+              {t("card.website")}
+            </a>
+          ) : null}
         </div>
       </div>
     </Card>

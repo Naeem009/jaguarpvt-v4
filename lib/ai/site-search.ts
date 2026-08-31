@@ -137,8 +137,8 @@ const siteSearchIndex: SiteSearchEntry[] = [
     id: "facility",
     title: "Facility",
     href: "/facility",
-    snippet: "Global facility map and location intelligence.",
-    keywords: ["facility", "facilities", "map", "footprint", "locations"],
+    snippet: "Facilities in Pakistan, Morocco, and the UK — map and capability cards.",
+    keywords: ["facility", "facilities", "map", "footprint", "locations", "morocco", "uk", "pakistan", "ava marie", "sweet threads"],
   },
   {
     id: "careers",

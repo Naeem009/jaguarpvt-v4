@@ -16,7 +16,7 @@ export const home = {
   },
   whoWeAre: {
     headline: "Built on experience. Driven by innovation.",
-    body: "Three generations of knitwear manufacturing — combining in-house knitting, dyeing, and sewing with the process discipline global brands expect. We develop and deliver casual wear, streetwear, activewear, denim, kidswear, and boutique programs from facilities built for long-term partnerships.",
+    body: "Three generations of knitwear manufacturing — combining in-house knitting, dyeing, sewing, garment dyeing, embroidery, and printing with the process discipline global brands expect. We develop and deliver programs from Faisalabad, with sister operations Ava Marie in Tangier and Sweet Threads in Leicester.",
     cta: "Discover our story",
     imageAlt: "Jaguar knitwear manufacturing and finished garments",
   },

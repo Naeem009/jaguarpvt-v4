@@ -15,7 +15,7 @@ export const about = {
     },
     overview: {
       title: "Ein Hersteller für langfristige Programme",
-      body: "Jaguar (Pvt) Ltd. integriert Produktentwicklung, Fertigung und Compliance in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique. Wir bedienen globale Marken von sechs Standorten in fünf Ländern — mit auditfähigen Systemen, transparenten Kapazitätsdaten und Commercial Teams, die die Sprache des Sourcings sprechen, nicht des Vertriebs.",
+      body: "Jaguar (Pvt) Ltd. integriert Produktentwicklung, Fertigung und Compliance in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique. Wir bedienen globale Marken von Standorten in Pakistan, Marokko (Ava Marie) und dem Vereinigten Königreich (Sweet Threads) — mit auditfähigen Systemen, transparenten Kapazitätsdaten und Commercial Teams, die die Sprache des Sourcings sprechen, nicht des Vertriebs.",
     },
     cta: {
       title: "Partnerschaft mit einem Hersteller für langfristige Programme",
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "Globale Präsenz, regionale Tiefe",
-        body: "Sechs Standorte in fünf Ländern geben Sourcing-Teams geografische Flexibilität ohne Verlust der Prozesskontrolle. Jeder Standort arbeitet unter gemeinsamen Qualitätssystemen mit kategoriespezifischen Linien für Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique — und dokumentiertem Zertifizierungsumfang pro Standort, nicht pauschal unternehmensweit.",
+        body: "Acht Standorte in Pakistan, Marokko und dem Vereinigten Königreich geben Sourcing-Teams geografische Flexibilität ohne Verlust der Prozesskontrolle. Der Campus in Faisalabad umfasst Strickerei, Färberei, Näherei, Konfektionsfärbung, Stickerei und Druckerei. Ava Marie in Tanger und Sweet Threads in Leicester erweitern die Gruppe um Near-Europe-Geschwindigkeit und britische Design-to-Manufacture-Kompetenz — mit dokumentiertem Zertifizierungsumfang pro Standort, nicht pauschal unternehmensweit.",
         imageAlt: "Globale Fertigungspräsenz und Standortnetzwerk",
       },
       {
@@ -86,9 +86,9 @@ export const about = {
             "Als sich die globale Mode veränderte, bauten wir hauseigene Strickerei und Färberei aus, investierten in CAD/CAM-Technologie und erweiterten unsere Stoffexpertise um Bio-Baumwolle, Bambus-Baumwolle und recycelte Materialien — und passten unsere Expertise an die sich wandelnden Anforderungen der Marken an.",
         },
         {
-          title: "Heute — Sechs Standorte, fünf Länder",
+          title: "Heute — Pakistan, Marokko und das Vereinigte Königreich",
           description:
-            "Mehr als vier Jahrzehnte später bedient Jaguar aufstrebende Unternehmer und etablierte Marken an sechs Standorten in fünf Ländern — mit ethischer Großhandelsbelieferung, optimierten Produktionsabläufen, transparenter Kommunikation und unerschütterlichem Qualitätsanspruch.",
+            "Mehr als vier Jahrzehnte später bedient Jaguar aufstrebende Unternehmer und etablierte Marken von Faisalabad, Tanger und Leicester — mit ethischer Großhandelsbelieferung, optimierten Produktionsabläufen, transparenter Kommunikation und unerschütterlichem Qualitätsanspruch.",
         },
       ],
     },

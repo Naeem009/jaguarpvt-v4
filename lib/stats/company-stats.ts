@@ -1,8 +1,8 @@
 import type { StatBarItem } from "@/components/sections/StatBar";
 
 export const COMPANY_STAT_PLACEHOLDERS = {
-  facilities: "6",
-  countries: "5",
+  facilities: "8",
+  countries: "3",
   employees: "900+",
   yearsInOperation: "40",
 } as const;

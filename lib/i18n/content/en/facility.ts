@@ -1,7 +1,7 @@
 export const facility = {
   hero: {
     headline: "Facility",
-    subhead: "Explore our global manufacturing footprint — capabilities, certifications, and locations across [X] facilities in [Y] countries.",
+    subhead: "Explore our global manufacturing footprint — capabilities, certifications, and locations across 8 facilities in Pakistan, Morocco, and the United Kingdom.",
     alt: "Global map of knitwear manufacturing facilities",
   },
   processCapabilities: {

@@ -12,8 +12,11 @@ export type Facility = {
   mapY?: number;
   categories: string[];
   certifications: string[];
-  employees: number;
+  employees?: number;
   establishedYear: number;
+  capabilities?: string[];
+  monthlyCapacity?: string;
+  website?: string;
   description: string;
   /** Resolved public path for card / list thumbnails. */
   thumbnail: string;
@@ -28,6 +31,9 @@ export const LEGACY_FACILITY_THUMBS: Record<string, string> = {
   "knitting-unit": "facility-thumb-01",
   "dyeing-unit": "facility-thumb-02",
   "sewing-facility": "facility-thumb-03",
+  "garment-dyeing-unit": "facility-thumb-02",
+  "embroidery-unit": "facility-thumb-01",
+  "printing-unit": "facility-thumb-03",
 };
 
 /** Client-safe candidate order when resolving or falling back to the next asset. */

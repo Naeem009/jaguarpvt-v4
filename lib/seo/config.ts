@@ -77,7 +77,7 @@ export const pageMetadata: Record<
     path: "/about/at-a-glance",
     title: "Jaguar at a Glance",
     description:
-      "Company overview of Jaguar (Pvt) Ltd.—six facilities across five countries, leadership, history, and integrated apparel manufacturing at scale.",
+      "Company overview of Jaguar (Pvt) Ltd.—facilities in Pakistan, Morocco, and the United Kingdom, leadership, history, and integrated apparel manufacturing at scale.",
     keywords: ["jaguar apparel overview", "garment manufacturer footprint", "textile company profile"],
   },
   aboutStrategy: {
@@ -124,12 +124,14 @@ export const pageMetadata: Record<
     path: "/facility",
     title: "Facility",
     description:
-      "Explore Jaguar manufacturing facilities, process capabilities, and production departments—from yarn intake through packing and quality assurance.",
+      "Explore Jaguar manufacturing facilities in Pakistan, Morocco, and the United Kingdom—including knitting, dyeing, sewing, garment dyeing, embroidery, and printing, plus Ava Marie and Sweet Threads.",
     keywords: [
       "apparel factory locations",
       "garment manufacturing facilities",
       "textile production capabilities",
       "Faisalabad apparel factory",
+      "Tangier Morocco garment factory",
+      "Leicester UK ladieswear manufacturer",
     ],
   },
   ourImpact: {

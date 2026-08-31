@@ -23,6 +23,8 @@ export const facilityMap = {
   card: {
     employees: "الموظفون",
     established: "تأسست",
+    monthlyCapacity: "الطاقة الشهرية",
+    website: "زيارة الموقع",
     facilityAlt: "منشأة {name}",
   },
   categories: {

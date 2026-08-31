@@ -11,7 +11,7 @@ export const sections = {
   facilityMapTeaser: {
     eyebrow: "Global footprint",
     title: "See where we manufacture",
-    subhead: "Explore our global footprint across [X] facilities in [Y] countries — with category and certification filters on the Facility page.",
+    subhead: "Explore our global footprint across facilities in Pakistan, Morocco, and the United Kingdom — with category and certification filters on the Facility page.",
     cta: "Explore facilities",
     mapAlt: "Stylized map preview of global manufacturing facilities",
     previewNote: "Interactive facility map — preview only. Full map available on the Facility page.",

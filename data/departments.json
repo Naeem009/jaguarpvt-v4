@@ -37,9 +37,9 @@
   },
   {
     "slug": "screen-printing",
-    "name": "Screen Printing",
+    "name": "Printing",
     "category": "Embellishment",
-    "description": "In-house screen printing for graphic and placement prints.",
+    "description": "In-house printing including DTG, screen printing, and puff print for graphics and placement artwork.",
     "capacityValue": "[X]",
     "capacityUnit": "stations / [X] pieces per day",
     "image": "/images/facility/departments/screen-printing/photo.jpg"
@@ -75,7 +75,7 @@
     "slug": "garment-dyeing",
     "name": "Garment Dyeing",
     "category": "Cut, Sew & Wet Processing",
-    "description": "Piece-dyeing of finished garments for solid and washed-color effects.",
+    "description": "Garment dyeing and wet processing — acid wash, stone wash, tie-dye, and pigment dye for washed-color and specialty finishes.",
     "capacityValue": "[X]",
     "capacityUnit": "pieces per batch",
     "image": "/images/facility/departments/garment-dyeing/photo.jpg"

@@ -23,6 +23,8 @@ export const facilityMap = {
   card: {
     employees: "员工",
     established: "成立年份",
+    monthlyCapacity: "月产能",
+    website: "访问网站",
     facilityAlt: "{name} 工厂",
   },
   categories: {

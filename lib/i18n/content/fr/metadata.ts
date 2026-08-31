@@ -14,7 +14,7 @@ export const metadata = {
   atAGlance: {
     title: "Jaguar en un coup d'œil",
     description:
-      "Vue d'ensemble de Jaguar (Pvt) Ltd. — six sites dans cinq pays, direction, historique et manufacture vestimentaire intégrée à grande échelle.",
+      "Vue d'ensemble de Jaguar (Pvt) Ltd. — sites au Pakistan, au Maroc et au Royaume-Uni, direction, historique et manufacture vestimentaire intégrée à grande échelle.",
   },
   aboutStrategy: {
     title: "Notre stratégie",

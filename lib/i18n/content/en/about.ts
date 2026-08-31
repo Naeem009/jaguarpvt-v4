@@ -15,7 +15,7 @@ export const about = {
     },
     overview: {
       title: "A manufacturer built for long-term programs",
-      body: "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer — knitting, dyeing, sewing, and finishing casual wear, streetwear, activewear, denim, kidswear, and boutique. We serve global brands from six facilities across five countries — with audit-ready systems, transparent capability data, and commercial teams who speak the language of sourcing, not sales.",
+      body: "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer — knitting, dyeing, sewing, garment dyeing, embroidery, and printing — delivering casual wear, streetwear, activewear, denim, kidswear, and boutique. We serve global brands from facilities in Pakistan, Morocco (Ava Marie), and the United Kingdom (Sweet Threads) — with audit-ready systems, transparent capability data, and commercial teams who speak the language of sourcing, not sales.",
     },
     cta: {
       title: "Partner with a manufacturer built for long-term programs",
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "Global footprint, regional depth",
-        body: "Six facilities across five countries give sourcing teams geographic optionality without sacrificing process control. Each site operates under shared quality systems, with category-specific lines for casual wear, streetwear, activewear, denim, kidswear, and boutique — and certification scope documented per facility, not assumed group-wide.",
+        body: "Eight facilities across Pakistan, Morocco, and the United Kingdom give sourcing teams geographic optionality without sacrificing process control. Jaguar's Faisalabad campus covers knitting, dyeing, sewing, garment dyeing, embroidery, and printing. Ava Marie in Tangier and Sweet Threads in Leicester extend the group with near-Europe speed and UK design-to-manufacture capability — with certification scope documented per facility, not assumed group-wide.",
         imageAlt: "Global manufacturing footprint and facility network",
       },
       {
@@ -86,9 +86,9 @@ export const about = {
             "As global fashion changed, we expanded in-house knitting and dyeing, invested in CAD/CAM technology, and broadened our fabric expertise to organic cotton, bamboo cotton, and recycled materials — adapting expertise to meet brands' ever-changing needs.",
         },
         {
-          title: "Today — Six facilities, five countries",
+          title: "Today — Pakistan, Morocco, and the United Kingdom",
           description:
-            "More than four decades on, Jaguar serves budding entrepreneurs and established giants across six facilities in five countries — with ethical wholesale supply, streamlined production, transparent communication, and an unwavering commitment to quality.",
+            "More than four decades on, Jaguar serves budding entrepreneurs and established giants from Faisalabad, Tangier, and Leicester — with ethical wholesale supply, streamlined production, transparent communication, and an unwavering commitment to quality.",
         },
       ],
     },

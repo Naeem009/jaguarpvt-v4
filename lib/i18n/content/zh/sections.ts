@@ -11,7 +11,7 @@ export const sections = {
   facilityMapTeaser: {
     eyebrow: "全球布局",
     title: "了解我们的制造基地",
-    subhead: "探索我们在 [Y] 个国家 [X] 座工厂的全球布局 —— 可在工厂页面按品类与认证筛选。",
+    subhead: "探索我们在巴基斯坦、摩洛哥与英国工厂的全球布局 —— 可在工厂页面按品类与认证筛选。",
     cta: "浏览工厂",
     mapAlt: "全球制造工厂的风格化地图预览",
     previewNote: "交互式工厂地图 —— 仅为预览。完整地图请见工厂页面。",
