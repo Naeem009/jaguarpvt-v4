@@ -34,14 +34,24 @@ export async function PageVideoSection({
         </header>
 
         <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-ink/8 bg-paper shadow-sm">
-          <div className="relative aspect-[21/9] w-full max-h-[min(22rem,42vw)] bg-paper">
+          <div
+            className={cn(
+              "relative w-full bg-paper",
+              pageKey === "home"
+                ? "aspect-video"
+                : "aspect-[21/9] max-h-[min(22rem,42vw)]",
+            )}
+          >
             <video
               autoPlay
               muted
               loop
               playsInline
               poster={poster}
-              className="h-full w-full object-cover"
+              className={cn(
+                "hero-video-grade h-full w-full",
+                pageKey === "home" ? "object-contain" : "object-cover",
+              )}
               aria-label={tPage("videoAlt")}
             >
               <source src={src} type="video/mp4" />

@@ -2,6 +2,9 @@ import type { PageMetadataKey } from "@/lib/seo/config";
 import { getHeroVideo, type HeroVideoKey } from "./hero-videos";
 import { pageOgImages } from "@/lib/seo/config";
 
+/** Jaguar brand footage for the home In Motion band. */
+export const HOME_PAGE_VIDEO = "/videos/home/in-motion.mp4";
+
 /** Page-specific background clips for the compact pre-footer video band. */
 export const PAGE_VIDEO_KEYS: Record<PageMetadataKey, HeroVideoKey> = {
   home: "home",
@@ -29,7 +32,7 @@ export const PAGE_VIDEO_KEYS: Record<PageMetadataKey, HeroVideoKey> = {
 export function getPageVideoMedia(page: PageMetadataKey) {
   const videoKey = PAGE_VIDEO_KEYS[page];
   return {
-    src: getHeroVideo(videoKey),
+    src: page === "home" ? HOME_PAGE_VIDEO : getHeroVideo(videoKey),
     poster: pageOgImages[page],
     videoKey,
   };
