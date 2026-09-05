@@ -42,9 +42,3 @@ export const aboutHistoryImages = [
   "/images/about/history-02.jpg",
   "/images/about/history-03.jpg",
 ];
-
-export const aboutLeadershipImages = [
-  "/images/about/leadership-01.png",
-  "/images/about/leadership-02.png",
-  "/images/about/leadership-03.png",
-];

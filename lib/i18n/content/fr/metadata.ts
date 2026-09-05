@@ -42,7 +42,7 @@ export const metadata = {
       "Contactez Jaguar (Pvt) Ltd. pour soumettre une RFI ou RFQ pour des programmes casual, streetwear, activewear, denim, mode enfant ou boutique. Notre équipe sourcing répond sous deux jours ouvrés.",
   },
   facility: {
-    title: "Sites",
+    title: "Fabrication",
     description:
       "Explorez les sites de manufacture Jaguar, les capacités de processus et les départements de production — de la réception de fil jusqu'à l'emballage et l'assurance qualité.",
   },

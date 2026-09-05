@@ -8,9 +8,11 @@ import {
   FACILITY_PLACEHOLDER_IMAGE,
   getFacilityThumbnailCandidates,
   type Facility,
+  type FacilityRecord,
+  type FacilityUnit,
 } from "./types";
 
-export type { Facility } from "./types";
+export type { Facility, FacilityUnit } from "./types";
 export {
   FACILITY_HERO_IMAGE,
   FACILITY_MAP_BACKGROUND,
@@ -32,23 +34,47 @@ function resolveFacilityThumbnail(slug: string): string {
 }
 
 function mapFacilityRecord(
-  facility: Omit<Facility, "thumbnail">,
+  facility: FacilityRecord,
   name: string,
   description: string,
+  units?: FacilityUnit[],
 ): Facility {
+  const { unitIds, ...record } = facility;
+  void unitIds;
+
   return {
-    ...facility,
+    ...record,
     name,
     description,
+    units,
     thumbnail: resolveFacilityThumbnail(facility.slug),
   };
+}
+
+function resolveFacilityUnits(
+  t: Awaited<ReturnType<typeof getTranslations>>,
+  slug: string,
+  unitIds?: string[],
+): FacilityUnit[] | undefined {
+  if (!unitIds?.length) return undefined;
+
+  return unitIds.map((id) => ({
+    id,
+    name: t(`${slug}.units.${id}.name`),
+    description: t(`${slug}.units.${id}.description`),
+  }));
 }
 
 export async function getFacilities(): Promise<Facility[]> {
   const t = await getTranslations("facilities");
 
-  return (facilitiesData as Omit<Facility, "thumbnail">[]).map((facility) =>
-    mapFacilityRecord(facility, t(`${facility.slug}.name`), t(`${facility.slug}.description`)),
+  return (facilitiesData as FacilityRecord[]).map((facility) =>
+    mapFacilityRecord(
+      facility,
+      t(`${facility.slug}.name`),
+      t(`${facility.slug}.description`),
+      resolveFacilityUnits(t, facility.slug, facility.unitIds),
+    ),
   );
 }
 

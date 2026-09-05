@@ -5,7 +5,7 @@ export const home = {
     headline: "从面料到时装。为下一步而设计。",
     subhead:
       "自 1984 年起的垂直整合针织制造商 — 从纱线到成衣，为全球品牌提供织造、缝纫与后整。",
-    cta: "探索我们的产能",
+    cta: "探索制造",
     heroAlt: "垂坠针织面料，讲述 Jaguar 制造故事",
   },
   highlights: {

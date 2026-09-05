@@ -33,7 +33,6 @@ export function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
-  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileImpactOpen, setMobileImpactOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -45,28 +44,6 @@ export function Navbar() {
     href: `/products/${slug}` as `/products/${ProductCategorySlug}`,
     description: tProducts(`${slug}.gridDescription`),
     image: `/images/products/${slug}/hero.jpg`,
-  }));
-
-  const aboutMegaMenuItems = (
-    tNavigation.raw("aboutMenu") as Array<{ title: string; description: string }>
-  ).map((item, index) => ({
-    ...item,
-    href: (
-      [
-        "/about/at-a-glance",
-        "/about/strategy",
-        "/about/mission",
-        "/about/company-policy",
-      ] as const
-    )[index],
-    image: (
-      [
-        "/images/about/at-a-glance/hero.jpg",
-        "/images/about/strategy/hero.jpg",
-        "/images/about/mission/hero.jpg",
-        "/images/about/company-policy/hero.jpg",
-      ] as const
-    )[index],
   }));
 
   const impactMegaMenuItems = (
@@ -183,41 +160,9 @@ export function Navbar() {
                 </Link>
 
                 <div className="space-y-4">
-                  <div>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-between text-base font-medium text-ink"
-                      aria-expanded={mobileAboutOpen}
-                      onClick={() => setMobileAboutOpen((value) => !value)}
-                    >
-                      {t("about")}
-                      <span aria-hidden>{mobileAboutOpen ? "−" : "+"}</span>
-                    </button>
-                    {mobileAboutOpen ? (
-                      <ul className="mt-3 space-y-2 ps-4">
-                        <li>
-                          <Link
-                            href="/about"
-                            className="block text-sm text-graphite"
-                            onClick={closeMobileMenu}
-                          >
-                            {t("aboutOverview")}
-                          </Link>
-                        </li>
-                        {aboutMegaMenuItems.map((item) => (
-                          <li key={item.href}>
-                            <Link
-                              href={item.href}
-                              className="block text-sm text-graphite"
-                              onClick={closeMobileMenu}
-                            >
-                              {item.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </div>
+                  <Link href="/about" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
+                    {t("about")}
+                  </Link>
 
                   <div>
                     <button
@@ -321,7 +266,9 @@ export function Navbar() {
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
-            <MegaMenu label={t("about")} items={aboutMegaMenuItems} inverted={isOverlayNav} />
+            <Link href="/about" className={navLinkClass(isOverlayNav)}>
+              {t("about")}
+            </Link>
             <Link href="/facility" className={navLinkClass(isOverlayNav)}>
               {t("capabilities")}
             </Link>

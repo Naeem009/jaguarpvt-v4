@@ -5,7 +5,7 @@ export const home = {
     headline: "Del tejido a la moda. Diseñado para lo que viene.",
     subhead:
       "Fabricante de punto integrado verticalmente desde 1984 — tejido, costura y acabado para marcas globales, del hilo a la prenda terminada.",
-    cta: "Explorar nuestras capacidades",
+    cta: "Explorar la fabricación",
     heroAlt: "Tejido de punto drapeado en la historia de Jaguar",
   },
   highlights: {

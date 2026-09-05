@@ -41,22 +41,18 @@ export function getBreadcrumbsForPage(page: PageMetadataKey): Array<{ name: stri
     atAGlance: [
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
-      { name: "Jaguar at a Glance", path: "/about/at-a-glance" },
     ],
     aboutStrategy: [
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
-      { name: "Our Strategy", path: "/about/strategy" },
     ],
     aboutMission: [
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
-      { name: "Mission", path: "/about/mission" },
     ],
     aboutCompanyPolicy: [
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
-      { name: "Company Policy", path: "/about/company-policy" },
     ],
     careers: [
       { name: "Home", path: "/" },
@@ -68,7 +64,7 @@ export function getBreadcrumbsForPage(page: PageMetadataKey): Array<{ name: stri
     ],
     facility: [
       { name: "Home", path: "/" },
-      { name: "Facility", path: "/facility" },
+      { name: "Manufacturing", path: "/facility" },
     ],
     ourImpact: [
       { name: "Home", path: "/" },

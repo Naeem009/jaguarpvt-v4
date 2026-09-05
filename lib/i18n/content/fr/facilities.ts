@@ -1,27 +1,35 @@
 export const facilities = {
-  "knitting-unit": {
-    name: "Tricotage",
-    description: "Tricotage circulaire et rectiligne à grand volume pour programmes jersey, molleton et mailles techniques.",
-  },
-  "dyeing-unit": {
-    name: "Teinture",
-    description: "Teinture tissu de pointe pour programmes maille et tissé, avec gestion documentée des produits chimiques et correspondance des teintes.",
-  },
-  "sewing-facility": {
-    name: "Couture",
-    description: "Coupe-couture intégrée, finition et emballage pour programmes vestimentaires multi-catégories.",
-  },
-  "garment-dyeing-unit": {
-    name: "Teinture vêtement",
-    description: "Teinture et traitements humides en interne — acid wash, stone wash, tie-dye et pigment dye.",
-  },
-  "embroidery-unit": {
-    name: "Broderie",
-    description: "Broderie multi-têtes en interne pour logos, écussons et détails décoratifs.",
-  },
-  "printing-unit": {
-    name: "Impression",
-    description: "Impression vêtement en interne : DTG, sérigraphie et puff print pour graphismes et impressions de placement.",
+  "jaguar-pvt": {
+    name: "Jaguar (Pvt) Ltd",
+    description:
+      "Le campus de manufacture intégré verticalement du groupe à Faisalabad — tricotage, teinture, couture, teinture vêtement, broderie et impression sous une même opération, au service des programmes de marques internationales, du fil au vêtement fini.",
+    units: {
+      knitting: {
+        name: "Tricotage",
+        description: "Tricotage circulaire et rectiligne à grand volume pour programmes jersey, molleton et mailles techniques.",
+      },
+      dyeing: {
+        name: "Teinture",
+        description:
+          "Teinture tissu de pointe pour programmes maille et tissé, avec gestion documentée des produits chimiques et correspondance des teintes.",
+      },
+      sewing: {
+        name: "Couture",
+        description: "Coupe-couture intégrée, finition et emballage pour programmes vestimentaires multi-catégories.",
+      },
+      "garment-dyeing": {
+        name: "Teinture vêtement",
+        description: "Teinture et traitements humides en interne — acid wash, stone wash, tie-dye et pigment dye.",
+      },
+      embroidery: {
+        name: "Broderie",
+        description: "Broderie multi-têtes en interne pour logos, écussons et détails décoratifs.",
+      },
+      printing: {
+        name: "Impression",
+        description: "Impression vêtement en interne : DTG, sérigraphie et puff print pour graphismes et impressions de placement.",
+      },
+    },
   },
   "ava-marie": {
     name: "Ava Marie",
@@ -32,5 +40,20 @@ export const facilities = {
     name: "Sweet Threads",
     description:
       "L'entreprise britannique de conception et de fabrication de mode féminine du groupe, à Leicester. Fondée en 2017, Sweet Threads Ltd mène la mode tendance du concept et du patronage à la production interne, au contrôle qualité et à la distribution.",
+  },
+  "design-development-spain": {
+    name: "Design & développement, Espagne",
+    description:
+      "Maison de design et de développement Jaguar en Espagne, pour le développement de collections, le prototypage et le travail produit auprès des marques.",
+  },
+  "design-development-germany": {
+    name: "Design & développement, Allemagne",
+    description:
+      "Maison de design et de développement Jaguar en Allemagne, pour le développement de collections, le prototypage et le travail produit auprès des marques.",
+  },
+  "design-development-uk": {
+    name: "Design & développement, Royaume-Uni",
+    description:
+      "Maison de design et de développement Jaguar au Royaume-Uni, pour le développement de collections, le prototypage et le travail produit auprès des marques.",
   },
 };

@@ -8,11 +8,11 @@ const ABOUT_SLUGS: AboutSubPageSlug[] = [
   "company-policy",
 ];
 
-const ABOUT_HREFS: Record<AboutSubPageSlug, `/about/${string}`> = {
-  "at-a-glance": "/about/at-a-glance",
-  strategy: "/about/strategy",
-  mission: "/about/mission",
-  "company-policy": "/about/company-policy",
+const ABOUT_HREFS: Record<AboutSubPageSlug, `/about#${string}`> = {
+  "at-a-glance": "/about#at-a-glance",
+  strategy: "/about#strategy",
+  mission: "/about#mission",
+  "company-policy": "/about#company-policy",
 };
 
 const MENU_KEYS: Record<AboutSubPageSlug, "atAGlance" | "strategy" | "mission" | "companyPolicy"> = {

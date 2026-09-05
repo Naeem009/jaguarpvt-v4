@@ -11,10 +11,10 @@ export const sections = {
   facilityMapTeaser: {
     eyebrow: "Empreinte mondiale",
     title: "Découvrez où nous produisons",
-    subhead: "Explorez notre empreinte mondiale au Pakistan, au Maroc et au Royaume-Uni — avec filtres par catégorie et certification sur la page Sites.",
-    cta: "Explorer les sites",
+    subhead: "Explorez notre empreinte mondiale au Pakistan, au Maroc, en Espagne, en Allemagne et au Royaume-Uni — avec filtres par catégorie et certification sur la page Fabrication.",
+    cta: "Explorer la fabrication",
     mapAlt: "Aperçu stylisé de la carte des sites de manufacture mondiaux",
-    previewNote: "Carte interactive des sites — aperçu uniquement. Carte complète disponible sur la page Sites.",
+    previewNote: "Carte interactive des sites — aperçu uniquement. Carte complète disponible sur la page Fabrication.",
   },
   timeline: {
     eyebrow: "Processus",

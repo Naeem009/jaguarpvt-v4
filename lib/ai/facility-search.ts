@@ -27,7 +27,13 @@ const regionAliases: Record<string, string[]> = {
   uk: ["Europe"],
   england: ["Europe"],
   leicester: ["Europe"],
+  london: ["Europe"],
+  spain: ["Europe"],
+  barcelona: ["Europe"],
+  germany: ["Europe"],
+  dusseldorf: ["Europe"],
   pakistan: ["South Asia"],
+  faisalabad: ["South Asia"],
   vietnam: ["Southeast Asia"],
   turkey: ["Europe & Middle East"],
 };
@@ -62,6 +68,9 @@ const categoryAliases: Record<string, string[]> = {
   "ava marie": ["casual-wear", "boutique", "activewear", "streetwear"],
   "sweet threads": ["casual-wear", "boutique", "streetwear"],
   ladieswear: ["casual-wear", "boutique", "streetwear"],
+  design: ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
+  development: ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
+  jaguar: ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
 };
 
 const certificationAliases = ["gots", "oeko-tex", "oeko", "wrap", "iso"];
@@ -100,6 +109,7 @@ function scoreFacility(query: string, facility: Facility) {
       facility.region,
       facility.description,
       ...(facility.capabilities ?? []),
+      ...(facility.units ?? []).flatMap((unit) => [unit.name, unit.description]),
       ...facility.categories,
       ...facility.certifications,
     ].join(" "),

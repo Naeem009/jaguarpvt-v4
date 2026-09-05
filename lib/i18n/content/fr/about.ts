@@ -3,7 +3,7 @@ export const about = {
     hero: {
       headline: "À propos de Jaguar",
       subhead:
-        "Quatre décennies de manufacture vestimentaire intégrée verticalement — fondée sur l'échelle, la conformité et des partenariats qui dépassent les collections saisonnières.",
+        "De National Hosiery Knitting à Faisalabad, 1962 — la qualité d'abord, toujours au tricot pour les marques mondiales.",
       alt: "Site de manufacture vestimentaire moderne et environnement de production",
       exploreSections: "Explorer l'entreprise",
     },
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "Empreinte mondiale, profondeur régionale",
-        body: "Huit sites au Pakistan, au Maroc et au Royaume-Uni offrent aux équipes sourcing une optionnalité géographique sans sacrifier le contrôle des processus. Le campus de Faisalabad couvre tricotage, teinture, couture, teinture vêtement, broderie et impression. Ava Marie à Tanger et Sweet Threads à Leicester étendent le groupe avec la vitesse proche de l'Europe et une capacité britannique du design à la fabrication — avec un périmètre de certification documenté par site, non supposé à l'échelle du groupe.",
+        body: "Jaguar (Pvt) Ltd à Faisalabad couvre tricotage, teinture, couture, teinture vêtement, broderie et impression. Ava Marie à Tanger et Sweet Threads à Leicester étendent le groupe avec la vitesse proche de l'Europe et une capacité britannique du design à la fabrication, avec des maisons de design et développement en Espagne, en Allemagne et au Royaume-Uni — avec un périmètre de certification documenté par site, non supposé à l'échelle du groupe.",
         imageAlt: "Empreinte mondiale de manufacture et réseau de sites",
       },
       {
@@ -71,9 +71,8 @@ export const about = {
     ],
     history: {
       eyebrow: "Historique",
-      title: "40 ans à Faisalabad, conçu pour les marques internationales",
-      subhead:
-        "D'un manufacturier familial de troisième génération dans la capitale textile du Pakistan à un partenaire multi-sites pour les startups et labels établis du monde entier.",
+      title: "Notre parcours de croissance et d'excellence",
+      subhead: "National Hosiery Knitting, Faisalabad — fondée en 1962. Jaguar perpétue ce savoir-faire.",
       steps: [
         {
           title: "1984 — Fondation à Faisalabad",

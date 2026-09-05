@@ -5,7 +5,7 @@ export const home = {
     headline: "Du tissu à la mode. Conçu pour la suite.",
     subhead:
       "Un fabricant de maille intégré verticalement depuis 1984 — tricotage, couture et finition pour des marques internationales, du fil au vêtement fini.",
-    cta: "Découvrir nos capacités",
+    cta: "Découvrir la fabrication",
     heroAlt: "Tissu maille drapé, au cœur de l'histoire Jaguar",
   },
   highlights: {

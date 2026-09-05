@@ -1,7 +1,7 @@
 export const facility = {
   hero: {
-    headline: "Standorte",
-    subhead: "Entdecken Sie unser globales Fertigungsnetzwerk — Kapazitäten, Zertifizierungen und Standorte an 8 Werken in Pakistan, Marokko und dem Vereinigten Königreich.",
+    headline: "Fertigung",
+    subhead: "Entdecken Sie unser globales Netzwerk — Jaguar (Pvt) Ltd in Faisalabad, Ava Marie, Sweet Threads sowie Design- und Entwicklungshäuser in Spanien, Deutschland und dem Vereinigten Königreich.",
     alt: "Weltkarte der Bekleidungsproduktionsstätten",
   },
   processCapabilities: {

@@ -5,7 +5,7 @@ export const home = {
     headline: "From fabric to fashion. Designed for what's next.",
     subhead:
       "A vertically integrated knitwear manufacturer since 1984 — knitting, sewing, and finishing programs for global brands, from yarn to finished garment.",
-    cta: "Explore our capabilities",
+    cta: "Explore manufacturing",
     heroAlt: "Draped knitted fabric across the Jaguar manufacturing story",
   },
   highlights: {

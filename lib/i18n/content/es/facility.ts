@@ -1,7 +1,7 @@
 export const facility = {
   hero: {
-    headline: "Instalaciones",
-    subhead: "Explore nuestra presencia global de manufactura — capacidades, certificaciones y ubicaciones en 8 instalaciones en Pakistán, Marruecos y el Reino Unido.",
+    headline: "Fabricación",
+    subhead: "Explore nuestra presencia global — Jaguar (Pvt) Ltd en Faisalabad, Ava Marie, Sweet Threads y las casas de diseño y desarrollo en España, Alemania y el Reino Unido.",
     alt: "Mapa global de plantas de manufactura de indumentaria",
   },
   processCapabilities: {

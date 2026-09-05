@@ -6,10 +6,6 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jaguarpvt.co
 export const marketingRoutes = [
   "",
   "/about",
-  "/about/at-a-glance",
-  "/about/strategy",
-  "/about/mission",
-  "/about/company-policy",
   "/careers",
   "/contact",
   "/facility",
@@ -122,9 +118,9 @@ export const pageMetadata: Record<
   },
   facility: {
     path: "/facility",
-    title: "Facility",
+    title: "Manufacturing",
     description:
-      "Explore Jaguar manufacturing facilities in Pakistan, Morocco, and the United Kingdom—including knitting, dyeing, sewing, garment dyeing, embroidery, and printing, plus Ava Marie and Sweet Threads.",
+      "Explore Jaguar manufacturing — Jaguar (Pvt) Ltd in Faisalabad covering knitting, dyeing, sewing, garment dyeing, embroidery, and printing, plus Ava Marie, Sweet Threads, and design & development houses in Spain, Germany, and the UK.",
     keywords: [
       "apparel factory locations",
       "garment manufacturing facilities",

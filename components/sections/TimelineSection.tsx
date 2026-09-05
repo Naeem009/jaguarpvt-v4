@@ -14,6 +14,7 @@ export type TimelineSectionProps = {
   title?: string;
   subhead?: string;
   steps: TimelineStep[];
+  variant?: "feature" | "compact";
   className?: string;
 };
 
@@ -22,6 +23,7 @@ export async function TimelineSection({
   title,
   subhead,
   steps,
+  variant = "feature",
   className,
 }: TimelineSectionProps) {
   const t = await getTranslations("sections.timeline");
@@ -33,9 +35,39 @@ export async function TimelineSection({
           eyebrow={eyebrow ?? t("eyebrow")}
           title={title ?? t("defaultTitle")}
           subhead={subhead ?? t("defaultSubhead")}
+          align={variant === "compact" ? "center" : "start"}
           className="mb-12 md:mb-16"
         />
 
+        {variant === "compact" ? (
+          <ol className="relative mx-auto max-w-4xl">
+            <span
+              aria-hidden
+              className="absolute inset-y-1 start-1/2 w-px -translate-x-px bg-ink/15"
+            />
+            {steps.map((step, index) => {
+              const onRight = index % 2 === 0;
+              return (
+                <li key={step.title} className="relative grid grid-cols-2 gap-6 pb-10 last:pb-0 md:gap-16">
+                  <span
+                    aria-hidden
+                    className="absolute start-1/2 top-1.5 size-2.5 -translate-x-1/2 rounded-full bg-ink"
+                  />
+                  <div
+                    className={cn(
+                      onRight ? "col-start-2 text-start" : "col-start-1 text-end",
+                    )}
+                  >
+                    <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-ink">
+                      {step.title}
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-graphite md:text-base">{step.description}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        ) : (
         <ol className="space-y-12 md:space-y-16">
           {steps.map((step, index) => (
             <li
@@ -66,6 +98,7 @@ export async function TimelineSection({
             </li>
           ))}
         </ol>
+        )}
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ export const about = {
     hero: {
       headline: "关于 Jaguar",
       subhead:
-        "四十年垂直整合服装制造经验——以规模、合规与超越季节系列的长期伙伴关系为基石。",
+        "源自 1962 年费萨拉巴德 National Hosiery Knitting——品质为先，持续为全球品牌针织。",
       alt: "现代化服装制造设施与生产环境",
       exploreSections: "了解公司",
     },
@@ -60,7 +60,7 @@ export const about = {
     blocks: [
       {
         title: "全球布局，区域深耕",
-        body: "巴基斯坦、摩洛哥与英国的八座工厂为采购团队提供地理灵活性，同时不牺牲流程管控。费萨拉巴德园区覆盖针织、染色、缝制、成衣染色、刺绣与印花。丹吉尔的 Ava Marie 与莱斯特的 Sweet Threads 以靠近欧洲的交期和英国从设计到制造的能力扩展集团网络——认证范围按工厂逐一记录，而非默认全集团适用。",
+        body: "费萨拉巴德的 Jaguar (Pvt) Ltd 覆盖针织、染色、缝制、成衣染色、刺绣与印花。丹吉尔的 Ava Marie 与莱斯特的 Sweet Threads 以靠近欧洲的交期和英国从设计到制造的能力扩展集团网络，并在西班牙、德国与英国设有设计开发中心——认证范围按地点逐一记录，而非默认全集团适用。",
         imageAlt: "全球制造布局与工厂网络",
       },
       {
@@ -71,9 +71,8 @@ export const about = {
     ],
     history: {
       eyebrow: "发展历程",
-      title: "扎根 Faisalabad 四十年，服务全球品牌",
-      subhead:
-        "从巴基斯坦纺织之都的第三代家族制造商，到服务全球初创品牌与成熟标签的多工厂合作伙伴。",
+      title: "成长与卓越之路",
+      subhead: "National Hosiery Knitting，费萨拉巴德，创立于 1962。Jaguar 传承这份工艺。",
       steps: [
         {
           title: "1984 — 创立于 Faisalabad",

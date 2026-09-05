@@ -25,6 +25,9 @@ export const facilityMap = {
     established: "成立年份",
     monthlyCapacity: "月产能",
     website: "访问网站",
+    facilities: "设施",
+    readMore: "阅读更多",
+    readLess: "收起",
     facilityAlt: "{name} 工厂",
   },
   categories: {

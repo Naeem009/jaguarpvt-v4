@@ -1,7 +1,7 @@
 export const facility = {
   hero: {
-    headline: "Facility",
-    subhead: "Explore our global manufacturing footprint — capabilities, certifications, and locations across 8 facilities in Pakistan, Morocco, and the United Kingdom.",
+    headline: "Manufacturing",
+    subhead: "Explore our global manufacturing footprint — Jaguar (Pvt) Ltd in Faisalabad, Ava Marie, Sweet Threads, and design & development houses in Spain, Germany, and the UK.",
     alt: "Global map of knitwear manufacturing facilities",
   },
   processCapabilities: {

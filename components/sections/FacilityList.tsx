@@ -42,20 +42,15 @@ export function FacilityList({
             {t("empty")}
           </p>
         ) : (
-          <ul className="grid auto-rows-fr gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="grid items-start gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filteredFacilities.map((facility) => (
-              <li key={facility.id} className="flex min-h-0">
-                <button
-                  type="button"
-                  onClick={() => onSelect?.(facility.id)}
-                  className={cn(
-                    "flex h-full w-full min-h-0 text-start",
-                    selectedId === facility.id && "rounded-[var(--radius-card-lg)] ring-2 ring-accent ring-offset-2",
-                  )}
-                  aria-current={selectedId === facility.id ? "true" : undefined}
-                >
-                  <FacilityCard facility={facility} variant="list" className="min-h-0" />
-                </button>
+              <li key={facility.id}>
+                <FacilityCard
+                  facility={facility}
+                  variant="list"
+                  selected={selectedId === facility.id}
+                  onSelect={() => onSelect?.(facility.id)}
+                />
               </li>
             ))}
           </ul>

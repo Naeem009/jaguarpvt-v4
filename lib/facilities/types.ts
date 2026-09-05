@@ -1,4 +1,10 @@
-export type Facility = {
+export type FacilityUnit = {
+  id: string;
+  name: string;
+  description: string;
+};
+
+export type FacilityRecord = {
   id: string;
   slug: string;
   name: string;
@@ -13,13 +19,19 @@ export type Facility = {
   categories: string[];
   certifications: string[];
   employees?: number;
-  establishedYear: number;
+  establishedYear?: number;
   capabilities?: string[];
   monthlyCapacity?: string;
   website?: string;
   description: string;
+  /** Department ids resolved into `Facility.units` via i18n. */
+  unitIds?: string[];
+};
+
+export type Facility = Omit<FacilityRecord, "unitIds"> & {
   /** Resolved public path for card / list thumbnails. */
   thumbnail: string;
+  units?: FacilityUnit[];
 };
 
 export const FACILITY_PLACEHOLDER_IMAGE = "/images/facility/facility-thumb-01.jpg";
@@ -28,6 +40,7 @@ export const FACILITY_HERO_IMAGE = "/images/facility/hero.jpg";
 
 /** Legacy numbered thumbs — kept for backwards compatibility with uploaded assets. */
 export const LEGACY_FACILITY_THUMBS: Record<string, string> = {
+  "jaguar-pvt": "facility-thumb-01",
   "knitting-unit": "facility-thumb-01",
   "dyeing-unit": "facility-thumb-02",
   "sewing-facility": "facility-thumb-03",

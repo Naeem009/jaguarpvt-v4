@@ -1,7 +1,7 @@
 export const facility = {
   hero: {
-    headline: "Sites de production",
-    subhead: "Explorez notre empreinte mondiale de manufacture — capacités, certifications et implantations à travers 8 sites au Pakistan, au Maroc et au Royaume-Uni.",
+    headline: "Fabrication",
+    subhead: "Explorez notre empreinte mondiale — Jaguar (Pvt) Ltd à Faisalabad, Ava Marie, Sweet Threads, et les maisons de design et développement en Espagne, en Allemagne et au Royaume-Uni.",
     alt: "Carte mondiale des sites de production de vêtements",
   },
   processCapabilities: {

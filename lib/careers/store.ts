@@ -27,8 +27,20 @@ type SaveDepartmentsResult = {
   persistedVia: "filesystem" | "github";
 };
 
+function parseJsonList(raw: string, label: string): unknown {
+  const trimmed = raw.replace(/^\uFEFF/, "").trim();
+  if (!trimmed) {
+    return [];
+  }
+  try {
+    return JSON.parse(trimmed) as unknown;
+  } catch {
+    throw new Error(`${label} is not valid JSON.`);
+  }
+}
+
 function parseOpenings(raw: string): JobOpening[] {
-  const parsed = JSON.parse(raw) as unknown;
+  const parsed = parseJsonList(raw, "Job openings file");
   if (!Array.isArray(parsed)) {
     throw new Error("Job openings file is not a list.");
   }
@@ -191,7 +203,7 @@ export async function saveJobOpenings(
 }
 
 function parseDepartments(raw: string): string[] {
-  const parsed = JSON.parse(raw) as unknown;
+  const parsed = parseJsonList(raw, "Job departments file");
   if (!Array.isArray(parsed)) {
     throw new Error("Job departments file is not a list.");
   }

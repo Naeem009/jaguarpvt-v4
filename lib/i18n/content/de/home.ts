@@ -5,7 +5,7 @@ export const home = {
     headline: "Von der Masche zur Mode. Entwickelt für das Nächste.",
     subhead:
       "Ein vertikal integrierter Strickwarenhersteller seit 1984 — Stricken, Nähen und Ausrüstung für globale Marken, vom Garn bis zum fertigen Teil.",
-    cta: "Unsere Fähigkeiten entdecken",
+    cta: "Fertigung entdecken",
     heroAlt: "Drapierte Maschenware in der Jaguar Fertigungsgeschichte",
   },
   highlights: {

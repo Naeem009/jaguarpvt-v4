@@ -42,9 +42,9 @@ export const metadata = {
       "Contact Jaguar (Pvt) Ltd. to submit an RFI or RFQ for casual wear, streetwear, activewear, denim, kidswear, or boutique programs. Our sourcing team responds within two business days.",
   },
   facility: {
-    title: "Facility",
+    title: "Manufacturing",
     description:
-      "Explore Jaguar manufacturing facilities in Pakistan, Morocco, and the United Kingdom—including knitting, dyeing, sewing, garment dyeing, embroidery, and printing, plus Ava Marie and Sweet Threads.",
+      "Explore Jaguar manufacturing — Jaguar (Pvt) Ltd in Faisalabad covering knitting, dyeing, sewing, garment dyeing, embroidery, and printing, plus Ava Marie, Sweet Threads, and design & development houses in Spain, Germany, and the UK.",
   },
   ourImpact: {
     title: "Our Impact",

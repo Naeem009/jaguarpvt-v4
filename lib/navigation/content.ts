@@ -21,7 +21,7 @@ export const impactMegaMenuItems = [
 export const primaryNavItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Facility", href: "/facility" },
+  { label: "Manufacturing", href: "/facility" },
   { label: "Careers", href: "/careers" },
 ] as const;
 
@@ -31,7 +31,7 @@ export const footerColumns = [
     links: [
       { label: "About", href: "/about" },
       { label: "Careers", href: "/careers" },
-      { label: "Facility", href: "/facility" },
+      { label: "Manufacturing", href: "/facility" },
     ],
   },
   {

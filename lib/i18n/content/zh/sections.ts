@@ -11,10 +11,10 @@ export const sections = {
   facilityMapTeaser: {
     eyebrow: "全球布局",
     title: "了解我们的制造基地",
-    subhead: "探索我们在巴基斯坦、摩洛哥与英国工厂的全球布局 —— 可在工厂页面按品类与认证筛选。",
-    cta: "浏览工厂",
+    subhead: "探索我们在巴基斯坦、摩洛哥、西班牙、德国与英国的全球布局 —— 可在制造页面按品类与认证筛选。",
+    cta: "浏览制造",
     mapAlt: "全球制造工厂的风格化地图预览",
-    previewNote: "交互式工厂地图 —— 仅为预览。完整地图请见工厂页面。",
+    previewNote: "交互式工厂地图 —— 仅为预览。完整地图请见制造页面。",
   },
   timeline: {
     eyebrow: "流程",

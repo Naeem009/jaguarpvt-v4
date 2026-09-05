@@ -42,7 +42,7 @@ export const metadata = {
       "联系 Jaguar (Pvt) Ltd. 提交休闲装、街头服饰、运动服饰、牛仔、童装或精品项目的 RFI 或 RFQ。我们的采购团队将在两个工作日内回复。",
   },
   facility: {
-    title: "工厂",
+    title: "制造",
     description:
       "探索捷豹制造工厂、工艺能力及生产部门 —— 从纱线进厂到包装与质量保证。",
   },

@@ -11,10 +11,10 @@ export const sections = {
   facilityMapTeaser: {
     eyebrow: "Globale Präsenz",
     title: "Sehen Sie, wo wir produzieren",
-    subhead: "Entdecken Sie unsere globale Präsenz an Standorten in Pakistan, Marokko und dem Vereinigten Königreich — mit Kategorie- und Zertifizierungsfiltern auf der Standortseite.",
-    cta: "Standorte entdecken",
+    subhead: "Entdecken Sie unsere globale Präsenz in Pakistan, Marokko, Spanien, Deutschland und dem Vereinigten Königreich — mit Kategorie- und Zertifizierungsfiltern auf der Fertigungsseite.",
+    cta: "Fertigung entdecken",
     mapAlt: "Stilisierte Kartenvorschau globaler Fertigungsstandorte",
-    previewNote: "Interaktive Standortkarte — nur Vorschau. Vollständige Karte auf der Standortseite verfügbar.",
+    previewNote: "Interaktive Standortkarte — nur Vorschau. Vollständige Karte auf der Fertigungsseite verfügbar.",
   },
   timeline: {
     eyebrow: "Prozess",

@@ -3,7 +3,7 @@ export const about = {
     hero: {
       headline: "About Jaguar",
       subhead:
-        "Four decades of vertically integrated apparel manufacturing — built on scale, compliance, and partnerships that outlast seasonal collections.",
+        "From National Hosiery Knitting in Faisalabad, 1962 — quality first, still knitting for global brands.",
       alt: "Modern apparel manufacturing facility and production environment",
       exploreSections: "Explore company",
     },
@@ -14,8 +14,8 @@ export const about = {
         "From group overview and strategic direction to mission, values, and published policies — the information sourcing teams need before a program begins.",
     },
     overview: {
-      title: "A manufacturer built for long-term programs",
-      body: "Jaguar (Pvt) Ltd. is a vertically integrated knitwear manufacturer — knitting, dyeing, sewing, garment dyeing, embroidery, and printing — delivering casual wear, streetwear, activewear, denim, kidswear, and boutique. We serve global brands from facilities in Pakistan, Morocco (Ava Marie), and the United Kingdom (Sweet Threads) — with audit-ready systems, transparent capability data, and commercial teams who speak the language of sourcing, not sales.",
+      title: "Jaguar at a glance",
+      body: "A Faisalabad knitwear house with roots in National Hosiery Knitting. Today Jaguar knits, dyes, and sews for global brands — with sister operations in Morocco and the UK. Quality first. Progress always.",
     },
     cta: {
       title: "Partner with a manufacturer built for long-term programs",
@@ -53,14 +53,13 @@ export const about = {
   },
   atAGlance: {
     headline: "Jaguar at a Glance",
-    subhead:
-      "A third-generation, family-owned manufacturer in Faisalabad — serving global apparel brands with ethical wholesale supply since 1984.",
+    subhead: "Faisalabad-born knitwear. Established 1962. Built for brands that need speed, quality, and a partner who stays.",
     intro:
       "Jaguar is a third-generation family-owned clothing brand manufacturer, rooted in the heart of Pakistan's textile industry, Faisalabad. Since 1984, we have evolved alongside the fashion industry and adapted our expertise to meet the ever-changing needs of brands worldwide. We have designed, engineered, and tailored quality garments, using fabrics like organic cotton, bamboo cotton, and recycled materials.\n\nOur passion for premium apparel is in our DNA. We're your go-to partner, offering expertise in fabric selection, trend forecasting, and sustainable practices. With in-house knitting, dyeing, and a state-of-the-art facility equipped with CAD/CAM technology, we combine artisanal skill with cutting-edge production methods.\n\nWhether you're a budding entrepreneur or an established brand, we're a wholesale supplier of clothes committed to bringing your vision to life with low minimums, transparent communication, and unshakeable commitment to quality.",
     blocks: [
       {
         title: "Global footprint, regional depth",
-        body: "Eight facilities across Pakistan, Morocco, and the United Kingdom give sourcing teams geographic optionality without sacrificing process control. Jaguar's Faisalabad campus covers knitting, dyeing, sewing, garment dyeing, embroidery, and printing. Ava Marie in Tangier and Sweet Threads in Leicester extend the group with near-Europe speed and UK design-to-manufacture capability — with certification scope documented per facility, not assumed group-wide.",
+        body: "Jaguar (Pvt) Ltd in Faisalabad covers knitting, dyeing, sewing, garment dyeing, embroidery, and printing. Ava Marie in Tangier and Sweet Threads in Leicester extend the group with near-Europe speed and UK design-to-manufacture capability, with design and development houses in Spain, Germany, and the UK — certification scope documented per location, not assumed group-wide.",
         imageAlt: "Global manufacturing footprint and facility network",
       },
       {
@@ -71,30 +70,33 @@ export const about = {
     ],
     history: {
       eyebrow: "History",
-      title: "40 years in Faisalabad, built for global brands",
-      subhead:
-        "From a third-generation family manufacturer in Pakistan's textile capital to a multi-facility partner for startups and established labels worldwide.",
+      title: "Our journey of growth & excellence",
+      subhead: "National Hosiery Knitting, Faisalabad — established 1962. Jaguar carries that craft forward.",
       steps: [
+        { title: "1962", description: "Hosiery production starts in Faisalabad as National Hosiery Knitting." },
+        { title: "1970", description: "Pakistan’s No. 1 vest manufacturer." },
+        { title: "1984", description: "First shipment to the UK." },
+        { title: "1999", description: "First automated dyeing house." },
+        { title: "2001", description: "Partnership with C&A begins." },
+        { title: "2004", description: "Exporting to worldwide retailers, including George." },
+        { title: "2005", description: "Babywear unit launched." },
+        { title: "2009", description: "Fabric export starts." },
+        { title: "2013", description: "Operations paused and the factory is sold." },
+        { title: "2020", description: "Jaguar revived — first order for PrettyLittleThing." },
+        { title: "2021", description: "Jaguar North opens: 100-machine cut-to-pack unit." },
+        { title: "2022", description: "Jaguar City established with a 500-machine setup." },
+        { title: "2023", description: "Knitting restarts with 10 machines." },
+        { title: "2024", description: "Dyeing house established." },
         {
-          title: "1984 — Founded in Faisalabad",
+          title: "2025",
           description:
-            "Jaguar began as a family-owned clothing manufacturer in the heart of Pakistan's textile industry. From the start, the focus was quality garments, skilled production, and partnerships that could grow with each brand's ambition.",
-        },
-        {
-          title: "1990s–2000s — Evolving with fashion",
-          description:
-            "As global fashion changed, we expanded in-house knitting and dyeing, invested in CAD/CAM technology, and broadened our fabric expertise to organic cotton, bamboo cotton, and recycled materials — adapting expertise to meet brands' ever-changing needs.",
-        },
-        {
-          title: "Today — Pakistan, Morocco, and the United Kingdom",
-          description:
-            "More than four decades on, Jaguar serves budding entrepreneurs and established giants from Faisalabad, Tangier, and Leicester — with ethical wholesale supply, streamlined production, transparent communication, and an unwavering commitment to quality.",
+            "20,000 kg fabric a day in-house, 1,000 machines, 25,000 garments a day — Jaguar’s highest turnover at $40M.",
         },
       ],
     },
     leadership: {
       eyebrow: "Leadership",
-      title: "Experienced operators across manufacturing and commercial functions",
+      title: "Leadership",
       members: [
         {
           name: "Mr. Asim ul Haq",
@@ -142,8 +144,7 @@ export const about = {
   },
   strategy: {
     headline: "Our Strategy",
-    subhead:
-      "A disciplined approach to category depth, geographic optionality, and compliance-led growth — designed for brands that plan in seasons, not transactions.",
+    subhead: "Depth in the categories we own. Options across countries. Compliance that keeps programs moving.",
     intro:
       "Our strategy is not a vision statement on a wall. It is a set of investment priorities — in integrated capacity, certified product lines, and long-term buyer relationships — that govern capital allocation, facility development, and how we engage with sourcing teams at the start of every program.",
     pillarsSection: {
@@ -152,19 +153,16 @@ export const about = {
     },
     pillars: [
       {
-        title: "Category depth over diversification",
-        description:
-          "We invest where we can control quality end-to-end: casual wear, streetwear, activewear, denim, kidswear, and boutique. Each category has dedicated lines, process engineers, and compliance documentation — rather than generalist capacity that underperforms under audit.",
+        title: "Category depth",
+        description: "Casual, streetwear, activewear, denim, kidswear, and boutique — each with dedicated lines, not a generalist floor.",
       },
       {
-        title: "Geographic optionality",
-        description:
-          "A multi-country footprint gives brands sourcing flexibility and risk distribution. Shared systems ensure consistency; local presence ensures responsiveness to regional program requirements.",
+        title: "Geographic options",
+        description: "Pakistan, Morocco, and the UK. Shared systems, local speed.",
       },
       {
-        title: "Compliance as a commercial advantage",
-        description:
-          "Certifications, audit readiness, and published ESG metrics are treated as product features — not overhead. We invest ahead of buyer requirements so programs launch without compliance delays.",
+        title: "Compliance first",
+        description: "Audit-ready from the start, so programs launch without delays.",
       },
     ],
     blocks: [
@@ -186,8 +184,7 @@ export const about = {
   },
   mission: {
     headline: "Mission",
-    subhead:
-      "Ethical wholesale apparel supply that lets brands focus on what they do best — design, marketing, and growth.",
+    subhead: "Ethical wholesale supply so brands can stay on design, marketing, and growth.",
     intro:
       "To fuel the fire of apparel brands, from startups to established giants, with ethical wholesale clothing supply, streamlined production, and transparent communication. It's a partnership that frees them to focus on design, marketing, and growth.",
     visionSection: {
@@ -195,31 +192,27 @@ export const about = {
       title: "Our vision",
     },
     vision:
-      "To set the gold standard for ethical and sustainable apparel manufacturing, inspiring a global shift towards responsible practices and empowering brands within the fashion industry to create a positive impact.",
+      "To set the gold standard for ethical, sustainable apparel manufacturing — and help brands do the same.",
     valuesSection: {
       eyebrow: "Mission",
       title: "How we deliver",
     },
     values: [
       {
-        title: "Ethical wholesale supply",
-        description:
-          "Responsible manufacturing and sourcing practices that startups and established brands can build on with confidence.",
+        title: "Ethical supply",
+        description: "Responsible manufacturing brands can build on with confidence.",
       },
       {
         title: "Streamlined production",
-        description:
-          "In-house knitting, dyeing, and CAD/CAM-equipped facilities that combine artisanal skill with efficient, reliable output.",
+        description: "In-house knitting, dyeing, and sewing — skill plus reliable output.",
       },
       {
-        title: "Transparent communication",
-        description:
-          "Clear timelines, honest capability conversations, and low minimums that keep partnerships straightforward from first sample to bulk delivery.",
+        title: "Clear communication",
+        description: "Honest timelines and low minimums from sample to bulk.",
       },
       {
-        title: "Sustainable impact",
-        description:
-          "Organic cotton, bamboo cotton, recycled materials, and continuous improvement toward the gold standard in responsible apparel manufacturing.",
+        title: "Sustainable materials",
+        description: "Organic cotton, bamboo cotton, recycled fibres — and we keep improving.",
       },
     ],
     blocks: [
@@ -241,8 +234,7 @@ export const about = {
   },
   companyPolicy: {
     headline: "Company Policy",
-    subhead:
-      "Published standards for ethics, compliance, workplace conduct, and governance — the framework that supports every customer program and audit.",
+    subhead: "Clear standards for ethics, labour, safety, and the environment — available to partners and auditors.",
     intro:
       "Jaguar (Pvt) Ltd. maintains formal policies governing business ethics, labor practices, environmental responsibility, and data integrity. These policies apply across all facilities and functions — and are available for review by brand partners, auditors, and prospective employees.",
     policiesSection: {
@@ -251,34 +243,28 @@ export const about = {
     },
     policies: [
       {
-        title: "Code of business ethics",
-        description:
-          "Zero tolerance for bribery, corruption, and conflicts of interest. All commercial relationships must be documented, transparent, and aligned with applicable trade and anti-corruption laws.",
+        title: "Business ethics",
+        description: "Zero tolerance for bribery or conflicts of interest. Relationships stay documented and legal.",
       },
       {
-        title: "Labor and workplace standards",
-        description:
-          "Fair wages, safe working conditions, freedom of association, and non-discrimination — aligned with ILO principles and buyer audit requirements including WRAP and social compliance frameworks.",
+        title: "Labour standards",
+        description: "Fair wages, safe work, and non-discrimination — aligned with ILO and buyer audits.",
       },
       {
-        title: "Environmental responsibility",
-        description:
-          "Documented programs for water stewardship, waste reduction, and chemical management — with facility-level metrics published in our ESG reporting and available on request.",
+        title: "Environment",
+        description: "Water, waste, and chemicals managed and reported at facility level.",
       },
       {
         title: "Health and safety",
-        description:
-          "Occupational health and safety systems at every facility, including training, incident reporting, emergency procedures, and regular third-party assessments.",
+        description: "Training, incident reporting, and regular third-party checks at every site.",
       },
       {
-        title: "Data protection and confidentiality",
-        description:
-          "Customer designs, costing, and commercial information are protected under formal confidentiality agreements and internal access controls.",
+        title: "Confidentiality",
+        description: "Designs, costing, and commercial data stay under NDA and access control.",
       },
       {
-        title: "Grievance and whistleblower protection",
-        description:
-          "Anonymous reporting channels for employees and stakeholders, with non-retaliation guarantees and documented investigation procedures.",
+        title: "Speak-up",
+        description: "Anonymous reporting with no retaliation, and a documented investigation path.",
       },
     ],
     blocks: [

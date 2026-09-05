@@ -42,7 +42,7 @@ export const metadata = {
       "Contacte a Jaguar (Pvt) Ltd. para enviar una RFI o RFQ de programas de ropa casual, streetwear, ropa deportiva, denim, ropa infantil o boutique. Nuestro equipo de abastecimiento responde en un plazo de dos días hábiles.",
   },
   facility: {
-    title: "Instalaciones",
+    title: "Fabricación",
     description:
       "Explore las instalaciones de fabricación de Jaguar, capacidades de proceso y departamentos de producción — desde la recepción de hilo hasta el empaque y el aseguramiento de calidad.",
   },

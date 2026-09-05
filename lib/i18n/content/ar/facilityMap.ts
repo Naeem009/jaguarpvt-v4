@@ -25,6 +25,9 @@ export const facilityMap = {
     established: "تأسست",
     monthlyCapacity: "الطاقة الشهرية",
     website: "زيارة الموقع",
+    facilities: "المنشآت",
+    readMore: "اقرأ المزيد",
+    readLess: "عرض أقل",
     facilityAlt: "منشأة {name}",
   },
   categories: {

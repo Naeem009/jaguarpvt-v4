@@ -12,11 +12,11 @@
     "home": "Home",
     "about": "About Us",
     "aboutOverview": "Overview",
-    "capabilities": "Capabilities",
+    "capabilities": "Manufacturing",
     "products": "Products",
     "sustainability": "Sustainability",
     "ourImpact": "Our Impact",
-    "facility": "Facility",
+    "facility": "Manufacturing",
     "careers": "Careers",
     "contact": "Contact",
     "downloadEsg": "Download ESG Report",
@@ -52,7 +52,7 @@
     "cookies": "Cookie Preferences",
     "modernSlavery": "Modern Slavery Statement",
     "copyright": "© {year} Jaguar (Pvt) Ltd. All rights reserved.",
-    "footprint": "8 facilities · 3 countries · [Z],000+ employees"
+    "footprint": "6 locations · 5 countries · [Z],000+ employees"
   },
   "search": {
     "placeholder": "Search pages, products, certifications, facilities...",
