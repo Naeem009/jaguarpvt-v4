@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { CurrentOpenings } from "@/components/sections/CurrentOpenings";
-import { Hero } from "@/components/sections";
+import { Hero, SectionJumpNav } from "@/components/sections";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getActiveOpenings } from "@/lib/careers/query";
 import { careersCultureImages } from "@/lib/careers/content";
@@ -22,7 +22,6 @@ export default async function CareersPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("careers");
-  const tCommon = await getTranslations("common");
   const cultureValues = t.raw("culture.values") as Array<{ title: string; body: string; alt: string }>;
   const benefits = t.raw("benefits.items") as Array<{ title: string; body: string }>;
   const openings = await getActiveOpenings();
@@ -34,11 +33,24 @@ export default async function CareersPage({ params }: PageProps) {
         headline={t("hero.headline")}
         subhead={t("hero.subhead")}
         primaryCTA={{ label: t("hero.viewRoles"), href: "#open-roles" }}
-        secondaryCTA={{ label: tCommon("contactUs"), href: "/contact" }}
+        secondaryCTA={{ label: t("hero.exploreSections"), href: "#careers" }}
         media={heroVideoMedia("/images/careers/hero.jpg", t("hero.alt"), "careers")}
       />
 
-      <section className="bg-paper py-16 md:py-24">
+      <SectionJumpNav
+        id="careers"
+        eyebrow={t("overview.eyebrow")}
+        title={t("overview.title")}
+        subhead={t("overview.subhead")}
+        links={[
+          { href: "#culture", label: t("culture.eyebrow") },
+          { href: "#internships", label: t("internships.eyebrow") },
+          { href: "#benefits", label: t("benefits.eyebrow") },
+          { href: "#open-roles", label: t("openRoles.title") },
+        ]}
+      />
+
+      <section id="culture" className="scroll-mt-24 bg-paper py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow={t("culture.eyebrow")}
@@ -76,7 +88,7 @@ export default async function CareersPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="bg-mist py-16 md:py-24">
+      <section id="internships" className="scroll-mt-24 bg-mist py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow={t("internships.eyebrow")}
@@ -88,7 +100,7 @@ export default async function CareersPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="bg-paper py-16 md:py-24">
+      <section id="benefits" className="scroll-mt-24 bg-paper py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow={t("benefits.eyebrow")}

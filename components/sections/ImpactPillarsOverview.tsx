@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { SectionJumpNav } from "@/components/sections/SectionJumpNav";
 import { SectionContainer } from "@/components/ui/SectionContainer";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { sectionPaddingCompactClass } from "@/lib/layout/section";
 import {
   environmentContent,
@@ -56,32 +56,17 @@ export async function ImpactPillarsOverview() {
   ];
 
   return (
-    <div id="pillars">
-      <section className={cn("bg-paper", sectionPaddingCompactClass)}>
-        <SectionContainer>
-          <SectionHeading
-            align="center"
-            eyebrow={tHub("eyebrow")}
-            title={tHub("title")}
-            subhead={tHub("subhead")}
-            className="mb-10"
-          />
-          <nav
-            aria-label={tHub("eyebrow")}
-            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-y border-ink/8 py-4"
-          >
-            {pillars.map((pillar) => (
-              <a
-                key={pillar.id}
-                href={`#${pillar.id}`}
-                className="text-xs font-medium uppercase tracking-[0.16em] text-graphite transition-colors hover:text-ink"
-              >
-                {pillar.title}
-              </a>
-            ))}
-          </nav>
-        </SectionContainer>
-      </section>
+    <div>
+      <SectionJumpNav
+        id="pillars"
+        eyebrow={tHub("eyebrow")}
+        title={tHub("title")}
+        subhead={tHub("subhead")}
+        links={pillars.map((pillar) => ({
+          href: `#${pillar.id}`,
+          label: pillar.title,
+        }))}
+      />
 
       {pillars.map((pillar, index) => {
         const imageStart = index % 2 === 0;

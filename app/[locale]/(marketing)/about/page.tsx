@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { prepareLocale } from "@/lib/i18n/prepare-locale";
 import { createPageMetadata } from "@/lib/seo/metadata";
-import { CTASection, Hero, StatBar, TimelineSection } from "@/components/sections";
+import { CTASection, Hero, SectionJumpNav, StatBar, TimelineSection } from "@/components/sections";
 import { Card } from "@/components/ui/Card";
 import { SectionContainer } from "@/components/ui/SectionContainer";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -65,31 +65,13 @@ export default async function AboutPage({ params }: PageProps) {
 
       <StatBar stats={companyStats} />
 
-      <section id="company" className={cn("bg-paper", sectionPaddingCompactClass)}>
-        <SectionContainer>
-          <SectionHeading
-            align="center"
-            eyebrow={tHub("grid.eyebrow")}
-            title={tHub("grid.title")}
-            subhead={tHub("grid.subhead")}
-            className="mb-10"
-          />
-          <nav
-            aria-label={tHub("grid.eyebrow")}
-            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-y border-ink/8 py-4"
-          >
-            {jumpLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-xs font-medium uppercase tracking-[0.16em] text-graphite transition-colors hover:text-ink"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        </SectionContainer>
-      </section>
+      <SectionJumpNav
+        id="company"
+        eyebrow={tHub("grid.eyebrow")}
+        title={tHub("grid.title")}
+        subhead={tHub("grid.subhead")}
+        links={jumpLinks}
+      />
 
       <section id="at-a-glance" className={cn("scroll-mt-24 bg-paper-muted", sectionPaddingCompactClass)}>
         <SectionContainer>

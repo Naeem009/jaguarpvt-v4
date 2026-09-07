@@ -46,6 +46,8 @@ export { InnovationNote } from "./InnovationNote";
 export type { InnovationNoteProps } from "./InnovationNote";
 export { ProductGrid } from "./ProductGrid";
 export type { ProductGridItem, ProductGridProps } from "./ProductGrid";
+export { SectionJumpNav } from "./SectionJumpNav";
+export type { SectionJumpNavProps, SectionJumpLink } from "./SectionJumpNav";
 export { ProductCategoriesOverview } from "./ProductCategoriesOverview";
 export { ProductPageTemplate } from "./ProductPageTemplate";
 export type { ProductPageTemplateProps } from "./ProductPageTemplate";

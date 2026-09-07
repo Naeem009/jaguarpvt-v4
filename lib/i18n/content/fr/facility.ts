@@ -3,6 +3,13 @@ export const facility = {
     headline: "Fabrication",
     subhead: "Explorez notre empreinte mondiale — Jaguar (Pvt) Ltd à Faisalabad, Ava Marie, Sweet Threads, et les maisons de design et développement en Espagne, en Allemagne et au Royaume-Uni.",
     alt: "Carte mondiale des sites de production de vêtements",
+    exploreSections: "Explorer la fabrication",
+  },
+  overview: {
+    eyebrow: "Fabrication",
+    title: "Sites, maisons de design et process interne",
+    subhead:
+      "De la carte mondiale au design et développement, aux sites de production et à chaque étape du process interne.",
   },
   processCapabilities: {
     eyebrow: "Processus et capacités",

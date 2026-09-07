@@ -5,6 +5,12 @@ export const careers = {
       "加入一家全球制造企业，在这里，精准、合规与持续改进是运营标准——而非空谈。",
     alt: "多元化团队在专业工作会议中协作",
     viewRoles: "查看开放职位",
+    exploreSections: "浏览职业发展",
+  },
+  overview: {
+    eyebrow: "职业发展",
+    title: "文化、成长与开放职位",
+    subhead: "我们如何工作、实习、福利与当前招聘。",
   },
   culture: {
     eyebrow: "在 Jaguar 的工作生活",

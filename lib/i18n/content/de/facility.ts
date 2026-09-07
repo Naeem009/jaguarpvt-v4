@@ -3,6 +3,13 @@ export const facility = {
     headline: "Fertigung",
     subhead: "Entdecken Sie unser globales Netzwerk — Jaguar (Pvt) Ltd in Faisalabad, Ava Marie, Sweet Threads sowie Design- und Entwicklungshäuser in Spanien, Deutschland und dem Vereinigten Königreich.",
     alt: "Weltkarte der Bekleidungsproduktionsstätten",
+    exploreSections: "Fertigung entdecken",
+  },
+  overview: {
+    eyebrow: "Fertigung",
+    title: "Standorte, Designhäuser und interne Prozesse",
+    subhead:
+      "Von der Weltkarte über Design & Entwicklung und Produktionsstandorte bis zu jeder internen Prozessstufe.",
   },
   processCapabilities: {
     eyebrow: "Prozess & Kapazitäten",

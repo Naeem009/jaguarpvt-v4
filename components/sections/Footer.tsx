@@ -19,9 +19,29 @@ export function Footer({ className }: { className?: string }) {
     {
       title: t("company"),
       links: [
-        { label: tNav("about"), href: "/about" as const },
-        { label: tNav("careers"), href: "/careers" as const },
-        { label: tNav("facility"), href: "/facility" as const },
+        { label: t("atAGlance"), href: { pathname: "/about" as const, hash: "at-a-glance" } },
+        { label: t("mission"), href: { pathname: "/about" as const, hash: "mission" } },
+        { label: t("strategy"), href: { pathname: "/about" as const, hash: "strategy" } },
+        { label: t("companyPolicy"), href: { pathname: "/about" as const, hash: "company-policy" } },
+        { label: t("history"), href: { pathname: "/about" as const, hash: "history" } },
+      ],
+    },
+    {
+      title: tNav("facility"),
+      links: [
+        { label: t("globalFootprint"), href: { pathname: "/facility" as const, hash: "footprint" } },
+        { label: t("designDevelopment"), href: { pathname: "/facility" as const, hash: "design" } },
+        { label: t("allFacilities"), href: { pathname: "/facility" as const, hash: "facilities" } },
+        { label: t("processCapabilities"), href: { pathname: "/facility" as const, hash: "capabilities" } },
+      ],
+    },
+    {
+      title: tNav("careers"),
+      links: [
+        { label: t("lifeAtJaguar"), href: { pathname: "/careers" as const, hash: "culture" } },
+        { label: t("internships"), href: { pathname: "/careers" as const, hash: "internships" } },
+        { label: t("benefits"), href: { pathname: "/careers" as const, hash: "benefits" } },
+        { label: t("openRoles"), href: { pathname: "/careers" as const, hash: "open-roles" } },
       ],
     },
     {
@@ -77,7 +97,7 @@ export function Footer({ className }: { className?: string }) {
           </div>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-6">
           {columns.map((column) => (
             <div key={column.title}>
               <h2 className="text-mdx-bold font-bold uppercase tracking-[0.06em] text-graphite">

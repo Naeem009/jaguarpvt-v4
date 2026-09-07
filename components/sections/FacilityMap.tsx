@@ -89,7 +89,7 @@ export function FacilityMap({ facilities, filterEnabled = false, className }: Fa
 
   return (
     <div className={cn("bg-paper text-ink", className)}>
-      <section className="py-16 md:py-24" aria-label={t("list.ariaLabel")}>
+      <section className="scroll-mt-24 py-16 md:py-24" id="footprint" aria-label={t("list.ariaLabel")}>
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow={t("heading.eyebrow")}
@@ -185,6 +185,7 @@ export function FacilityMap({ facilities, filterEnabled = false, className }: Fa
       </section>
 
       <FacilityList
+        id="design"
         copyKey="design"
         facilities={designHouses}
         visibleIds={visibleIds}
@@ -194,6 +195,7 @@ export function FacilityMap({ facilities, filterEnabled = false, className }: Fa
       />
 
       <FacilityList
+        id="facilities"
         facilities={manufacturingFacilities}
         visibleIds={visibleIds}
         selectedId={selectedId}

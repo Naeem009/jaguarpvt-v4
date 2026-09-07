@@ -5,6 +5,12 @@ export const careers = {
       "Rejoignez une organisation de manufacture mondiale où la précision, la conformité et l'amélioration continue sont des standards opérationnels — pas des slogans.",
     alt: "Équipe diversifiée collaborant lors d'une réunion professionnelle",
     viewRoles: "Voir les postes ouverts",
+    exploreSections: "Explorer les carrières",
+  },
+  overview: {
+    eyebrow: "Carrières",
+    title: "Culture, développement et postes ouverts",
+    subhead: "Notre façon de travailler, les stages, les avantages et les postes ouverts.",
   },
   culture: {
     eyebrow: "La vie chez Jaguar",

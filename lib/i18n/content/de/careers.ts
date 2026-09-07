@@ -5,6 +5,12 @@ export const careers = {
       "Werden Sie Teil einer globalen Fertigungsorganisation, in der Präzision, Compliance und kontinuierliche Verbesserung operative Standards sind — keine Schlagworte.",
     alt: "Vielfältiges Team in einer professionellen Arbeitsbesprechung",
     viewRoles: "Offene Stellen ansehen",
+    exploreSections: "Karriere entdecken",
+  },
+  overview: {
+    eyebrow: "Karriere",
+    title: "Kultur, Entwicklung und offene Stellen",
+    subhead: "Wie wir arbeiten, Praktika, Benefits und aktuelle Stellen.",
   },
   culture: {
     eyebrow: "Leben bei Jaguar",

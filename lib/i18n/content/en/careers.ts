@@ -5,6 +5,12 @@ export const careers = {
       "Join a global manufacturing organization where precision, compliance, and continuous improvement are operational standards — not talking points.",
     alt: "Diverse team collaborating in a professional workplace meeting",
     viewRoles: "View open roles",
+    exploreSections: "Explore careers",
+  },
+  overview: {
+    eyebrow: "Careers",
+    title: "Culture, development, and open roles",
+    subhead: "How we work, internships, benefits, and current openings.",
   },
   culture: {
     eyebrow: "Life at Jaguar",

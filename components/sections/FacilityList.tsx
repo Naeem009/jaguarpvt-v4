@@ -13,6 +13,7 @@ export type FacilityListProps = {
   onSelect?: (facilityId: string) => void;
   copyKey?: "list" | "design";
   hideWhenEmpty?: boolean;
+  id?: string;
   className?: string;
 };
 
@@ -23,6 +24,7 @@ export function FacilityList({
   onSelect,
   copyKey = "list",
   hideWhenEmpty = false,
+  id,
   className,
 }: FacilityListProps) {
   const t = useTranslations(`facilityMap.${copyKey}`);
@@ -36,7 +38,11 @@ export function FacilityList({
   }
 
   return (
-    <section className={cn("bg-paper py-16 md:py-24", className)} aria-label={t("ariaLabel")}>
+    <section
+      id={id}
+      className={cn("scroll-mt-24 bg-paper py-16 md:py-24", className)}
+      aria-label={t("ariaLabel")}
+    >
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <SectionHeading
           eyebrow={t("eyebrow")}

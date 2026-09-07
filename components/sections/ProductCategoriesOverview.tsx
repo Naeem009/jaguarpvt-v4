@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { SectionJumpNav } from "@/components/sections/SectionJumpNav";
 import { SectionContainer } from "@/components/ui/SectionContainer";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { sectionPaddingCompactClass } from "@/lib/layout/section";
 import type { ProductCategoryContent } from "@/lib/products/content";
 import { cn } from "@/lib/utils";
@@ -24,32 +24,17 @@ export async function ProductCategoriesOverview({
   const tCategories = await getTranslations("productCategories");
 
   return (
-    <div id="categories">
-      <section className={cn("bg-paper", sectionPaddingCompactClass)}>
-        <SectionContainer>
-          <SectionHeading
-            align="center"
-            eyebrow={t("overview.eyebrow")}
-            title={t("overview.title")}
-            subhead={t("overview.subhead")}
-            className="mb-10"
-          />
-          <nav
-            aria-label={t("overview.eyebrow")}
-            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-y border-ink/8 py-4"
-          >
-            {categories.map((category) => (
-              <a
-                key={category.slug}
-                href={`#${category.slug}`}
-                className="text-xs font-medium uppercase tracking-[0.16em] text-graphite transition-colors hover:text-ink"
-              >
-                {category.name}
-              </a>
-            ))}
-          </nav>
-        </SectionContainer>
-      </section>
+    <div>
+      <SectionJumpNav
+        id="categories"
+        eyebrow={t("overview.eyebrow")}
+        title={t("overview.title")}
+        subhead={t("overview.subhead")}
+        links={categories.map((category) => ({
+          href: `#${category.slug}`,
+          label: category.name,
+        }))}
+      />
 
       {categories.map((category, index) => {
         const imageStart = index % 2 === 0;

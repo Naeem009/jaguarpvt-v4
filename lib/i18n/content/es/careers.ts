@@ -5,6 +5,12 @@ export const careers = {
       "Únase a una organización global de manufactura donde la precisión, el cumplimiento normativo y la mejora continua son estándares operativos — no simples declaraciones.",
     alt: "Equipo diverso colaborando en una reunión profesional",
     viewRoles: "Ver vacantes abiertas",
+    exploreSections: "Explorar carreras",
+  },
+  overview: {
+    eyebrow: "Carreras",
+    title: "Cultura, desarrollo y vacantes",
+    subhead: "Cómo trabajamos, prácticas, beneficios y vacantes actuales.",
   },
   culture: {
     eyebrow: "La vida en Jaguar",

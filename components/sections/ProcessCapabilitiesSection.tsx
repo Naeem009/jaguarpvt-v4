@@ -12,12 +12,14 @@ import { cn } from "@/lib/utils";
 export type ProcessCapabilitiesSectionProps = {
   departments: Department[];
   categories: string[];
+  id?: string;
   className?: string;
 };
 
 export function ProcessCapabilitiesSection({
   departments,
   categories,
+  id = "capabilities",
   className,
 }: ProcessCapabilitiesSectionProps) {
   const t = useTranslations("facility.processCapabilities");
@@ -33,7 +35,11 @@ export function ProcessCapabilitiesSection({
   }
 
   return (
-    <section className={cn("bg-paper py-16 md:py-24", className)} aria-labelledby="process-capabilities-heading">
+    <section
+      id={id}
+      className={cn("scroll-mt-24 bg-paper py-16 md:py-24", className)}
+      aria-labelledby="process-capabilities-heading"
+    >
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <SectionHeading
           eyebrow={t("eyebrow")}
