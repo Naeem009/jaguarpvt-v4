@@ -23,7 +23,7 @@ export const facilityMap = {
   design: {
     eyebrow: "Design & Development",
     title: "Design and development houses",
-    subhead: "Collection development, sampling, and brand-facing product work in Spain, Germany, and the United Kingdom.",
+    subhead: "Collection development, sampling, and brand-facing product work in Spain, Germany, and the United Kingdom. Feel free to discuss your season project with us.",
     empty: "No design houses match the current filter. Clear the search to view all locations.",
     ariaLabel: "Design and development houses",
   },
