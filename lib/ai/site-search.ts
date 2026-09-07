@@ -25,15 +25,15 @@ const siteSearchIndex: SiteSearchEntry[] = [
     id: "about",
     title: "About",
     href: "/about",
-    snippet: "Company overview, strategy, mission, and policies.",
-    keywords: ["about", "company", "overview", "glance", "history", "leadership", "strategy", "mission", "policy"],
+    snippet: "Company overview, strategy, mission, policies, and history.",
+    keywords: ["about", "company", "overview", "glance", "history", "strategy", "mission", "policy"],
   },
   {
     id: "about-at-a-glance",
     title: "Jaguar at a Glance",
     href: "/about#at-a-glance",
-    snippet: "Footprint, leadership, history, and company scale.",
-    keywords: ["about", "glance", "overview", "history", "leadership", "footprint"],
+    snippet: "Footprint, history, and company scale.",
+    keywords: ["about", "glance", "overview", "history", "footprint"],
   },
   {
     id: "about-strategy",
@@ -55,6 +55,13 @@ const siteSearchIndex: SiteSearchEntry[] = [
     href: "/about#company-policy",
     snippet: "Ethics, labor standards, environmental responsibility, and governance.",
     keywords: ["policy", "ethics", "compliance", "governance", "labor", "standards"],
+  },
+  {
+    id: "about-history",
+    title: "History",
+    href: "/about#history",
+    snippet: "Jaguar’s journey from 1962 to vertically integrated knitwear manufacturing.",
+    keywords: ["history", "timeline", "journey", "1962", "growth"],
   },
   {
     id: "products",

@@ -25,7 +25,7 @@ export const about = {
   menu: {
     atAGlance: {
       title: "Jaguar at a Glance",
-      description: "Footprint, leadership, history, and the scale behind our manufacturing network.",
+      description: "Footprint, history, and the scale behind our manufacturing network.",
     },
     strategy: {
       title: "Our Strategy",

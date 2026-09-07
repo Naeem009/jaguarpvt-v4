@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { sectionPaddingClass, sectionPaddingCompactClass } from "@/lib/layout/section";
 import { cn } from "@/lib/utils";
 
 export type TimelineStep = {
@@ -15,6 +16,7 @@ export type TimelineSectionProps = {
   subhead?: string;
   steps: TimelineStep[];
   variant?: "feature" | "compact";
+  id?: string;
   className?: string;
 };
 
@@ -24,12 +26,20 @@ export async function TimelineSection({
   subhead,
   steps,
   variant = "feature",
+  id,
   className,
 }: TimelineSectionProps) {
   const t = await getTranslations("sections.timeline");
 
   return (
-    <section className={cn("bg-paper py-16 md:py-24", className)}>
+    <section
+      id={id}
+      className={cn(
+        "scroll-mt-24 bg-paper",
+        variant === "compact" ? sectionPaddingCompactClass : sectionPaddingClass,
+        className,
+      )}
+    >
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <SectionHeading
           eyebrow={eyebrow ?? t("eyebrow")}

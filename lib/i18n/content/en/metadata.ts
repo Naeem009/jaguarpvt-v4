@@ -9,12 +9,12 @@ export const metadata = {
   about: {
     title: "About",
     description:
-      "Learn about Jaguar (Pvt) Ltd.—our history, leadership, manufacturing footprint, and long-term partnerships with international apparel brands.",
+      "Learn about Jaguar (Pvt) Ltd.—our history, manufacturing footprint, mission, strategy, and long-term partnerships with international apparel brands.",
   },
   atAGlance: {
     title: "Jaguar at a Glance",
     description:
-      "Company overview of Jaguar (Pvt) Ltd.—facilities in Pakistan, Morocco, and the United Kingdom, leadership, history, and integrated apparel manufacturing at scale.",
+      "Company overview of Jaguar (Pvt) Ltd.—facilities in Pakistan, Morocco, and the United Kingdom, history, and integrated apparel manufacturing at scale.",
   },
   aboutStrategy: {
     title: "Our Strategy",

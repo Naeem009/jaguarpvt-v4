@@ -2,7 +2,7 @@ export const navigation = {
   aboutMenu: [
     {
       title: "Jaguar at a Glance",
-      description: "Footprint, leadership, history, and the scale behind our manufacturing network.",
+      description: "Footprint, history, and the scale behind our manufacturing network.",
     },
     {
       title: "Our Strategy",
