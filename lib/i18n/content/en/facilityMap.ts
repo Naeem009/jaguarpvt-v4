@@ -15,10 +15,17 @@ export const facilityMap = {
   mapAlt: "Stylized world map showing manufacturing facility locations",
   list: {
     eyebrow: "All facilities",
-    title: "Browse the full facility list",
-    subhead: "Accessible list view of every published facility — with the same filter applied to the map above.",
+    title: "Browse manufacturing facilities",
+    subhead: "Jaguar (Pvt) Ltd, Ava Marie, and Sweet Threads — with the same filter applied to the map above.",
     empty: "No facilities match the current filter. Clear the search to view all locations.",
     ariaLabel: "Facility list",
+  },
+  design: {
+    eyebrow: "Design & Development",
+    title: "Design and development houses",
+    subhead: "Collection development, sampling, and brand-facing product work in Spain, Germany, and the United Kingdom.",
+    empty: "No design houses match the current filter. Clear the search to view all locations.",
+    ariaLabel: "Design and development houses",
   },
   card: {
     employees: "Employees",

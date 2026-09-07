@@ -3,17 +3,17 @@ import { ESG_REPORT_URL } from "@/lib/our-impact/content";
 export const impactMegaMenuItems = [
   {
     title: "Environment",
-    href: "/our-impact/environment",
+    href: "/our-impact",
     description: "Water stewardship, renewable energy, and waste reduction programs.",
   },
   {
     title: "People & Communities",
-    href: "/our-impact/people",
+    href: "/our-impact",
     description: "Worker welfare, training, and community programs.",
   },
   {
     title: "Governance & Certifications",
-    href: "/our-impact/governance",
+    href: "/our-impact",
     description: "Certifications, compliance systems, and governance structures.",
   },
 ];
@@ -37,20 +37,20 @@ export const footerColumns = [
   {
     title: "Products",
     links: [
-      { label: "Casual Wear", href: "/products/casual-wear" },
-      { label: "Streetwear", href: "/products/streetwear" },
-      { label: "Activewear", href: "/products/activewear" },
-      { label: "Denim", href: "/products/denim" },
-      { label: "Kidswear", href: "/products/kidswear" },
-      { label: "Boutique", href: "/products/boutique" },
+      { label: "Casual Wear", href: "/products" },
+      { label: "Streetwear", href: "/products" },
+      { label: "Activewear", href: "/products" },
+      { label: "Denim", href: "/products" },
+      { label: "Kidswear", href: "/products" },
+      { label: "Boutique", href: "/products" },
     ],
   },
   {
     title: "Our Impact",
     links: [
-      { label: "Environment", href: "/our-impact/environment" },
-      { label: "People & Communities", href: "/our-impact/people" },
-      { label: "Governance & Certifications", href: "/our-impact/governance" },
+      { label: "Environment", href: "/our-impact" },
+      { label: "People & Communities", href: "/our-impact" },
+      { label: "Governance & Certifications", href: "/our-impact" },
       { label: "ESG Reports", href: ESG_REPORT_URL },
     ],
   },

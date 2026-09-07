@@ -6,10 +6,15 @@ export const productsHub = {
     exploreCategories: "Explore categories",
     alt: "Knitwear product categories across casual wear, streetwear, activewear, denim, kidswear, and boutique",
   },
-  grid: {
+  overview: {
     eyebrow: "Categories",
-    title: "Select a product category",
+    title: "Six programs, one manufacturing partner",
     subhead:
-      "Each category page outlines process steps, technical specs, and sustainability programs.",
+      "Casual wear, streetwear, activewear, denim, kidswear, and boutique — each with a focused production offer, typical products, and development support.",
+    discuss: "Discuss a program",
+  },
+  cta: {
+    title: "Start a product conversation",
+    subhead: "Share volume, materials, and compliance requirements. We respond to qualified RFIs with clear next steps.",
   },
 };

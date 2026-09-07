@@ -3,6 +3,7 @@ export const impact = {
     hero: {
       headline: "我们的影响",
       subhead: "涵盖环境、人员与治理的已验证项目——以已发布基准衡量，而非营销话术。",
+      explorePillars: "浏览项目",
       alt: "制造运营中的环境与社会影响项目",
     },
     cta: {

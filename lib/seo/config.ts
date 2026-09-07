@@ -10,16 +10,7 @@ export const marketingRoutes = [
   "/contact",
   "/facility",
   "/our-impact",
-  "/our-impact/environment",
-  "/our-impact/people",
-  "/our-impact/governance",
   "/products",
-  "/products/casual-wear",
-  "/products/streetwear",
-  "/products/activewear",
-  "/products/denim",
-  "/products/kidswear",
-  "/products/boutique",
 ] as const;
 
 export type PageMetadataKey =
@@ -138,21 +129,21 @@ export const pageMetadata: Record<
     keywords: ["sustainable apparel manufacturing", "ESG garment factory", "ethical textile production"],
   },
   environment: {
-    path: "/our-impact/environment",
+    path: "/our-impact",
     title: "Environment",
     description:
       "Environmental programs at Jaguar facilities including water stewardship, renewable energy, and waste reduction for responsible apparel manufacturing.",
     keywords: ["sustainable textile factory", "water stewardship apparel", "green garment manufacturing"],
   },
   people: {
-    path: "/our-impact/people",
+    path: "/our-impact",
     title: "People & Communities",
     description:
       "Worker welfare, safety training, and community programs across Jaguar apparel manufacturing locations.",
     keywords: ["factory worker welfare", "apparel workforce programs", "ethical manufacturing people"],
   },
   governance: {
-    path: "/our-impact/governance",
+    path: "/our-impact",
     title: "Governance & Certifications",
     description:
       "Governance, audit readiness, and certifications including GOTS, OEKO-TEX, WRAP, and ISO programs at Jaguar manufacturing sites.",
@@ -166,42 +157,42 @@ export const pageMetadata: Record<
     keywords: ["apparel product categories", "garment manufacturing capabilities", "clothing production programs"],
   },
   casualWear: {
-    path: "/products/casual-wear",
+    path: "/products",
     title: "Casual Wear",
     description:
       "Casual wear knit manufacturing for jersey tees, polos, loungewear, and everyday separates with in-house knitting, sewing, and finishing.",
     keywords: ["casual wear manufacturer", "jersey knit supplier", "lounge wear factory"],
   },
   streetwear: {
-    path: "/products/streetwear",
+    path: "/products",
     title: "Streetwear",
     description:
       "Streetwear manufacturing for urban apparel, premium trims, and brand-led drops with specialized construction and wash programs.",
     keywords: ["streetwear manufacturer", "urban apparel factory", "streetwear supplier"],
   },
   activewear: {
-    path: "/products/activewear",
+    path: "/products",
     title: "Activewear",
     description:
       "Activewear manufacturing for leggings, training tops, and performance layers with stretch recovery and moisture management.",
     keywords: ["activewear manufacturer", "performance apparel factory", "sportswear supplier"],
   },
   denim: {
-    path: "/products/denim",
+    path: "/products",
     title: "Denim",
     description:
       "Denim manufacturing for jeans, jackets, and skirts with wash development, shade control, and brand-ready finishing.",
     keywords: ["denim manufacturer", "jeans factory", "denim wash supplier"],
   },
   kidswear: {
-    path: "/products/kidswear",
+    path: "/products",
     title: "Kidswear",
     description:
       "Kidswear manufacturing with soft-hand construction, secure attachments, and compliance-focused finishing.",
     keywords: ["kidswear manufacturer", "children's apparel factory", "kids clothing supplier"],
   },
   boutique: {
-    path: "/products/boutique",
+    path: "/products",
     title: "Boutique",
     description:
       "Boutique and small-batch apparel programs with low minimums, refined construction, and catalogue-ready styles.",

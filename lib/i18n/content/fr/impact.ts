@@ -3,6 +3,7 @@ export const impact = {
     hero: {
       headline: "Notre impact",
       subhead: "Programmes vérifiés couvrant l'environnement, les personnes et la gouvernance — mesurés selon des références publiées, pas des allégations marketing.",
+      explorePillars: "Explorer les programmes",
       alt: "Programmes d'impact environnemental et social sur les opérations de manufacture",
     },
     cta: {

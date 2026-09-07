@@ -10,19 +10,19 @@ import { cn } from "@/lib/utils";
 const pillarConfig = [
   {
     key: "environment",
-    href: "/our-impact/environment",
+    href: "/our-impact#environment",
     image: "/images/our-impact/environment/solar.jpg",
     placeholders: ["[X]M", "[X]%"],
   },
   {
     key: "people",
-    href: "/our-impact/people",
+    href: "/our-impact#people",
     image: "/images/our-impact/people/community.jpg",
     placeholders: ["[X]", "[X]+"],
   },
   {
     key: "governance",
-    href: "/our-impact/governance",
+    href: "/our-impact#governance",
     image: "/images/our-impact/governance/hero.jpg",
     placeholders: ["[X]", "[X]"],
   },

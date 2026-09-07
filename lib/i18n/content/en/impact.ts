@@ -3,6 +3,7 @@ export const impact = {
     hero: {
       headline: "Our Impact",
       subhead: "Verified programs across environment, people, and governance — measured against published benchmarks, not marketing claims.",
+      explorePillars: "Explore programs",
       alt: "Environmental and social impact programs across manufacturing operations",
     },
     cta: {

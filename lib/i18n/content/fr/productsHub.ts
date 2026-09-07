@@ -6,10 +6,16 @@ export const productsHub = {
     exploreCategories: "Explorer les catégories",
     alt: "Catégories de produits vestimentaires : casual, streetwear, activewear, denim, mode enfant et boutique",
   },
-  grid: {
+  overview: {
     eyebrow: "Catégories",
-    title: "Sélectionnez une catégorie de produits",
+    title: "Six programmes, un partenaire de manufacture",
     subhead:
-      "Chaque page de catégorie décrit les étapes de processus, les spécifications techniques et les programmes de durabilité.",
+      "Casual, streetwear, activewear, denim, mode enfant et boutique — chacun avec une offre de production ciblée, des produits types et un accompagnement développement.",
+    discuss: "Discuter d'un programme",
+  },
+  cta: {
+    title: "Ouvrir une conversation produit",
+    subhead:
+      "Indiquez volumes, matières et exigences de conformité. Nous répondons aux RFI qualifiés avec des prochaines étapes claires.",
   },
 };

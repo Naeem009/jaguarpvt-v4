@@ -15,6 +15,7 @@
     "employees": 2600,
     "establishedYear": 1962,
     "unitIds": ["knitting", "dyeing", "sewing", "garment-dyeing", "embroidery", "printing"],
+    "kind": "manufacturing",
     "description": "The group's vertically integrated manufacturing campus in Faisalabad — knitting, dyeing, sewing, garment dyeing, embroidery, and printing under one operation."
   },
   {
@@ -40,6 +41,7 @@
       "Quality control",
       "International shipping"
     ],
+    "kind": "manufacturing",
     "description": "The group's Morocco operation in Tangier — two production facilities at the gateway to Europe, delivering end-to-end manufacturing with capacity of 250,000 pieces per month. Ava Marie S.A.R.L.A.U. combines Moroccan craftsmanship with industrial scale across design, prototyping, production, finishing, and shipping."
   },
   {
@@ -65,6 +67,7 @@
       "In-house manufacture",
       "Ethical & sustainable"
     ],
+    "kind": "manufacturing",
     "description": "The group's UK ladieswear design and manufacturing company in Leicester. Established in 2017, Sweet Threads Ltd takes trend-led fashion from concept and pattern development through in-house production, quality check, and distribution."
   },
   {
@@ -81,6 +84,7 @@
     "categories": ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
     "certifications": [],
     "capabilities": ["Design", "Development", "Sampling", "Pattern making"],
+    "kind": "design-house",
     "description": "Jaguar design and development house in Spain, supporting collection development, sampling, and brand-facing product work."
   },
   {
@@ -97,6 +101,7 @@
     "categories": ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
     "certifications": [],
     "capabilities": ["Design", "Development", "Sampling", "Pattern making"],
+    "kind": "design-house",
     "description": "Jaguar design and development house in Germany, supporting collection development, sampling, and brand-facing product work."
   },
   {
@@ -113,6 +118,7 @@
     "categories": ["casual-wear", "streetwear", "activewear", "denim", "kidswear", "boutique"],
     "certifications": [],
     "capabilities": ["Design", "Development", "Sampling", "Pattern making"],
+    "kind": "design-house",
     "description": "Jaguar design and development house in the United Kingdom, supporting collection development, sampling, and brand-facing product work."
   }
 ]

@@ -6,10 +6,16 @@ export const productsHub = {
     exploreCategories: "Kategorien entdecken",
     alt: "Bekleidungsproduktkategorien in Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique",
   },
-  grid: {
+  overview: {
     eyebrow: "Kategorien",
-    title: "Produktkategorie auswählen",
+    title: "Sechs Programme, ein Fertigungspartner",
     subhead:
-      "Jede Kategorieseite beschreibt Prozessschritte, technische Spezifikationen und Nachhaltigkeitsprogramme.",
+      "Freizeitbekleidung, Streetwear, Activewear, Denim, Kinderbekleidung und Boutique — jeweils mit klarem Produktionsfokus, typischen Produkten und Entwicklungsbegleitung.",
+    discuss: "Programm besprechen",
+  },
+  cta: {
+    title: "Produktgespräch starten",
+    subhead:
+      "Teilen Sie Volumen, Materialien und Compliance-Anforderungen. Qualifizierte RFIs beantworten wir mit klaren nächsten Schritten.",
   },
 };

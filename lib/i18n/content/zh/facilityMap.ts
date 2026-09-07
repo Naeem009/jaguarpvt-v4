@@ -15,10 +15,17 @@ export const facilityMap = {
   mapAlt: "展示制造工厂位置的风格化世界地图",
   list: {
     eyebrow: "全部工厂",
-    title: "浏览完整工厂列表",
-    subhead: "所有已发布工厂的无障碍列表视图 —— 与上方地图应用相同筛选条件。",
+    title: "浏览制造工厂",
+    subhead: "Jaguar (Pvt) Ltd、Ava Marie 与 Sweet Threads —— 与上方地图应用相同筛选条件。",
     empty: "没有工厂符合当前筛选条件。清除搜索以查看全部位置。",
     ariaLabel: "工厂列表",
+  },
+  design: {
+    eyebrow: "设计与开发",
+    title: "设计与开发中心",
+    subhead: "在西班牙、德国与英国开展系列开发、打样及面向品牌的产品工作。",
+    empty: "没有设计中心符合当前筛选条件。清除搜索以查看全部位置。",
+    ariaLabel: "设计与开发中心",
   },
   card: {
     employees: "员工",

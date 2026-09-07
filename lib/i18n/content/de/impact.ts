@@ -3,6 +3,7 @@ export const impact = {
     hero: {
       headline: "Unsere Wirkung",
       subhead: "Verifizierte Programme in Umwelt, Menschen und Governance — gemessen an veröffentlichten Benchmarks, nicht Marketingversprechen.",
+      explorePillars: "Programme entdecken",
       alt: "Umwelt- und Sozialprogramme in Fertigungsbetrieben",
     },
     cta: {

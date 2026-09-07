@@ -73,17 +73,14 @@ export function getBreadcrumbsForPage(page: PageMetadataKey): Array<{ name: stri
     environment: [
       { name: "Home", path: "/" },
       { name: "Our Impact", path: "/our-impact" },
-      { name: "Environment", path: "/our-impact/environment" },
     ],
     people: [
       { name: "Home", path: "/" },
       { name: "Our Impact", path: "/our-impact" },
-      { name: "People & Communities", path: "/our-impact/people" },
     ],
     governance: [
       { name: "Home", path: "/" },
       { name: "Our Impact", path: "/our-impact" },
-      { name: "Governance & Certifications", path: "/our-impact/governance" },
     ],
     products: [
       { name: "Home", path: "/" },
@@ -92,32 +89,26 @@ export function getBreadcrumbsForPage(page: PageMetadataKey): Array<{ name: stri
     casualWear: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Casual Wear", path: "/products/casual-wear" },
     ],
     streetwear: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Streetwear", path: "/products/streetwear" },
     ],
     activewear: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Activewear", path: "/products/activewear" },
     ],
     denim: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Denim", path: "/products/denim" },
     ],
     kidswear: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Kidswear", path: "/products/kidswear" },
     ],
     boutique: [
       { name: "Home", path: "/" },
       { name: "Products", path: "/products" },
-      { name: "Boutique", path: "/products/boutique" },
     ],
   };
 

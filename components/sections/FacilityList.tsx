@@ -11,6 +11,8 @@ export type FacilityListProps = {
   visibleIds?: string[] | null;
   selectedId?: string | null;
   onSelect?: (facilityId: string) => void;
+  copyKey?: "list" | "design";
+  hideWhenEmpty?: boolean;
   className?: string;
 };
 
@@ -19,13 +21,19 @@ export function FacilityList({
   visibleIds,
   selectedId,
   onSelect,
+  copyKey = "list",
+  hideWhenEmpty = false,
   className,
 }: FacilityListProps) {
-  const t = useTranslations("facilityMap.list");
+  const t = useTranslations(`facilityMap.${copyKey}`);
   const filteredFacilities =
     visibleIds == null
       ? facilities
       : facilities.filter((facility) => visibleIds.includes(facility.id));
+
+  if (hideWhenEmpty && filteredFacilities.length === 0) {
+    return null;
+  }
 
   return (
     <section className={cn("bg-paper py-16 md:py-24", className)} aria-label={t("ariaLabel")}>

@@ -1,8 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { prepareLocale } from "@/lib/i18n/prepare-locale";
 import { createPageMetadata } from "@/lib/seo/metadata";
-import { CapabilityMatcher, Hero, ProductGrid } from "@/components/sections";
-import { getProductHubGridItems } from "@/lib/products/get-content";
+import { CTASection, Hero } from "@/components/sections";
+import { ProductCategoriesOverview } from "@/components/sections/ProductCategoriesOverview";
+import { getProductCategoryList } from "@/lib/products/get-content";
 import { heroVideoMedia } from "@/lib/media/hero-media";
 
 type PageProps = {
@@ -19,7 +20,7 @@ export default async function ProductsHubPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("productsHub");
   const tCommon = await getTranslations("common");
-  const productItems = await getProductHubGridItems();
+  const categories = await getProductCategoryList();
 
   return (
     <main>
@@ -32,16 +33,16 @@ export default async function ProductsHubPage({ params }: PageProps) {
         media={heroVideoMedia("/images/products/casual-wear/hero.jpg", t("hero.alt"), "products")}
       />
 
-      <div id="categories">
-        <ProductGrid
-          eyebrow={t("grid.eyebrow")}
-          title={t("grid.title")}
-          subhead={t("grid.subhead")}
-          items={productItems}
-        />
-      </div>
+      <ProductCategoriesOverview categories={categories} />
 
-      <CapabilityMatcher />
+      <CTASection
+        title={t("cta.title")}
+        subhead={t("cta.subhead")}
+        cta={{
+          label: tCommon("contactUs"),
+          href: "/contact",
+        }}
+      />
     </main>
   );
 }

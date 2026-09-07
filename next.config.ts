@@ -17,14 +17,34 @@ function localDevOrigins() {
 }
 
 const aboutSubPaths = ["at-a-glance", "strategy", "mission", "company-policy"] as const;
+const productSubPaths = [
+  "casual-wear",
+  "streetwear",
+  "activewear",
+  "denim",
+  "kidswear",
+  "boutique",
+] as const;
+
+const impactSubPaths = ["environment", "people", "governance"] as const;
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: localDevOrigins(),
   async redirects() {
-    return aboutSubPaths.flatMap((slug) => [
-      { source: `/about/${slug}`, destination: "/about", permanent: true },
-      { source: `/:locale(ar|zh|es|fr|de)/about/${slug}`, destination: "/:locale/about", permanent: true },
-    ]);
+    return [
+      ...aboutSubPaths.flatMap((slug) => [
+        { source: `/about/${slug}`, destination: "/about", permanent: true },
+        { source: `/:locale(ar|zh|es|fr|de)/about/${slug}`, destination: "/:locale/about", permanent: true },
+      ]),
+      ...productSubPaths.flatMap((slug) => [
+        { source: `/products/${slug}`, destination: "/products", permanent: true },
+        { source: `/:locale(ar|zh|es|fr|de)/products/${slug}`, destination: "/:locale/products", permanent: true },
+      ]),
+      ...impactSubPaths.flatMap((slug) => [
+        { source: `/our-impact/${slug}`, destination: "/our-impact", permanent: true },
+        { source: `/:locale(ar|zh|es|fr|de)/our-impact/${slug}`, destination: "/:locale/our-impact", permanent: true },
+      ]),
+    ];
   },
 };
 

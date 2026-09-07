@@ -47,12 +47,17 @@ export async function getProductCategories(): Promise<Record<ProductCategorySlug
   ) as Record<ProductCategorySlug, ProductCategoryContent>;
 }
 
+export async function getProductCategoryList(): Promise<ProductCategoryContent[]> {
+  const categories = await getProductCategories();
+  return PRODUCT_CATEGORY_SLUGS.map((slug) => categories[slug]);
+}
+
 export async function getProductHubGridItems() {
   const categories = await getProductCategories();
 
   return PRODUCT_CATEGORY_SLUGS.map((slug) => ({
     title: categories[slug].name,
-    href: `/products/${slug}` as const,
+    href: `/products#${slug}` as const,
     image: categories[slug].heroImage,
     description: categories[slug].gridDescription,
   }));

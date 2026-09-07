@@ -24,6 +24,8 @@ export type FacilityRecord = {
   monthlyCapacity?: string;
   website?: string;
   description: string;
+  /** Groups manufacturing sites vs design & development houses. */
+  kind?: "manufacturing" | "design-house";
   /** Department ids resolved into `Facility.units` via i18n. */
   unitIds?: string[];
 };
@@ -33,6 +35,10 @@ export type Facility = Omit<FacilityRecord, "unitIds"> & {
   thumbnail: string;
   units?: FacilityUnit[];
 };
+
+export function isDesignHouse(facility: Pick<Facility, "kind">) {
+  return facility.kind === "design-house";
+}
 
 export const FACILITY_PLACEHOLDER_IMAGE = "/images/facility/facility-thumb-01.jpg";
 export const FACILITY_MAP_BACKGROUND = "/images/facility/map-background.svg";

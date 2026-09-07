@@ -7,10 +7,6 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { BrandLogo } from "@/components/theme/BrandLogo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { MegaMenu } from "./MegaMenu";
-import { ESG_REPORT_URL } from "@/lib/our-impact/content";
-import { PRODUCT_CATEGORY_SLUGS } from "@/lib/products/content";
-import type { ProductCategorySlug } from "@/lib/products/content";
 import { cn } from "@/lib/utils";
 
 function navLinkClass(isOverlayNav: boolean) {
@@ -25,33 +21,15 @@ function navLinkClass(isOverlayNav: boolean) {
 export function Navbar() {
   const t = useTranslations("nav");
   const tCommon = useTranslations("common");
-  const tProducts = useTranslations("productCategories");
-  const tNavigation = useTranslations("navigation");
   const pathname = usePathname();
   const previousPathname = useRef(pathname);
   const headerRef = useRef<HTMLElement>(null);
   const [mounted, setMounted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
-  const [mobileImpactOpen, setMobileImpactOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const isHome = pathname === "/" || pathname === "";
   const isOverlayNav = isHome && !scrolled;
-
-  const productsMegaMenuItems = PRODUCT_CATEGORY_SLUGS.map((slug) => ({
-    title: tProducts(`${slug}.name`),
-    href: `/products/${slug}` as `/products/${ProductCategorySlug}`,
-    description: tProducts(`${slug}.gridDescription`),
-    image: `/images/products/${slug}/hero.jpg`,
-  }));
-
-  const impactMegaMenuItems = (
-    tNavigation.raw("impactMenu") as Array<{ title: string; description: string }>
-  ).map((item, index) => ({
-    ...item,
-    href: (["/our-impact/environment", "/our-impact/people", "/our-impact/governance"] as const)[index],
-  }));
 
   useEffect(() => {
     setMounted(true);
@@ -126,14 +104,10 @@ export function Navbar() {
     if (previousPathname.current === pathname) return;
     previousPathname.current = pathname;
     setMobileOpen(false);
-    setMobileProductsOpen(false);
-    setMobileImpactOpen(false);
   }, [pathname]);
 
   function closeMobileMenu() {
     setMobileOpen(false);
-    setMobileProductsOpen(false);
-    setMobileImpactOpen(false);
   }
 
   const mobileMenu =
@@ -163,65 +137,12 @@ export function Navbar() {
                   <Link href="/about" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
                     {t("about")}
                   </Link>
-
-                  <div>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-between text-base font-medium text-ink"
-                      aria-expanded={mobileProductsOpen}
-                      onClick={() => setMobileProductsOpen((value) => !value)}
-                    >
-                      {t("products")}
-                      <span aria-hidden>{mobileProductsOpen ? "−" : "+"}</span>
-                    </button>
-                    {mobileProductsOpen ? (
-                      <ul className="mt-3 space-y-2 ps-4">
-                        {productsMegaMenuItems.map((item) => (
-                          <li key={item.href}>
-                            <Link
-                              href={item.href}
-                              className="block text-sm text-graphite"
-                              onClick={closeMobileMenu}
-                            >
-                              {item.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </div>
-
-                  <div>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-between text-base font-medium text-ink"
-                      aria-expanded={mobileImpactOpen}
-                      onClick={() => setMobileImpactOpen((value) => !value)}
-                    >
-                      {t("sustainability")}
-                      <span aria-hidden>{mobileImpactOpen ? "−" : "+"}</span>
-                    </button>
-                    {mobileImpactOpen ? (
-                      <ul className="mt-3 space-y-2 ps-4">
-                        {impactMegaMenuItems.map((item) => (
-                          <li key={item.href}>
-                            <Link
-                              href={item.href}
-                              className="block text-sm text-graphite"
-                              onClick={closeMobileMenu}
-                            >
-                              {item.title}
-                            </Link>
-                          </li>
-                        ))}
-                        <li>
-                          <a href={ESG_REPORT_URL} className="block text-sm text-accent">
-                            {t("downloadEsg")}
-                          </a>
-                        </li>
-                      </ul>
-                    ) : null}
-                  </div>
+                  <Link href="/products" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
+                    {t("products")}
+                  </Link>
+                  <Link href="/our-impact" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
+                    {t("sustainability")}
+                  </Link>
 
                   <Link href="/facility" className="block text-base font-medium text-ink" onClick={closeMobileMenu}>
                     {t("capabilities")}
@@ -272,13 +193,12 @@ export function Navbar() {
             <Link href="/facility" className={navLinkClass(isOverlayNav)}>
               {t("capabilities")}
             </Link>
-            <MegaMenu label={t("products")} items={productsMegaMenuItems} inverted={isOverlayNav} />
-            <MegaMenu
-              label={t("sustainability")}
-              items={impactMegaMenuItems}
-              footerAction={{ label: t("downloadEsg"), href: ESG_REPORT_URL }}
-              inverted={isOverlayNav}
-            />
+            <Link href="/products" className={navLinkClass(isOverlayNav)}>
+              {t("products")}
+            </Link>
+            <Link href="/our-impact" className={navLinkClass(isOverlayNav)}>
+              {t("sustainability")}
+            </Link>
             <Link href="/careers" className={navLinkClass(isOverlayNav)}>
               {t("careers")}
             </Link>

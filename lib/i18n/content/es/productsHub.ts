@@ -6,10 +6,16 @@ export const productsHub = {
     exploreCategories: "Explorar categorías",
     alt: "Categorías de productos de confección en ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique",
   },
-  grid: {
+  overview: {
     eyebrow: "Categorías",
-    title: "Seleccione una categoría de producto",
+    title: "Seis programas, un socio de fabricación",
     subhead:
-      "Cada página de categoría describe los pasos del proceso, especificaciones técnicas y programas de sostenibilidad.",
+      "Ropa casual, streetwear, ropa deportiva, denim, ropa infantil y boutique — cada uno con una oferta de producción concreta, productos típicos y apoyo de desarrollo.",
+    discuss: "Consultar un programa",
+  },
+  cta: {
+    title: "Iniciar una conversación de producto",
+    subhead:
+      "Comparta volumen, materiales y requisitos de cumplimiento. Respondemos a RFI cualificados con siguientes pasos claros.",
   },
 };

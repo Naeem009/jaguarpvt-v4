@@ -18,7 +18,7 @@
     "id": "products-casual-wear",
     "title": "Casual Wear",
     "source": "Casual Wear Product Page",
-    "href": "/products/casual-wear",
+    "href": "/products#casual-wear",
     "keywords": ["casual wear", "lounge wear", "basics", "everyday apparel", "tees", "polos"],
     "content": "We produce everyday apparel — tees, polos, loungewear, and soft-hand separates with integrated cutting, sewing, and finishing."
   },
@@ -26,7 +26,7 @@
     "id": "products-streetwear",
     "title": "Streetwear",
     "source": "Streetwear Product Page",
-    "href": "/products/streetwear",
+    "href": "/products#streetwear",
     "keywords": ["streetwear", "urban apparel", "hoodies", "drops", "graphic apparel"],
     "content": "Streetwear programs cover urban-inspired apparel with premium construction, wash development, and brand-led seasonal drops."
   },
@@ -34,7 +34,7 @@
     "id": "products-activewear",
     "title": "Activewear",
     "source": "Activewear Product Page",
-    "href": "/products/activewear",
+    "href": "/products#activewear",
     "keywords": ["activewear", "sportswear", "leggings", "performance apparel", "training wear"],
     "content": "Activewear programs include leggings, training tops, and performance layers with stretch recovery and moisture management."
   },
@@ -42,7 +42,7 @@
     "id": "products-denim",
     "title": "Denim",
     "source": "Denim Product Page",
-    "href": "/products/denim",
+    "href": "/products#denim",
     "keywords": ["denim", "jeans", "denim jacket", "wash development", "five pocket"],
     "content": "Denim programs cover jeans, jackets, and skirts with controlled wash development, shade consistency, and brand-ready finishing."
   },
@@ -50,7 +50,7 @@
     "id": "products-kidswear",
     "title": "Kidswear",
     "source": "Kidswear Product Page",
-    "href": "/products/kidswear",
+    "href": "/products#kidswear",
     "keywords": ["kidswear", "children's apparel", "kids clothing", "schoolwear"],
     "content": "Kidswear programs focus on soft-hand construction, secure attachments, and compliance-focused finishing for children's apparel."
   },
@@ -58,7 +58,7 @@
     "id": "products-boutique",
     "title": "Boutique",
     "source": "Boutique Product Page",
-    "href": "/products/boutique",
+    "href": "/products#boutique",
     "keywords": ["boutique", "low moq", "small batch", "catalogue", "capsule collection"],
     "content": "Boutique programs support small-batch production with low minimums, refined construction, and a browsable catalogue on the Boutique page."
   },
@@ -66,7 +66,7 @@
     "id": "impact-governance",
     "title": "Governance & Certifications",
     "source": "Governance & Certifications",
-    "href": "/our-impact/governance",
+    "href": "/our-impact#governance",
     "keywords": ["GOTS", "OEKO-TEX", "WRAP", "ISO 14001", "certification", "compliance", "audit"],
     "content": "Published certifications include GOTS, OEKO-TEX Standard 100, WRAP, and ISO 14001 at selected facilities. Certification scope varies by facility and product line."
   },
@@ -74,7 +74,7 @@
     "id": "impact-environment",
     "title": "Environment",
     "source": "Environment Programs",
-    "href": "/our-impact/environment",
+    "href": "/our-impact#environment",
     "keywords": ["water", "renewable", "solar", "sustainability", "environment", "sustainable apparel"],
     "content": "Environmental programs include water stewardship, renewable energy installations, and waste reduction tracked against published benchmarks."
   },

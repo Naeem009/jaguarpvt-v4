@@ -34,7 +34,7 @@ export const ourImpactHubStats = [
 export const impactPillars: ImpactPillar[] = [
   {
     title: "Environment",
-    href: "/our-impact/environment",
+    href: "/our-impact",
     image: "/images/our-impact/environment/solar.jpg",
     description:
       "Water stewardship, renewable energy, and waste reduction programs measured against published benchmarks — not marketing claims.",
@@ -45,7 +45,7 @@ export const impactPillars: ImpactPillar[] = [
   },
   {
     title: "People & Communities",
-    href: "/our-impact/people",
+    href: "/our-impact",
     image: "/images/our-impact/people/community.jpg",
     description:
       "Worker welfare, training, and community programs across manufacturing communities — documented and auditable.",
@@ -56,7 +56,7 @@ export const impactPillars: ImpactPillar[] = [
   },
   {
     title: "Governance & Certifications",
-    href: "/our-impact/governance",
+    href: "/our-impact",
     image: "/images/our-impact/governance/hero.jpg",
     description:
       "Certifications, compliance systems, and governance structures that support buyer audit requirements.",

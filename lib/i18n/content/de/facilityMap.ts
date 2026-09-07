@@ -15,10 +15,17 @@ export const facilityMap = {
   mapAlt: "Stilisierte Weltkarte mit Standorten der Fertigungsbetriebe",
   list: {
     eyebrow: "Alle Standorte",
-    title: "Vollständige Standortliste durchsuchen",
-    subhead: "Barrierefreie Listenansicht aller veröffentlichten Standorte — mit demselben Filter wie auf der Karte oben.",
+    title: "Fertigungsstandorte durchsuchen",
+    subhead: "Jaguar (Pvt) Ltd, Ava Marie und Sweet Threads — mit demselben Filter wie auf der Karte oben.",
     empty: "Keine Standorte entsprechen dem aktuellen Filter. Setzen Sie die Suche zurück, um alle Standorte anzuzeigen.",
     ariaLabel: "Standortliste",
+  },
+  design: {
+    eyebrow: "Design & Entwicklung",
+    title: "Design- und Entwicklungshäuser",
+    subhead: "Kollektionsentwicklung, Bemusterung und markennahe Produktarbeit in Spanien, Deutschland und dem Vereinigten Königreich.",
+    empty: "Keine Designhäuser entsprechen dem aktuellen Filter. Setzen Sie die Suche zurück, um alle Standorte anzuzeigen.",
+    ariaLabel: "Design- und Entwicklungshäuser",
   },
   card: {
     employees: "Mitarbeitende",

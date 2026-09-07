@@ -8,7 +8,7 @@ import { FacilityCard } from "./FacilityCard";
 import { FacilityList } from "./FacilityList";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { projectFacilityToMapPosition } from "@/lib/facilities/map-projection";
-import { FACILITY_MAP_BACKGROUND, type Facility } from "@/lib/facilities/types";
+import { FACILITY_MAP_BACKGROUND, isDesignHouse, type Facility } from "@/lib/facilities/types";
 import { cn } from "@/lib/utils";
 
 export type FacilityMapProps = {
@@ -35,6 +35,15 @@ export function FacilityMap({ facilities, filterEnabled = false, className }: Fa
     if (visibleIds === null) return facilities;
     return facilities.filter((facility) => visibleIds.includes(facility.id));
   }, [facilities, visibleIds]);
+
+  const manufacturingFacilities = useMemo(
+    () => facilities.filter((facility) => !isDesignHouse(facility)),
+    [facilities],
+  );
+  const designHouses = useMemo(
+    () => facilities.filter((facility) => isDesignHouse(facility)),
+    [facilities],
+  );
 
   const selectedFacility = facilities.find((facility) => facility.id === selectedId) ?? null;
 
@@ -176,7 +185,16 @@ export function FacilityMap({ facilities, filterEnabled = false, className }: Fa
       </section>
 
       <FacilityList
-        facilities={facilities}
+        copyKey="design"
+        facilities={designHouses}
+        visibleIds={visibleIds}
+        selectedId={selectedId}
+        onSelect={setSelectedId}
+        hideWhenEmpty
+      />
+
+      <FacilityList
+        facilities={manufacturingFacilities}
         visibleIds={visibleIds}
         selectedId={selectedId}
         onSelect={setSelectedId}

@@ -6,7 +6,6 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ESG_REPORT_URL } from "@/lib/our-impact/content";
 import { PRODUCT_CATEGORY_SLUGS } from "@/lib/products/content";
-import type { ProductCategorySlug } from "@/lib/products/content";
 import { cn } from "@/lib/utils";
 
 export function Footer({ className }: { className?: string }) {
@@ -29,15 +28,15 @@ export function Footer({ className }: { className?: string }) {
       title: t("products"),
       links: PRODUCT_CATEGORY_SLUGS.map((slug) => ({
         label: tProducts(`${slug}.name`),
-        href: `/products/${slug}` as const,
+        href: { pathname: "/products" as const, hash: slug },
       })),
     },
     {
       title: t("ourImpact"),
       links: [
-        { label: t("environment"), href: "/our-impact/environment" as const },
-        { label: t("people"), href: "/our-impact/people" as const },
-        { label: t("governance"), href: "/our-impact/governance" as const },
+        { label: t("environment"), href: { pathname: "/our-impact" as const, hash: "environment" } },
+        { label: t("people"), href: { pathname: "/our-impact" as const, hash: "people" } },
+        { label: t("governance"), href: { pathname: "/our-impact" as const, hash: "governance" } },
         { label: t("esgReports"), href: ESG_REPORT_URL, external: true },
       ],
     },

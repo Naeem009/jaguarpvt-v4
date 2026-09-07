@@ -6,10 +6,14 @@ export const productsHub = {
     exploreCategories: "浏览品类",
     alt: "休闲装、街头服饰、运动服饰、牛仔、童装与精品等服装产品品类",
   },
-  grid: {
+  overview: {
     eyebrow: "品类",
-    title: "选择产品品类",
-    subhead:
-      "各品类页面概述工艺流程、技术规格及可持续发展项目。",
+    title: "六个品类，一个制造伙伴",
+    subhead: "休闲装、街头服饰、运动服饰、牛仔、童装与精品——各有明确的生产重点、典型产品和开发支持。",
+    discuss: "洽谈项目",
+  },
+  cta: {
+    title: "开始产品沟通",
+    subhead: "请说明数量、面料与合规要求。我们对合格的询盘会给出明确的下一步。",
   },
 };
