@@ -1,0 +1,20 @@
+---
+description: Keep the as-built developer handbook in sync with code changes
+alwaysApply: true
+---
+
+# Developer handbook
+
+The live developer guide is `handbook/` (start at `handbook/README.md`). `docs/00`–`09` is the original brief only — not the live sitemap or stack.
+
+After you change any of the following, update `handbook/` **in the same turn** and add a dated bullet to `handbook/CHANGELOG.md`:
+
+- Routes, redirects, nav, footer hashes, or section `id`s
+- i18n (`messages/*.json` or `lib/i18n/content/`)
+- Design tokens, theme, or logo
+- APIs, env vars, or `data/*.json` contracts
+- Jump nav / `SectionJumpNav` usage
+
+Do not leave the handbook describing old IA (product mega-menus, leadership, Wovens/Knits/Baby Wear sub-routes, Headless CMS as current, green accent as current).
+
+If handbook and code disagree, code wins — then fix the handbook immediately.

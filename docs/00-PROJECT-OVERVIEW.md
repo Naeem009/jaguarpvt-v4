@@ -1,5 +1,7 @@
 # 00 — Project Overview & How To Use These Docs
 
+> **Archive / original brief.** This numbered `docs/` set is the planning spec from before the site shipped its current IA. For how the repo works **today**, use the as-built **[developer handbook](../handbook/README.md)**. Do not implement mega-menus, leadership, Wovens/Knits/Baby Wear sub-routes, or a green accent from this file unless product explicitly reverts those decisions.
+
 ## What this project is
 
 `Jaguar (Private) Limited` is a corporate website for a **vertically-integrated apparel manufacturer** — the same category as MAS Holdings, Crystal International, Interloop, and Artistic Milliners. It sells nothing directly to consumers. There is no cart, no checkout, no product listings with prices.
