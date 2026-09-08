@@ -4,6 +4,7 @@ As-built notes for developers. Newest first. This is not the git log.
 
 ## 2026-09-08
 
+- Theme init no longer uses `next/script` `beforeInteractive` (React 19 / Next 16 overlay). Inline `<head>` script instead.
 - Replaced the brand mark with the metallic 3D J from `j logo new.pdf`, cropped to the emblem only, transparent background (`public/logos/jaguar-mark.png`). Favicons regenerated. CSS invert removed so shading stays intact. Re-export with `python scripts/export-j-mark.py`.
 
 ## 2026-09-07

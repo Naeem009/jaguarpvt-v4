@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Inter, Martel_Sans, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
@@ -81,10 +80,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       suppressHydrationWarning
       className={`${inter.variable} ${montserrat.variable} ${martelSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
+      <head>
+        <script id="jaguar-theme-init" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="flex min-h-dvh flex-col bg-paper text-ink">
-        <Script id="jaguar-theme-init" strategy="beforeInteractive">
-          {themeInitScript}
-        </Script>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
             <div className="flex flex-1 flex-col">{children}</div>

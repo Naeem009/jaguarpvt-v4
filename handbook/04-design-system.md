@@ -40,7 +40,7 @@ Loaded in `app/[locale]/layout.tsx`:
 
 ## Theme
 
-`lib/theme.ts` injects `themeInitScript` **beforeInteractive**. It:
+`lib/theme.ts` injects `themeInitScript` as an inline `<head>` script (not `next/script`, which React 19 rejects in the layout tree). It:
 
 - Removes any saved `jaguar-theme` override
 - Applies `html.dark` / `html.light` from `prefers-color-scheme`
