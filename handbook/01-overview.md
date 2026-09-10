@@ -34,7 +34,7 @@ It must:
 ## Brand in product
 
 - Wordmark: Martel Sans (`.font-brand`)
-- Mark: metallic 3D J at `public/logos/jaguar-mark.png` (native `<img>`, transparent background; do not invert)
+- Mark: five-stroke J at `public/logos/jaguar-mark.png` (from `public/j1.png`, black on transparent; `dark:invert`)
 - Surfaces: warm paper / ink; accent is camel/heather knitwear, not the original-brief green
 - Color scheme: **system `prefers-color-scheme` only** (no in-app theme toggle)
 

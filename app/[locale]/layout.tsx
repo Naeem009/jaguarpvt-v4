@@ -6,7 +6,6 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { rootSiteMetadata } from "@/lib/seo/metadata";
-import { themeInitScript } from "@/lib/theme";
 import "../globals.css";
 
 const inter = Inter({
@@ -80,9 +79,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       suppressHydrationWarning
       className={`${inter.variable} ${montserrat.variable} ${martelSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <head>
-        <script id="jaguar-theme-init" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-      </head>
       <body className="flex min-h-dvh flex-col bg-paper text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>

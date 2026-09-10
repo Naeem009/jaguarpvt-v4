@@ -1,54 +1,35 @@
-"""Export the J mark from `j logo new.pdf` with a transparent background."""
+"""Convert `public/j1.png` (white J on black) into a transparent ink mark."""
 
 from pathlib import Path
 
-import fitz
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF = ROOT / "j logo new.pdf"
+SOURCE = ROOT / "public" / "j1.png"
 LOGOS = ROOT / "public" / "logos"
 APP = ROOT / "app"
 PUBLIC = ROOT / "public"
 
 
-def render_page(scale: float = 5) -> Image.Image:
-    doc = fitz.open(PDF)
-    page = doc[0]
-    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=True)
-    return Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
+def knockout_black_to_ink(img: Image.Image) -> Image.Image:
+    rgba = img.convert("RGBA")
+    pixels = list(rgba.getdata())
+    cleaned = []
+    for r, g, b, _a in pixels:
+        luminance = int(round(0.299 * r + 0.587 * g + 0.114 * b))
+        cleaned.append((0, 0, 0, luminance))
+    rgba.putdata(cleaned)
+    return rgba
 
 
-def crop_emblem(img: Image.Image, padding_ratio: float = 0.04) -> Image.Image:
+def crop_with_padding(img: Image.Image, padding_ratio: float = 0.06) -> Image.Image:
     bbox = img.getbbox()
     if bbox is None:
-        raise RuntimeError("PDF page has no visible artwork.")
-
-    sheet = img.crop(bbox)
-    width, height = sheet.size
-    pixels = sheet.load()
-
-    def row_density(y: int) -> int:
-        return sum(1 for x in range(0, width, 2) if pixels[x, y][3] > 20)
-
-    empty_start = None
-    gap = None
-    for y in range(int(height * 0.55), height):
-        empty = row_density(y) < 8
-        if empty and empty_start is None:
-            empty_start = y
-        elif not empty and empty_start is not None and y - empty_start >= 40:
-            gap = (empty_start, y)
-            break
-
-    emblem = sheet.crop((0, 0, width, gap[0])) if gap else sheet
-    emblem_bbox = emblem.getbbox()
-    if emblem_bbox:
-        emblem = emblem.crop(emblem_bbox)
-
-    pad = max(8, int(max(emblem.size) * padding_ratio))
-    canvas = Image.new("RGBA", (emblem.size[0] + pad * 2, emblem.size[1] + pad * 2), (0, 0, 0, 0))
-    canvas.paste(emblem, (pad, pad), emblem)
+        raise RuntimeError("No logo pixels found after knockout.")
+    cropped = img.crop(bbox)
+    pad = max(8, int(max(cropped.size) * padding_ratio))
+    canvas = Image.new("RGBA", (cropped.size[0] + pad * 2, cropped.size[1] + pad * 2), (0, 0, 0, 0))
+    canvas.paste(cropped, (pad, pad), cropped)
     return canvas
 
 
@@ -62,11 +43,11 @@ def make_square_icon(img: Image.Image, size: int = 512) -> Image.Image:
 
 
 def main() -> None:
-    if not PDF.exists():
-        raise FileNotFoundError(PDF)
+    if not SOURCE.exists():
+        raise FileNotFoundError(SOURCE)
 
     LOGOS.mkdir(parents=True, exist_ok=True)
-    emblem = crop_emblem(render_page())
+    emblem = crop_with_padding(knockout_black_to_ink(Image.open(SOURCE)))
     mark_path = LOGOS / "jaguar-mark.png"
     emblem.save(mark_path, optimize=True)
 

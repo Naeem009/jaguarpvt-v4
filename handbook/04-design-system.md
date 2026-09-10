@@ -30,20 +30,21 @@ Loaded in `app/[locale]/layout.tsx`:
 
 ## Logo
 
-- File: `public/logos/jaguar-mark.png` (transparent PNG from `j logo new.pdf` via `scripts/export-j-mark.py`)
+- File: `public/logos/jaguar-mark.png` (transparent PNG from `public/j1.png` via `scripts/export-j-mark.py`)
 - Component: `components/theme/BrandLogo.tsx`
 - Native `<img>` (not `next/image`) so the silhouette stays sharp
-- Do **not** CSS-invert the mark — it is grayscale metal with its own highlights
+- Ink mark on transparent; `dark:invert` (and `invert` when `inverted`) so it reads on paper and on dark
 - Wordmark is still CSS (`font-brand`), black in light mode / white in dark
 - Variants: `lockup` (default), `stacked` (home hero), `mark`
 - Favicons: `app/icon.png`, `app/apple-icon.png`, `app/favicon.ico`
 
 ## Theme
 
-`lib/theme.ts` injects `themeInitScript` as an inline `<head>` script (not `next/script`, which React 19 rejects in the layout tree). It:
+Dark mode follows **`prefers-color-scheme` only** (no in-app toggle, no blocking `<script>` in the layout — React 19 rejects those on client locale navigations).
 
-- Removes any saved `jaguar-theme` override
-- Applies `html.dark` / `html.light` from `prefers-color-scheme`
+- CSS variables: `html.dark` and `@media (prefers-color-scheme: dark)` on `html:not(.light)` in `app/globals.css`
+- Tailwind `dark:` variant: the same media query
+- `ThemeProvider` still syncs `html.dark` / `html.light` after mount so class-based selectors stay aligned
 
 There is **no** user theme toggle. Do not add one unless product asks.
 

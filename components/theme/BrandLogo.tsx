@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 
 const MARK = {
   src: "/logos/jaguar-mark.png",
-  width: 1076,
-  height: 1799,
+  width: 329,
+  height: 401,
 } as const;
 
 export function BrandLogo({
@@ -20,6 +20,7 @@ export function BrandLogo({
   variant?: "lockup" | "stacked" | "mark";
 }) {
   const wordmark = inverted ? "text-white" : "text-black dark:text-white";
+  const markFilter = inverted ? "invert" : "dark:invert";
 
   const mark = (
     // Native img keeps the original silhouette sharp (no optimizer resampling).
@@ -30,7 +31,7 @@ export function BrandLogo({
       width={MARK.width}
       height={MARK.height}
       {...(priority ? { fetchPriority: "high" as const } : {})}
-      className="h-full w-auto object-contain object-center"
+      className={cn("h-full w-auto object-contain object-center", markFilter)}
     />
   );
 
